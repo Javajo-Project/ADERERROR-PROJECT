@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <title>productlist</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+  <link rel="stylesheet" href="./assets/styles/pretendard.css">
+  <style>
+    /***** current *****/
+    body{
+      margin:0;
+      padding:0;
+      font-family: 'pretendard';
+    }
+    p{
+      font-size: 1rem;
+    }
+    a{
+      text-decoration: none;
+      color:#000;
+    }
+    /***** list img main *****/
+    .list-img-main{
+      width:100%;
+      height: 960px;
+      background: url(./images/list-img-main.jpg) 50% /cover;
+    }
+
+     /***** list lookbook  *****/
+     .list-lookbook-wrapper{
+      position: relative;
+      width:100%;
+      height: 1230px;
+     }
+    .list-lookbook-wrapper .list-lookbook1-wrapper{
+      position: absolute;
+      padding:120px 90px;
+      height: 900px;
+      display: flex;
+      background-color: #fff;
+    }
+    .list-lookbook-wrapper .list-lookbook1-wrapper img{
+      width:45vw;
+    }
+    .list-lookbook-wrapper .list-lookbook1-wrapper .box{
+      padding:5vw 10vw;
+    }
+    .list-lookbook-wrapper .list-lookbook1-wrapper .box p strong{
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+    .list-lookbook-wrapper .list-lookbook1-wrapper .box .list-content{
+      margin-top:10vw;
+    }
+ 
+    /***** list content *****/
+    .list-content-wrapper .list-content{
+      list-style: none;
+      display: flex;
+      margin:0;
+      padding:0;
+      padding-left:90px;
+    }
+    .list-content-wrapper .list-content li a{
+     display: block;
+     margin:0 40px;
+     font-weight: 600;
+     color:#AEAEAE;
+    }
+    .list-content-wrapper .list-content li:first-child a{
+     margin:0;
+     color:#0000C5;
+    }
+
+    /***** list product *****/
+    .list-product-wrapper{
+      display: grid;
+      grid-template-columns: repeat(3,30vw);
+    }
+    .list-product-wrapper .list-img1-wrapper{
+      margin-top:55px;
+      padding-left:90px;
+    }
+    .list-product-wrapper .list-img1-wrapper img{
+      width:29vw;
+    }
+    .list-product-wrapper .list-img1-wrapper ul{
+      list-style: none;
+      margin:0;
+      padding:0;
+      display: flex;
+    }
+    .list-product-wrapper .list-img1-wrapper ul .selectColor{
+      width:14px;
+      height: 14px;
+      border-radius: 50%;
+      text-indent: -9999px;
+      cursor: pointer;
+    }
+    .list-product-wrapper .list-img1-wrapper .list-img1-white{
+      background-color: #fff;
+      border: 1px solid #000;
+    }
+    .list-product-wrapper .list-img1-wrapper .list-img2-black{
+      background-color: #000;
+      margin-right: 10px;
+    }
+    .list-product-wrapper .list-img1-wrapper .list-img2-gray{
+      background-color: #ddd;
+      margin-right: 10px;
+    }
+    .list-product-wrapper .list-img1-wrapper .list-img2-brown{
+      background-color: #5a1a1a;
+      margin-right: 10px;
+    }
+  </style>
+  <script src="../assets/jquery-3.7.1.min.js"></script>
+</head>
+
+<body>
+
+  <!-----  list img main ----->
+  <section class="list-img-main">
+  </section>
+
+  <!----- list lookbook ----->
+  <section class="list-lookbook-wrapper">
+    <div class="list-lookbook1-wrapper">
+      <a href="#"><img src="./images/list-lookbook-img1.jpg" alt="img1"></a>
+      <div class="box">
+      <a href="#"><p><strong>TOP</strong></p></a>
+      <a href="#"><p>Wez jacket</p></a>
+      <a href="#"><p>489,000</p></a>
+      <div class="list-content">
+      <a href="#"><p><strong>BOTTOM</strong></p></a>
+      <a href="#"><p>Henrik jeans</p></a>
+      <a href="#"><p>339,000</p></a>
+      </div>
+      <div class="list-content">
+      <a href="#"><p><strong>SHOEs</strong></p></a>
+      <a href="#"><p>Log; BAUS (Off White)</p></a>
+      <a href="#"><p>320,000</p></a>
+      </div>
+    </div>
+    </div>
+    <div class="list-lookbook1-wrapper">
+      <a href="#"><img src="./images/list-lookbook-img2.jpg" alt="img1"></a>
+      <div class="box">
+      <a href="#"><p><strong>TOP</strong></p></a>
+      <a href="#"><p>Zeoly jacket</p></a>
+      <a href="#"><p>539,000</p></a>
+      <div class="list-content">
+      <a href="#"><p><strong>BOTTOM</strong></p></a>
+      <a href="#"><p>Vassi slacks</p></a>
+      <a href="#"><p>419,000</p></a>
+      </div>
+      <div class="list-content">
+      <a href="#"><p><strong>SHOES</strong></p></a>
+      <a href="#"><p>Orsay</p></a>
+      <a href="#"><p>330,000</p></a>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!----- list content ----->
+  <section class="list-content-wrapper">
+    <ul class="list-content">
+      <li><a href="#">전체보기</a></li>
+      <li><a href="#">티셔츠&셔츠</a></li>
+      <li><a href="#">재킷&블레이저</a></li>
+      <li><a href="#">점퍼&코트</a></li>
+      <li><a href="#">팬츠&스커트</a></li>
+      <li><a href="#">스웨트셔츠&후디</a></li>
+      <li><a href="#">데님</a></li>
+    </ul>
+  </section>
+
+  <!----- list product ----->
+  <section class="list-product-wrapper">
+    <div class="list-img1-wrapper">
+      <a href="#"><img src="./images/list-img1-white.jpg" alt="list-img1"></a>
+      <p><a href="#">Blue bird t-shirt</a></p>
+      <p><a href="#">139,000</a></p>
+      <ul>
+        <li class="selectColor list-img1-white">white</li>
+      </ul>
+    </div>
+    <div class="list-img1-wrapper">
+      <a href="#"><img src="./images/list-img2-black.jpg" alt="list-img2"></a>
+      <p><a href="#">Langle t-shirt</a></p>
+      <p><a href="#">139,000</a></p>
+      <ul>
+        <li class="selectColor list-img2-black">black</li>
+        <li class="selectColor list-img2-gray">gray</li>
+        <li class="selectColor list-img2-brown">brown</li>
+      </ul>
+    </div>
+    <div class="list-img1-wrapper">
+      <a href="#"><img src="./images/list-img3-black.jpg" alt="list-img3"></a>
+      <p><a href="#">Langle t-shirt</a></p>
+      <p><a href="#">139,000</a></p>
+      <ul>
+        <li class="selectColor list-img2-black">black</li>
+        <li class="selectColor list-img2-gray">gray</li>
+        <li class="selectColor list-img2-brown">brown</li>
+      </ul>
+    </div>
+    <div class="list-img1-wrapper">
+      <a href="#"><img src="./images/list-img2-black.jpg" alt="list-img1"></a>
+      <p><a href="#">Langle t-shirt</a></p>
+      <p><a href="#">139,000</a></p>
+      <ul>
+        <li class="selectColor list-img2-black">black</li>
+        <li class="selectColor list-img2-gray">gray</li>
+        <li class="selectColor list-img2-brown">brown</li>
+      </ul>
+    </div>
+    <div class="list-img1-wrapper">
+      <a href="#"><img src="./images/list-img2-black.jpg" alt="list-img1"></a>
+      <p><a href="#">Langle t-shirt</a></p>
+      <p><a href="#">139,000</a></p>
+      <ul>
+        <li class="selectColor list-img2-black">black</li>
+        <li class="selectColor list-img2-gray">gray</li>
+        <li class="selectColor list-img2-brown">brown</li>
+      </ul>
+    </div>
+    <div class="list-img1-wrapper">
+      <a href="#"><img src="./images/list-img2-black.jpg" alt="list-img1"></a>
+      <p><a href="#">Langle t-shirt</a></p>
+      <p><a href="#">139,000</a></p>
+      <ul>
+        <li class="selectColor list-img2-black">black</li>
+        <li class="selectColor list-img2-gray">gray</li>
+        <li class="selectColor list-img2-brown">brown</li>
+      </ul>
+    </div>
+  </section>
+
+  <script>
+    $(function slide(){
+      $('.list-lookbook1-wrapper:first-child').appendTo('.list-lookbook-wrapper');
+      setTimeout(slide,3000);
+    });
+  </script>
+</body>
+</html>
