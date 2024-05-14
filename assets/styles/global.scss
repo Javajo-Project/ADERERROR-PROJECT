@@ -1,0 +1,51 @@
+
+/****** color 변수 ******/
+$wColor: #fff;
+$bColor: #000;
+$mainColor: #0000C5;
+$gColor: #AEAEAE;
+
+/****** font 변수 ******/
+@mixin enFont($font-weight:500, $font-size:16px, $color:$bColor) {
+  font-family: 'Jost', -apple-system, BlinkMacSystemFont, "Malgun Gothic", "맑은 고딕", helvetica, "Apple SD Gothic Neo", sans-serif;
+  font-weight: $font-weight;
+  font-size: $font-size;
+  color: $color;
+}
+@mixin koFont($font-weight:500, $font-size:16px, $color:$bColor) {
+  font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, "Malgun Gothic", "맑은 고딕", helvetica, "Apple SD Gothic Neo", sans-serif;
+  font-weight: $font-weight;
+  font-size: $font-size;
+  color: $color;
+}
+
+/****** header ******/
+.pc-main-nav {
+  position: fixed;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1038px;
+  height: 55px;
+  border-radius: 55px;
+  background-color: $bColor;
+  display: flex;
+  align-items: center;
+  padding: 0 75px;
+  @include koFont(-weight, -size, $wColor);
+
+  .logo-img {
+    width: 150px;
+    height: 19.65px;
+    background: url(../images/global/logo-w.png) no-repeat 50% / cover ;
+  }
+  .logo-img::after {
+    content: "";
+    width: 1px;
+    height: 40px;
+    background-color: $wColor;
+    
+  }
+}
+
+  /****** footer ******/
