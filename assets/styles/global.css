@@ -1,6 +1,10 @@
 @charset "UTF-8";
 /****** color 변수 ******/
 /****** font 변수 ******/
+.content {
+  height: 100vh;
+}
+
 /****** header ******/
 .pc-main-nav {
   position: fixed;
@@ -13,8 +17,9 @@
   background-color: #000;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   padding: 0 75px;
-  font-family: "Pretendard", -apple-system, BlinkMacSystemFont, "Malgun Gothic", "맑은 고딕", helvetica, "Apple SD Gothic Neo", sans-serif;
+  font-family: "Jost", sans-serif;
   font-weight: -weight;
   font-size: -size;
   color: #fff;
@@ -23,12 +28,78 @@
   width: 150px;
   height: 19.65px;
   background: url(../images/global/logo-w.png) no-repeat 50%/cover;
+  text-indent: -999999px;
 }
 .pc-main-nav .logo-img::after {
   content: "";
   width: 1px;
   height: 40px;
   background-color: #fff;
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 257px;
+}
+.pc-main-nav .menu-wrapper {
+  display: flex;
+  gap: 80px;
 }
 
-/****** footer ******//*# sourceMappingURL=global.css.map */
+/****** footer ******/
+.pc-main-footer {
+  width: 1360px;
+  height: 467px;
+  border-radius: 40px;
+  background-color: #0000C5;
+  margin: 0 auto 50px;
+  font-family: "Jost", sans-serif;
+  font-weight: -weight;
+  font-size: 14px;
+  color: #fff;
+  padding: 92px 0;
+}
+.pc-main-footer .footer-companyIntroduction {
+  display: flex;
+  gap: 100px;
+  margin-left: 170px;
+}
+.pc-main-footer .footer-companyIntroduction .companyIntroduction-wrapper:nth-child(1) .companyIntroduction-item-logo img {
+  width: 294px;
+  height: 38px;
+  margin-bottom: 60px;
+}
+.pc-main-footer .footer-companyIntroduction .companyIntroduction-wrapper .companyIntroduction-item-title {
+  font-family: "Jost", sans-serif;
+  font-weight: -weight;
+  font-size: 18px;
+  color: #fff;
+}
+.pc-main-footer .footer-companyIntroduction .companyIntroduction-wrapper .companyIntroduction-item-title::after {
+  content: "";
+  width: 20px;
+  height: 1px;
+  display: block;
+  background-color: #fff;
+  margin: 18px 0;
+}
+.pc-main-footer .footer-companyIntroduction .companyIntroduction-wrapper .companyIntroduction-item-text {
+  margin: 7.5px 0;
+}
+.pc-main-footer .footer-companyContact {
+  width: 1038px;
+  height: 55px;
+  border-radius: 55px;
+  border: 1px solid #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 35px;
+  margin: 55px auto 0;
+}
+.pc-main-footer .footer-companyContact .companyContact-companyLogo-wrapper {
+  display: flex;
+}
+.pc-main-footer .footer-companyContact .companyContact-companyLogo-wrapper li a {
+  padding: 0 30px;
+}/*# sourceMappingURL=global.css.map */
