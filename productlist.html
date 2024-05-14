@@ -4,34 +4,59 @@
   <meta charset="utf-8">
   <title>productlist</title>
   <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+  <link rel="stylesheet" href="./assets/styles/productlist.css">
   <link rel="stylesheet" href="./assets/styles/pretendard.css">
-  <style>
-    /***** current *****/
+  <link rel="stylesheet" href="./assets/styles/jost.css">
+  <link rel="stylesheet" href="./assets/styles/global.css">
+  <!-- <style>
+    /****** current ******/
+
     body{
       margin:0;
       padding:0;
-      font-family: 'pretendard';
-    }
-    p{
-      font-size: 1rem;
+      font-family: 'jost';
     }
     a{
       text-decoration: none;
       color:#000;
     }
-    /***** list img main *****/
+    ul{
+      list-style: none;
+    }
+    /****** nav ******/
+
+    html {
+    box-sizing: border-box
+    }
+    *,
+    *::before,
+    *::after {
+    box-sizing: inherit
+    }
+    .menu-wrapper{
+    list-style:none;
+    }
+    .menu-wrapper .menu-item a{
+    color:inherit;
+    text-decoration:none;
+    }
+
+    /****** list img main ******/
+
     .list-img-main{
       width:100%;
       height: 960px;
       background: url(./images/list-img-main.jpg) 50% /cover;
     }
 
-     /***** list lookbook  *****/
+     /****** list lookbook ******/
+
      .list-lookbook-wrapper{
       position: relative;
       width:100%;
       height: 1230px;
      }
+
     .list-lookbook-wrapper .list-lookbook1-wrapper{
       position: absolute;
       padding:120px 90px;
@@ -53,8 +78,10 @@
       margin-top:10vw;
     }
  
-    /***** list content *****/
+    /****** list content ******/
+
     .list-content-wrapper .list-content{
+      font-family: 'pretendard';
       list-style: none;
       display: flex;
       margin:0;
@@ -68,59 +95,159 @@
      color:#AEAEAE;
     }
     .list-content-wrapper .list-content li:first-child a{
-     margin:0;
+     margin-left:0;
      color:#0000C5;
     }
 
-    /***** list product *****/
+    /****** list product ******/
+
     .list-product-wrapper{
+      padding:0 90px;
       display: grid;
-      grid-template-columns: repeat(3,30vw);
+      grid-template-columns: repeat(3,32%);
+      justify-content: space-evenly;
+      gap:80px 20px;
+      margin-bottom:20vh;
     }
-    .list-product-wrapper .list-img1-wrapper{
+    .list-product-wrapper .list-img-wrapper{
       margin-top:55px;
-      padding-left:90px;
     }
-    .list-product-wrapper .list-img1-wrapper img{
-      width:29vw;
+    .list-product-wrapper .list-img-wrapper img{
+      width:100%;
+      height: 100%;
+      object-fit: cover;
     }
-    .list-product-wrapper .list-img1-wrapper ul{
+    .list-product-wrapper .list-img-wrapper .list-img{
+      margin:0;
+      width:100%;
+      height: 100%;
+      text-indent: -9999px;
+    }
+    .list-product-wrapper .list-img-wrapper p{
+      line-height: 0.8;
+    }
+    .list-product-wrapper .list-img-wrapper ul{
       list-style: none;
       margin:0;
       padding:0;
       display: flex;
     }
-    .list-product-wrapper .list-img1-wrapper ul .selectColor{
+    .list-product-wrapper .list-img-wrapper ul .selectColor{
       width:14px;
       height: 14px;
       border-radius: 50%;
       text-indent: -9999px;
       cursor: pointer;
     }
-    .list-product-wrapper .list-img1-wrapper .list-img1-white{
+
+    /* list product img change */
+
+    .list-product-wrapper .list-img-wrapper .list-img2-blackimg{
+      background: url(./images/list-img2-black.jpg) 50% / cover;
+    }
+    .list-product-wrapper .list-img-wrapper .list-img2-blackimg.black{
+      background: url(./images/list-img2-black.jpg) 50% / cover;
+    }
+    .list-product-wrapper .list-img-wrapper .list-img2-blackimg.gray{
+      background: url(./images/list-img2-gray.jpg) 50% / cover;
+    }
+    .list-product-wrapper .list-img-wrapper .list-img2-blackimg.brown{
+      background: url(./images/list-img2-brown.jpg) 50% / cover;
+    }
+    .list-product-wrapper .list-img-wrapper .list-img3-blackimg{
+      background:url(./images/list-img3-black.jpg) 50% / cover;
+    }
+    .list-product-wrapper .list-img-wrapper .list-img3-blackimg.black{
+      background:url(./images/list-img3-black.jpg) 50% / cover;
+    }
+    .list-product-wrapper .list-img-wrapper .list-img3-blackimg.blue{
+      background:url(./images/list-img3-blue.jpg) 50% / cover;
+    }
+    .list-product-wrapper .list-img-wrapper .list-img3-blackimg.white{
+      background:url(./images/list-img3-white.jpg) 50% / cover;
+    }
+    .list-product-wrapper .list-img-wrapper .list-img6-blueimg{
+      background:url(./images/list-img6-blue.jpg) 50% / cover;
+    }
+    .list-product-wrapper .list-img-wrapper .list-img6-blueimg.blue{
+      background:url(./images/list-img6-blue.jpg) 50% / cover;
+    }
+    .list-product-wrapper .list-img-wrapper .list-img6-blueimg.brown{
+      background:url(./images/list-img6-brown.jpg) 50% / cover;
+    }
+
+    /* list product icon change */
+
+    .list-product-wrapper .list-img-wrapper .list-img1-white{
       background-color: #fff;
       border: 1px solid #000;
+      box-sizing: border-box;
     }
-    .list-product-wrapper .list-img1-wrapper .list-img2-black{
+    .list-product-wrapper .list-img-wrapper .list-img2-black{
       background-color: #000;
       margin-right: 10px;
     }
-    .list-product-wrapper .list-img1-wrapper .list-img2-gray{
+    .list-product-wrapper .list-img-wrapper .list-img2-gray{
       background-color: #ddd;
       margin-right: 10px;
     }
-    .list-product-wrapper .list-img1-wrapper .list-img2-brown{
+    .list-product-wrapper .list-img-wrapper .list-img2-brown{
       background-color: #5a1a1a;
       margin-right: 10px;
     }
-  </style>
+    .list-product-wrapper .list-img-wrapper .list-img3-black{
+      background-color: #000;
+      margin-right: 10px;
+    }
+    .list-product-wrapper .list-img-wrapper .list-img3-blue{
+      background-color: #0000C5;
+      margin-right: 10px;
+    }
+    .list-product-wrapper .list-img-wrapper .list-img3-white{
+      background-color: #fff;
+      border:1px solid #000;
+      box-sizing: border-box;
+      margin-right: 10px;
+    }
+    .list-product-wrapper .list-img-wrapper .list-img4-blue{
+      background-color: #0000C5;
+      margin-right: 10px;
+    }
+    .list-product-wrapper .list-img-wrapper .list-img5-gray{
+      background-color: #ddd;
+      margin-right: 10px;
+    }
+    .list-product-wrapper .list-img-wrapper .list-img6-blue{
+      background-color: #0000C5;
+      margin-right: 10px;
+    }
+    .list-product-wrapper .list-img-wrapper .list-img6-brown{
+      background-color: #5a1a1a;
+      margin-right: 10px;
+    }
+
+    /* footer */
+    .companyContact-companyLogo-wrapper a{
+      color:inherit;
+    }
+  </style> -->
   <script src="../assets/jquery-3.7.1.min.js"></script>
+  <script src="./assets/jquery-ui.min.js"></script>
 </head>
 
 <body>
 
   <!-----  list img main ----->
   <section class="list-img-main">
+    <nav class="pc-main-nav">
+      <div class="logo-img">logo area</div>
+      <ul class="menu-wrapper">
+        <li class="menu-item"><a href="#">About +</a></li>
+        <li class="menu-item"><a href="#">Significant +</a></li>
+        <li class="menu-item"><a href="#">A-ventory +</a></li>
+        <li class="menu-item"><a href="#">Collaboration +</a></li>
+      </ul> 
+    </nav>
   </section>
 
   <!----- list lookbook ----->
@@ -178,7 +305,7 @@
 
   <!----- list product ----->
   <section class="list-product-wrapper">
-    <div class="list-img1-wrapper">
+    <div class="list-img-wrapper">
       <a href="#"><img src="./images/list-img1-white.jpg" alt="list-img1"></a>
       <p><a href="#">Blue bird t-shirt</a></p>
       <p><a href="#">139,000</a></p>
@@ -186,8 +313,8 @@
         <li class="selectColor list-img1-white">white</li>
       </ul>
     </div>
-    <div class="list-img1-wrapper">
-      <a href="#"><img src="./images/list-img2-black.jpg" alt="list-img2"></a>
+    <div class="list-img-wrapper list-img2-wrapper">
+      <p class="list-img list-img2-blackimg">img</p>
       <p><a href="#">Langle t-shirt</a></p>
       <p><a href="#">139,000</a></p>
       <ul>
@@ -196,52 +323,115 @@
         <li class="selectColor list-img2-brown">brown</li>
       </ul>
     </div>
-    <div class="list-img1-wrapper">
-      <a href="#"><img src="./images/list-img3-black.jpg" alt="list-img3"></a>
-      <p><a href="#">Langle t-shirt</a></p>
-      <p><a href="#">139,000</a></p>
+    <div class="list-img-wrapper">
+      <p class="list-img list-img3-blackimg">img</p>
+      <p><a href="#">Caef logo t-shirt</a></p>
+      <p><a href="#">149,000</a></p>
       <ul>
-        <li class="selectColor list-img2-black">black</li>
-        <li class="selectColor list-img2-gray">gray</li>
-        <li class="selectColor list-img2-brown">brown</li>
+        <li class="selectColor list-img3-black">black</li>
+        <li class="selectColor list-img3-blue">blue</li>
+        <li class="selectColor list-img3-white">white</li>
       </ul>
     </div>
-    <div class="list-img1-wrapper">
-      <a href="#"><img src="./images/list-img2-black.jpg" alt="list-img1"></a>
-      <p><a href="#">Langle t-shirt</a></p>
-      <p><a href="#">139,000</a></p>
+    <div class="list-img-wrapper">
+      <a href="#"><img src="./images/list-img4-blue.jpg" alt="list-img1"></a>
+      <p><a href="#">Henrik jeans</a></p>
+      <p><a href="#">339,000</a></p>
       <ul>
-        <li class="selectColor list-img2-black">black</li>
-        <li class="selectColor list-img2-gray">gray</li>
-        <li class="selectColor list-img2-brown">brown</li>
+        <li class="selectColor list-img4-blue">blue</li>
       </ul>
     </div>
-    <div class="list-img1-wrapper">
-      <a href="#"><img src="./images/list-img2-black.jpg" alt="list-img1"></a>
-      <p><a href="#">Langle t-shirt</a></p>
+    <div class="list-img-wrapper">
+      <a href="#"><img src="./images/list-img5-gray.jpg" alt="list-img1"></a>
+      <p><a href="#">Blue bee t-shirt</a></p>
       <p><a href="#">139,000</a></p>
       <ul>
-        <li class="selectColor list-img2-black">black</li>
-        <li class="selectColor list-img2-gray">gray</li>
-        <li class="selectColor list-img2-brown">brown</li>
+        <li class="selectColor list-img5-gray">gray</li>
       </ul>
     </div>
-    <div class="list-img1-wrapper">
-      <a href="#"><img src="./images/list-img2-black.jpg" alt="list-img1"></a>
+    <div class="list-img-wrapper">
+      <p class="list-img list-img6-blueimg">img</p>
       <p><a href="#">Langle t-shirt</a></p>
       <p><a href="#">139,000</a></p>
       <ul>
-        <li class="selectColor list-img2-black">black</li>
-        <li class="selectColor list-img2-gray">gray</li>
-        <li class="selectColor list-img2-brown">brown</li>
+        <li class="selectColor list-img6-blue">blue</li>
+        <li class="selectColor list-img6-brown">brown</li>
       </ul>
     </div>
   </section>
-
+  <footer class="pc-main-footer">
+    <div class="footer-companyIntroduction">
+     <div class="companyIntroduction-wrapper">
+       <div class="companyIntroduction-item-logo"><img src="./assets/images/global/logo-w.png" alt="logo-w"></div>
+       <p class="companyIntroduction-item-text">Business License 02-792-2232</p>
+       <p class="companyIntroduction-item-text">Office hour Mon - Fri AM 9:30 - PM 5:00</p>
+     </div>
+     <div class="companyIntroduction-wrapper">
+       <p class="companyIntroduction-item-title">Information</p>
+       <p class="companyIntroduction-item-text">Shipping</p>
+       <p class="companyIntroduction-item-text">Care</p>
+       <p class="companyIntroduction-item-text">Stockists</p>
+       <p class="companyIntroduction-item-text">Size Chart</p>
+       <p class="companyIntroduction-item-text">Refund & Exchabge</p>
+     </div>
+     <div class="companyIntroduction-wrapper">
+       <p class="companyIntroduction-item-title">Company ADER</p>
+       <p class="companyIntroduction-item-text">Business Name FIVE SPACE CO.,LTD </p>   
+       <p class="companyIntroduction-item-text">Business License 760-87-01757</p>   
+       <p class="companyIntroduction-item-text">office 14, Yeonmujang 9-gil, Seongdong-gu, Seoul, South Korea</p>   
+       <p class="companyIntroduction-item-text">MAIL-ORDER LICENSE NO. 2021-서울성동-01588</p>   
+       <p class="companyIntroduction-item-text">TEL. 02-792-2232  Office hour Mon - Fri AM 9:30 - PM 5:00</p>   
+     </div>
+    </div>
+    <div class="footer-companyContact">
+     <p class="companyContact-language">Language +</p>
+     <ul class="companyContact-companyLogo-wrapper">
+       <li><a href="https://www.instagram.com/ader_error/" target="_blank">Instagram</a></li>
+       <li><a href="https://www.facebook.com/adererror" target="_blank">Facebook</a></li>
+       <li><a href="https://pf.kakao.com/_mQzRxl" target="_blank">Kakao Talk</a></li>
+       <li><a href="https://www.youtube.com/channel/UCu8Oj6fqmD5tG4Nch2ijG4Q" target="_blank">Youtube</a></li>
+     </ul>
+     <p class=”companyContact-copyRight”>©2021 ADER All Rights Reserved</p>
+    </div>
+ </footer>
   <script>
     $(function slide(){
       $('.list-lookbook1-wrapper:first-child').appendTo('.list-lookbook-wrapper');
-      setTimeout(slide,3000);
+      setTimeout(slide,3500);
+    });
+    $('.list-img2-black').on('click',()=>{
+      $('.list-product-wrapper .list-img-wrapper .list-img2-blackimg').removeClass('brown');
+      $('.list-product-wrapper .list-img-wrapper .list-img2-blackimg').removeClass('gray');
+      $('.list-product-wrapper .list-img-wrapper .list-img2-blackimg').addClass('black');
+    });
+    $('.list-img2-gray').on('click',()=>{
+      $('.list-product-wrapper .list-img-wrapper .list-img2-blackimg').removeClass('brown');
+      $('.list-product-wrapper .list-img-wrapper .list-img2-blackimg').addClass('gray');
+    });
+    $('.list-img2-brown').on('click',()=>{
+      $('.list-product-wrapper .list-img-wrapper .list-img2-blackimg').removeClass('black');
+      $('.list-product-wrapper .list-img-wrapper .list-img2-blackimg').addClass('brown');
+    });
+    $('.list-img3-black').on('click',()=>{
+      $('.list-product-wrapper .list-img-wrapper .list-img3-blackimg').removeClass('white');
+      $('.list-product-wrapper .list-img-wrapper .list-img3-blackimg').removeClass('blue');
+      $('.list-product-wrapper .list-img-wrapper .list-img3-blackimg').addClass('black');
+    });
+    $('.list-img3-blue').on('click',()=>{
+      $('.list-product-wrapper .list-img-wrapper .list-img3-blackimg').removeClass('white');
+      $('.list-product-wrapper .list-img-wrapper .list-img3-blackimg').addClass('blue');
+    });
+    $('.list-img3-white').on('click',()=>{
+      $('.list-product-wrapper .list-img-wrapper .list-img3-blackimg').removeClass('black');
+      $('.list-product-wrapper .list-img-wrapper .list-img3-blackimg').addClass('white');
+    });
+    $('.list-img6-blue').on('click',()=>{
+      $('.list-product-wrapper .list-img-wrapper .list-img6-blueimg').removeClass('brown');
+      $('.list-product-wrapper .list-img-wrapper .list-img6-blueimg').addClass('blue');
+    });
+    $('.list-img6-brown').on('click',()=>{
+      $('.list-product-wrapper .list-img-wrapper .list-img6-blueimg').removeClass('blue');
+      $('.list-product-wrapper .list-img-wrapper .list-img6-blueimg').addClass('brown');
     });
   </script>
 </body>
