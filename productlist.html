@@ -4,8 +4,11 @@
   <meta charset="utf-8">
   <title>productlist</title>
   <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+  <!------ font ------>
   <link rel="stylesheet" href="./assets/styles/pretendard.css">
   <link rel="stylesheet" href="./assets/styles/jost.css">
+
+  <!------ style ------>
   <link rel="stylesheet" href="./assets/styles/global.css">
   <link rel="stylesheet" href="./assets/styles/productlist.css">
   <!-- <style>
@@ -231,15 +234,17 @@
       color:inherit;
     }
   </style> -->
- <script src="./assets/Js/jquery-3.7.1.min.js"></script>
- <script src="./assets/Js/jquery-ui.min.js"></script>
- <script src="./assets/Js/global.js"></script>
+  <script src="./assets/Js/jquery-3.7.1.min.js"></script>
+  <script src="./assets/Js/jquery-ui.min.js"></script>
+  <script src="./assets/Js/global.js"></script>
+  <script src="./assets/styles/productlist.js"></script>
 </head>
 
 <body>
 
   <!-----  list img main ----->
   <section class="list-img-main">
+    <!------ nav ------>
     <nav class="pc-main-nav">
       <div class="logo-img">logo area</div>
       <ul class="menu-wrapper">
@@ -360,6 +365,8 @@
       </ul>
     </div>
   </section>
+
+  <!------ footer ------>
   <footer class="pc-main-footer">
     <div class="footer-companyIntroduction">
      <div class="companyIntroduction-wrapper">
@@ -395,45 +402,5 @@
      <p class=”companyContact-copyRight”>©2021 ADER All Rights Reserved</p>
     </div>
  </footer>
-  <script>
-    $(function slide(){
-      $('.list-lookbook1-wrapper:first-child').appendTo('.list-lookbook-wrapper');
-      setTimeout(slide,3500);
-    });
-    $('.list-img2-black').on('click',()=>{
-      $('.list-product-wrapper .list-img-wrapper .list-img2-blackimg').removeClass('brown');
-      $('.list-product-wrapper .list-img-wrapper .list-img2-blackimg').removeClass('gray');
-      $('.list-product-wrapper .list-img-wrapper .list-img2-blackimg').addClass('black');
-    });
-    $('.list-img2-gray').on('click',()=>{
-      $('.list-product-wrapper .list-img-wrapper .list-img2-blackimg').removeClass('brown');
-      $('.list-product-wrapper .list-img-wrapper .list-img2-blackimg').addClass('gray');
-    });
-    $('.list-img2-brown').on('click',()=>{
-      $('.list-product-wrapper .list-img-wrapper .list-img2-blackimg').removeClass('black');
-      $('.list-product-wrapper .list-img-wrapper .list-img2-blackimg').addClass('brown');
-    });
-    $('.list-img3-black').on('click',()=>{
-      $('.list-product-wrapper .list-img-wrapper .list-img3-blackimg').removeClass('white');
-      $('.list-product-wrapper .list-img-wrapper .list-img3-blackimg').removeClass('blue');
-      $('.list-product-wrapper .list-img-wrapper .list-img3-blackimg').addClass('black');
-    });
-    $('.list-img3-blue').on('click',()=>{
-      $('.list-product-wrapper .list-img-wrapper .list-img3-blackimg').removeClass('white');
-      $('.list-product-wrapper .list-img-wrapper .list-img3-blackimg').addClass('blue');
-    });
-    $('.list-img3-white').on('click',()=>{
-      $('.list-product-wrapper .list-img-wrapper .list-img3-blackimg').removeClass('black');
-      $('.list-product-wrapper .list-img-wrapper .list-img3-blackimg').addClass('white');
-    });
-    $('.list-img6-blue').on('click',()=>{
-      $('.list-product-wrapper .list-img-wrapper .list-img6-blueimg').removeClass('brown');
-      $('.list-product-wrapper .list-img-wrapper .list-img6-blueimg').addClass('blue');
-    });
-    $('.list-img6-brown').on('click',()=>{
-      $('.list-product-wrapper .list-img-wrapper .list-img6-blueimg').removeClass('blue');
-      $('.list-product-wrapper .list-img-wrapper .list-img6-blueimg').addClass('brown');
-    });
-  </script>
 </body>
 </html>
