@@ -1,6 +1,5 @@
 @charset "utf-8";
 
-
     /****** index main vedio ******/
     .index-main{
       position: relative;
@@ -40,13 +39,17 @@
       top:60%;
       right:10%;
     }
+
+    /****** index collabo brand list ******/
     .index-collab{
       height: 50vh;
       background-color: #000;
     }
 
     /****** index collaboration ******/
-
+    .index-collabo-horizontal{
+      overflow-x: hidden;
+    }
     .index-collab h3{
       color:#fff;
       text-align: center;
@@ -62,30 +65,93 @@
       margin-top:70px;
       cursor: pointer;
     }
-    .index-collabo-horizontal{
-      height: 80vh;
+    .index-collab-wrapper{
+      width:300vw;
+      height: 100vh;
       background-color: #000;
       color:#fff;
+      display: flex;
     }
-    .index-collabo-horizontal h2{
+    .index-collabo-horizontal .index-collab-wrapper h2{
       font-size: 50px;
       font-weight: 600;
       margin-left: 120px;
       font-family: 'Jost';
     }
-    .index-collabo-horizontal .index-collabo-horizontaltext{
+    .index-collabo-horizontal .index-collab-wrapper .index-collabo-horizontaltext{
       padding-top:200px;
     }
-    .index-collabo-horizontal p{
+    .index-collabo-horizontal .index-collab-wrapper p{
       font-family: 'Jost';
       font-size: 50px;
       margin-left: 120px;
       font-weight: 600;
     }
-    .index-collabo-horizontal p span{
+    .index-collabo-horizontal .index-collab-wrapper p span{
       display: inline-block;
       border:3px solid #fff;
       padding:5px 10px;
       border-radius: 20px;
       transform: rotate(-5deg);
     }
+    .index-collabo-horizontal .index-collab-wrapper .index-collabo-horizontalwrapper1{
+      display: flex;
+      width:100vw;
+      gap:20px;
+    }
+    .index-collabo-horizontal .index-collab-wrapper .index-collabo-horizontalwrapper1 img{
+      margin-top: 100px;
+      width:350px;
+      object-fit: cover;
+    }
+    .text{
+      position: absolute;
+      top:50%;
+    }
+
+    /****** index product list ******/
+    .index-productlist-wrapper{
+      width:100%;
+    }
+    .index-productlist-wrapper h2{
+      text-align: center;
+      font-family: 'Jost';
+      font-size: 40px;
+      margin-top:130px;
+    }
+    .index-productlist-wrapper .collection{
+      width:39vw;
+      text-align: center;
+      margin:50px auto;
+    }
+    .index-productlist-wrapper .index-productlist-container{
+      width: 100%;
+      height: 100vh;
+      display: grid;
+      grid-template-columns: repeat(2,600px);
+      gap:50px;
+      justify-content: center;
+    }
+    .index-productlist-wrapper .index-productlist-container .index-product-list1{
+      width:600px;
+      height: 600px;
+    }
+    .index-productlist-wrapper .index-productlist-container .index-product-list1 .index-product{
+      display: block;
+      aspect-ratio: 1/1;
+      width:600px;
+      height: 600px;
+    } 
+    .index-productlist-wrapper .index-productlist-container .index-product-list1 .index-product img{
+    border-radius: 50px;
+    aspect-ratio: 1/1;
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+    object-position:top;
+    margin-top: 60px;
+    }
+    .index-productlist-wrapper .index-productlist-container .index-product-list1 .index-product .index-img-speaker{
+      object-position:bottom;
+      margin-top:100px;
+      }
