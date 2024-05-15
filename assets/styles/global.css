@@ -24,6 +24,7 @@
   font-weight: -weight;
   font-size: -size;
   color: #fff;
+  z-index: 9999;
 }
 .pc-main-nav .logo-img {
   width: 150px;

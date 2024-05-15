@@ -2,6 +2,7 @@ $(function slide(){
   $('.list-lookbook1-wrapper:first-child').appendTo('.list-lookbook-wrapper');
   setTimeout(slide,3500);
 });
+
 $('.list-img2-black').on('click',()=>{
   $('.list-product-wrapper .list-img-wrapper .list-img2-blackimg').removeClass('brown');
   $('.list-product-wrapper .list-img-wrapper .list-img2-blackimg').removeClass('gray');
