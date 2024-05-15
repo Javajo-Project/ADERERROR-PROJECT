@@ -145,23 +145,19 @@ body {
   max-width: 1440px;
   margin: 0 auto;
   padding: 160px 90px;
+  overflow: auto;
 } 
 .through-wrapper {
   max-width: 1000px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
 }
 .through-wrapper1 {
   text-align: left;
   margin-bottom: 120px;
-  display: block;
-  align-self: flex-end;
+  float: right;
 }
 .through-wrapper2 {
   text-align: right;
-  display: block;
-  align-self: flex-start;
+  float: left;
 }
 .through-wrapper img{
   width: 100%;
