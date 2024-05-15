@@ -221,3 +221,7 @@
   .companyContact-companyLogo-wrapper a{
     color:inherit;
   }
+
+  .pc-main-footer p {
+    margin: 0;
+  }
