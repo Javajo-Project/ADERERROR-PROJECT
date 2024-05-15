@@ -32,6 +32,7 @@ $gColor: #AEAEAE;
   height: 55px;
   border-radius: 55px;
   background-color: $bColor;
+  border: 1px solid $wColor;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -145,13 +146,22 @@ $gColor: #AEAEAE;
   width: 100%;
   .product-slideShow-text {
     @include enFont(600, 30px, $gColor);
-    margin: 0 0 100px 90px;
+    margin: 0 0 0 90px;
   }
   .product-slideShow-wrapper {
+    width: 100%;
     display: flex;
-
+    overflow: hidden;
+    padding-top: 110px;
     .product-slideShow-item {
+      margin-left: 40px;
+      width: 100%;
+      height: 100%;
+      margin-bottom: 210px;
       img {
+        box-shadow: 
+        3px 3px 50px rgba(138, 138, 138, 0.3),
+        -3px -3px 50px rgba(138, 138, 138, 0.3);
         border-radius: 40px;
       }
     }
