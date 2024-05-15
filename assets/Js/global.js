@@ -8,7 +8,6 @@ $(function () {
  addEventListener('mousemove', (e) => {
   mouseX = e.clientX -10;
   mouseY = e.clientY -10;
-  console.log(mouseX, mouseY)
 })
 let emojiX = 0;
 let emojiY = 0;

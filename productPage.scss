@@ -1,0 +1,18 @@
+/****** page-main-productContainer ******/
+
+.product-slideShow {
+  width: 100%;
+}
+.product-slideShow .product-slideShow-text {
+  font-family: "Jost", sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+  color: #AEAEAE;
+  margin: 0 0 100px 90px;
+}
+.product-slideShow .product-slideShow-wrapper {
+  display: flex;
+}
+.product-slideShow .product-slideShow-wrapper .product-slideShow-item img {
+  border-radius: 40px;
+}

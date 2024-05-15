@@ -139,3 +139,21 @@ $gColor: #AEAEAE;
       height: 100%;
     }
   }
+
+/****** page-product-slideShow product-slideShow ******/
+.product-slideShow {
+  width: 100%;
+  .product-slideShow-text {
+    @include enFont(600, 30px, $gColor);
+    margin: 0 0 100px 90px;
+  }
+  .product-slideShow-wrapper {
+    display: flex;
+
+    .product-slideShow-item {
+      img {
+        border-radius: 40px;
+      }
+    }
+  }
+}
