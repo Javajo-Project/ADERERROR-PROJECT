@@ -103,7 +103,7 @@ body {
 /***** collabo-intro *****/
 .collabo-intro  {
   height: 90vh;
-  background: url(../images/collabo/collabo_bg1.png) no-repeat 20% 0% ;
+  background: url(./assets/images/collabo/collabo_bg1.png) no-repeat 20% 0% ;
 }
 
 .collabo-intro img {
