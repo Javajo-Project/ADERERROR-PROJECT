@@ -34,9 +34,9 @@ body {
 }
 .brand-text-wrapper1 h1 {
   margin: 0 64px 82px;
-  font-size: 50px;
+  font-size: 45px;
   font-weight: bold;
-  line-height: 5rem;
+  line-height: 4.2rem;
   color: #fff;
 }
 .brand-text-wrapper1 p {
@@ -46,6 +46,7 @@ body {
   color: #fff;
 }
 .brand-text-wrapper1 .brand-text-img {
+  /* animation : easeoutCubic */
   position: absolute;
   top: 600px;
   left: 750px;
@@ -79,6 +80,7 @@ body {
   margin: 200px 0 60px;
   font-size: 100px;
   font-family: "Jost", sans-serif;
+  font-weight: 800;
   letter-spacing: -3px;
   line-height: 100px;
   color: #0000C5;
