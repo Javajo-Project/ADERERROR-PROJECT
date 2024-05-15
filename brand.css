@@ -1,0 +1,101 @@
+@charset "utf-8";
+
+body {
+  font-family: "Pretendard", sans-serif;
+}
+
+/****** section 1 - brand-main-wrapper ******/
+.brand-main-wrapper {
+  height: 100vh;
+  background-color: #0000C5;
+}
+.brand-main-wrapper h1 {
+  text-align: center;
+  padding-top: 200px;
+}
+.brand-main-wrapper p {
+  margin: auto;
+  padding: 70px 0 120px;
+  width: 680px;
+  font-size: 18px;
+  text-align: center;
+  line-height: 1.7rem;
+  color: #fff;
+}
+.brand-main-wrapper .brand-main-imgList {
+  width: 80vw;
+}
+/****** section 2 - brand-text-wrapper1 ******/
+.brand-text-wrapper1 {
+  padding-top: 100px;
+  height: 1400px;
+  background-color: #000;
+  position: relative;
+}
+.brand-text-wrapper1 h1 {
+  margin: 0 64px 82px;
+  font-size: 50px;
+  font-weight: bold;
+  line-height: 5rem;
+  color: #fff;
+}
+.brand-text-wrapper1 p {
+  margin: 0 64px 55px;
+  font-size: 22px;
+  line-height: 2rem;
+  color: #fff;
+}
+.brand-text-wrapper1 .brand-text-img {
+  position: absolute;
+  top: 600px;
+  left: 750px;
+}
+.brand-text-wrapper1 .brand-text-img > img {
+  width: 750px;
+}
+.brand-text-wrapper1 .brand-text-btn {
+  margin: 27px 64px;
+  width: 235px;
+  height: 40px;
+  border: 1px solid #0000C5;
+  border-radius: 10px;
+  background-color: #0000C5;
+  color: #fff;
+  text-align: center;
+  font-size: 18px;
+  font-family: "Jost", sans-serif;
+}
+.brand-text-wrapper1 .brand-text-btn > img {
+  margin: 2px 7px 2px 0;
+  width: 16px;
+}
+
+/****** section 3 - brand-text-wrapper2 ******/
+.brand-text-wrapper2 {
+  height: 1800px;
+  text-align: center;
+}
+.brand-text-wrapper2 h1 {
+  margin: 200px 0 60px;
+  font-size: 100px;
+  font-family: "Jost", sans-serif;
+  letter-spacing: -3px;
+  line-height: 100px;
+  color: #0000C5;
+}
+.brand-text-wrapper2 .brand-textWrapper2-txt {
+  border: #0000C5 2px solid;
+  border-radius: 25px;
+  padding: 0 15px;
+}
+.brand-text-wrapper2 p {
+  margin: auto;
+  padding-bottom: 100px;
+  width: 680px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.7rem;
+}
+.brand-text-wrapper2 .brand-textWrapper2-video {
+  width: 50%;
+}
