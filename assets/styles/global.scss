@@ -7,19 +7,18 @@ $gColor: #AEAEAE;
 
 /****** font 변수 ******/
 @mixin enFont($font-weight: 500, $font-size: 16px, $color: $bColor) {
-  font-family: "Jost", sans-serif;
+  font-family: 'Jost', sans-serif;
   font-weight: $font-weight;
   font-size: $font-size;
   color: $color;
 }
 
 @mixin koFont($font-weight: 500, $font-size: 16px, $color: $bColor) {
-  font-family: "Pretendard", sans-serif;
+  font-family: 'Pretendard', sans-serif;
   font-weight: $font-weight;
   font-size: $font-size;
   color: $color;
 }
-
 .content {
   height: 100vh;
 }
@@ -125,3 +124,18 @@ $gColor: #AEAEAE;
     }
   }
 }
+
+  /****** mouseEmoji ******/
+  .logo-emoji {
+    width: 30px;
+    height: 36.63px;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    pointer-events: none;
+    will-change: transform;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }

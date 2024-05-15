@@ -23,7 +23,6 @@
   font-weight: -weight;
   font-size: -size;
   color: #fff;
-  z-index: 9999;
 }
 .pc-main-nav .logo-img {
   width: 150px;
@@ -103,4 +102,19 @@
 }
 .pc-main-footer .footer-companyContact .companyContact-companyLogo-wrapper li a {
   padding: 0 30px;
+}
+
+/****** mouseEmoji ******/
+.logo-emoji {
+  width: 30px;
+  height: 36.63px;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  pointer-events: none;
+  will-change: transform;
+}
+.logo-emoji img {
+  width: 100%;
+  height: 100%;
 }/*# sourceMappingURL=global.css.map */
