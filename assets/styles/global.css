@@ -12,7 +12,7 @@ header .mo-main-header {
 }
 header .pc-main-nav {
   transition: 0.3s;
-  z-index: 99999;
+  z-index: 9999999;
   position: fixed;
   top: 50px;
   left: 50%;
@@ -124,7 +124,7 @@ footer .pc-main-footer .footer-companyContact .companyContact-companyLogo-wrappe
   left: 20px;
   pointer-events: none;
   will-change: transform;
-  z-index: 9999999;
+  z-index: 99999999;
 }
 .logo-emoji img {
   width: 100%;
@@ -147,6 +147,7 @@ footer .pc-main-footer .footer-companyContact .companyContact-companyLogo-wrappe
   width: 500%;
   display: flex;
   padding-top: 110px;
+  margin-left: -100px;
 }
 .product-slideShow .product-slideShow-wrapper .product-slideShow-item {
   margin-left: 40px;
@@ -206,6 +207,7 @@ footer .pc-main-footer .footer-companyContact .companyContact-companyLogo-wrappe
   .logo-emoji {
     display: none;
   }
+  /****** header ******/
   header {
     font-family: "Jost", sans-serif;
     font-weight: 600;
@@ -243,6 +245,7 @@ footer .pc-main-footer .footer-companyContact .companyContact-companyLogo-wrappe
   header .mo-main-header .menu-wrapper li:hover {
     color: #0000C5;
   }
+  /****** footer ******/
   footer .pc-main-footer {
     display: none;
   }
@@ -278,5 +281,31 @@ footer .pc-main-footer .footer-companyContact .companyContact-companyLogo-wrappe
   }
   footer .mo-main-footer .companyContact-companyLogo-wrapper li a {
     padding: 8px;
+  }
+  /****** page-product-slideShow product-slideShow ******/
+  .product-slideShow {
+    width: 100%;
+    overflow: hidden;
+  }
+  .product-slideShow .product-slideShow-text {
+    font-family: "Jost", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: #AEAEAE;
+    margin: 0 0 0 20px;
+  }
+  .product-slideShow .product-slideShow-wrapper {
+    padding-top: 50px;
+    margin-left: -30px;
+  }
+  .product-slideShow .product-slideShow-wrapper .product-slideShow-item {
+    margin-left: 10px;
+    width: 100px;
+    margin-bottom: 100px;
+  }
+  .product-slideShow .product-slideShow-wrapper .product-slideShow-item img {
+    width: 100%;
+    box-shadow: 3px 3px 20px rgba(138, 138, 138, 0.3), -3px -3px 20px rgba(138, 138, 138, 0.3);
+    border-radius: 20px;
   }
 }/*# sourceMappingURL=global.css.map */
