@@ -11,7 +11,7 @@ let scrollTween=gsap.to(sections,{
         trigger:".index-collabo-horizontal",
         pin:true,
         scrub:1,
-        end:"+=3000"
+        end:"+=3000",
     }
 })
 sections.forEach(section=>{
@@ -20,9 +20,9 @@ sections.forEach(section=>{
     gsap.from(text,{
         y:-130,
         opacity:0,
-        duration:2,
-        ease:"elastic",
-        stagger:0.1,
+        duration:1,
+        ease:"none",
+        stagger:0.5,
         scrollTrigger:{
             trigger:section,
             containerAnimation:scrollTween,
