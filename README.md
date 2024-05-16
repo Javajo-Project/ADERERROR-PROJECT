@@ -5,7 +5,12 @@
 - gsap scrollTrigger 기능 학습 및 활용
 
 **하은혜**
-- brand페이지 1차 완성(80%), assets > images > brand 폴더에 이미지 추가 후 업로드
+- brand페이지 1차 완성(80%), assets > images > brand 폴더에 이미지 추가 후 업로드   
+     
+**문지영**
+- mouse emoji 구현
+- productPage html 완성
+- productPage scss 완성
 
 # 240514_화 
 퍼블리싱 가이드(section전 주석문 표기 및 표기법)정함, 서브페이지 퍼블리싱, 

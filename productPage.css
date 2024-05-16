@@ -73,6 +73,19 @@
   color: #ff0000;
   text-align: center;
 }
+.page-main-productContaine .page-mainContent-container .page-mainContent-imgWrapper {
+  margin: 0;
+  width: 100%;
+}
+.page-main-productContaine .page-mainContent-container .page-mainContent-imgWrapper div {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.page-main-productContaine .page-mainContent-container .page-mainContent-imgWrapper div img {
+  width: 100%;
+  height: 100%;
+}
 .page-main-productContaine .page-mainContent-container .page-mainContent-subTextBox .subTextBox-wrapper .subTextBox-item {
   margin-bottom: 90px;
 }
