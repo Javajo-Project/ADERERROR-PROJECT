@@ -7,6 +7,9 @@
 
 /*********** pc ***********/
 /****** header ******/
+header .mo-main-header {
+  display: none;
+}
 header .pc-main-nav {
   transition: 0.3s;
   z-index: 99999;
@@ -51,6 +54,9 @@ header .pc-main-nav .menu-wrapper {
 }
 
 /****** footer ******/
+footer .mo-main-footer {
+  display: none;
+}
 footer .pc-main-footer {
   transition: 0.3s;
   width: 1360px;
@@ -157,7 +163,7 @@ footer .pc-main-footer .footer-companyContact .companyContact-companyLogo-wrappe
 }
 
 /*********** tb ***********/
-@media (min-width: 768px) and (max-width: 1439px) {
+@media (min-width: 430px) and (max-width: 1439px) {
   header .pc-main-nav {
     width: 700px;
     height: 55px;
@@ -196,11 +202,81 @@ footer .pc-main-footer .footer-companyContact .companyContact-companyLogo-wrappe
   }
 }
 /*********** mo ***********/
-@media (max-width: 389px) {
+@media (max-width: 431px) {
+  .logo-emoji {
+    display: none;
+  }
+  header {
+    font-family: "Jost", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: #000;
+  }
   header .pc-main-nav {
     display: none;
   }
-  header .pc-main-footer {
+  header .mo-main-header {
+    display: block;
+    padding: 50px 20px 0;
+  }
+  header .mo-main-header .mo-header-top {
+    margin-bottom: 30px;
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+  header .mo-main-header .mo-header-top .logo-b {
+    width: 108px;
+  }
+  header .mo-main-header .mo-header-top .icon-wrapper {
+    justify-self: end;
+  }
+  header .mo-main-header .mo-header-top .icon-wrapper a {
+    padding: 0 10px;
+  }
+  header .mo-main-header .menu-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  header .mo-main-header .menu-wrapper li:hover {
+    color: #0000C5;
+  }
+  footer .pc-main-footer {
     display: none;
+  }
+  footer .mo-main-footer {
+    font-family: "Jost", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: #0000C5;
+    display: block;
+    padding: 0 20px 50px;
+  }
+  footer .mo-main-footer .logo-mainColor {
+    margin-bottom: 37px;
+  }
+  footer .mo-main-footer .topContents .title::after {
+    content: "";
+    height: 1px;
+    width: 20px;
+    background-color: #0000C5;
+    display: block;
+    margin: 10px 0;
+  }
+  footer .mo-main-footer .topContents .text {
+    padding-bottom: 14px;
+  }
+  footer .mo-main-footer .topContents .text:nth-of-type(7) {
+    margin-top: 22px;
+  }
+  footer .mo-main-footer .companyContact-companyLogo-wrapper {
+    display: flex;
+    justify-content: end;
+    padding: 60px 0 10px;
+  }
+  footer .mo-main-footer .companyContact-companyLogo-wrapper li a {
+    padding: 8px;
   }
 }/*# sourceMappingURL=global.css.map */

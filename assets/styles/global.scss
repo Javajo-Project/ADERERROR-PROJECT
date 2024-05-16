@@ -1,16 +1,15 @@
 // Breakpoints
-$breakpoint-mobile: 390px;
-$breakpoint-tablet: 768px;
+$breakpoint-tablet: 430px;
 $breakpoint-desktop: 1440px;
 
 @mixin mobile {
-  @media (max-width: #{$breakpoint-mobile - 1px}) {
+  @media  (max-width: #{$breakpoint-tablet + 1px}) {
     @content;
   }
 }
 
 @mixin tablet {
-  @media (min-width: #{$breakpoint-tablet}) and (max-width: #{$breakpoint-desktop - 1px}) {
+  @media (min-width: #{$breakpoint-tablet})  and (max-width: #{$breakpoint-desktop - 1px}){
     @content;
   }
 }
@@ -51,6 +50,9 @@ $gColor: #AEAEAE;
 /*********** pc ***********/
 /****** header ******/
 header {
+  .mo-main-header {
+    display: none;
+  }
   .pc-main-nav {
     transition: 0.3s;
     z-index: 99999;
@@ -97,6 +99,9 @@ header {
 
 /****** footer ******/
 footer {
+  .mo-main-footer {
+    display: none;
+  }
   .pc-main-footer {
     transition: 0.3s;
     width: 1360px;
@@ -276,8 +281,76 @@ footer {
 
 /*********** mo ***********/
 @include mobile {
+  .logo-emoji {
+    display: none;
+  }
   header {
-    .pc-main-nav { display: none;}
+    @include enFont(600, 16px, $bColor);
+    .pc-main-nav {display: none;}
+    .mo-main-header {
+      display: block;
+      padding: 50px 20px 0;
+      .mo-header-top {
+        margin-bottom: 30px;
+        display: grid;
+        justify-content: space-between;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        .logo-b {
+          width: 108px;
+        }
+        .icon-wrapper {
+          justify-self: end;
+          a {
+            padding: 0 10px;
+          }
+        }
+      }
+      .menu-wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        li:hover {
+          color: $mColor;
+        }
+      }
+    }
+
+  }
+  footer {
     .pc-main-footer {display: none;}
+    .mo-main-footer {
+      @include enFont(500, 14px, $mColor);
+      display: block;
+      padding: 0 20px 50px;
+      .logo-mainColor {
+        margin-bottom: 37px;
+      }
+      .topContents {
+        .title::after {
+          content: "";
+          height: 1px;
+          width: 20px;
+          background-color: $mColor;
+          display: block;
+          margin: 10px 0;
+        }
+        .text {
+          padding-bottom: 14px;
+          &:nth-of-type(7) {
+            margin-top: 22px;
+          }
+
+        }
+      }
+      .companyContact-companyLogo-wrapper {
+        display: flex;
+        justify-content: end;
+        padding: 60px 0 10px;
+        li a  {
+          padding: 8px;
+        }
+      }
+    }
   }
 }
