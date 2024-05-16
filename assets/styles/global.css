@@ -7,6 +7,7 @@
 
 /****** header ******/
 .pc-main-nav {
+  z-index: 99999;
   position: fixed;
   top: 50px;
   left: 50%;
@@ -124,6 +125,7 @@
 /****** page-product-slideShow product-slideShow ******/
 .product-slideShow {
   width: 100%;
+  overflow: hidden;
 }
 .product-slideShow .product-slideShow-text {
   font-family: "Jost", sans-serif;
@@ -133,14 +135,13 @@
   margin: 0 0 0 90px;
 }
 .product-slideShow .product-slideShow-wrapper {
-  width: 100%;
+  width: 500%;
   display: flex;
-  overflow: hidden;
   padding-top: 110px;
 }
 .product-slideShow .product-slideShow-wrapper .product-slideShow-item {
   margin-left: 40px;
-  width: 100%;
+  width: 300px;
   height: 100%;
   margin-bottom: 210px;
 }

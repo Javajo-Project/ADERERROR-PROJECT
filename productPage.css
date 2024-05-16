@@ -55,7 +55,7 @@
   text-decoration: underline;
   margin-left: 110px;
 }
-.page-main-productContaine .page-mainContent-container .page-mainContent-mainTextBox .clickButton-wrapper li {
+.page-main-productContaine .page-mainContent-container .page-mainContent-mainTextBox .clickButton-wrapper li a {
   margin-bottom: 15px;
   height: 44px;
   border-radius: 30px;
@@ -65,7 +65,7 @@
   font-size: 16px;
   font-weight: 500;
 }
-.page-main-productContaine .page-mainContent-container .page-mainContent-mainTextBox .clickButton-wrapper .clickButton-b {
+.page-main-productContaine .page-mainContent-container .page-mainContent-mainTextBox .clickButton-wrapper .clickButton-b a {
   background-color: #000;
   color: #fff;
 }

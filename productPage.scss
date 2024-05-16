@@ -70,7 +70,7 @@ $gColor: #AEAEAE;
         }
       }
       .clickButton-wrapper {
-        li {
+        li a {
           margin-bottom: 15px;
           height: 44px;
           border-radius: 30px;
@@ -80,7 +80,7 @@ $gColor: #AEAEAE;
           font-size: 16px;
           font-weight: 500;
         }
-        .clickButton-b {
+        .clickButton-b  a {
           background-color: $bColor;
           color: $wColor;
         }

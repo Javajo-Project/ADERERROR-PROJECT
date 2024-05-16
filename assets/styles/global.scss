@@ -24,6 +24,7 @@ $gColor: #AEAEAE;
 }
 /****** header ******/
 .pc-main-nav {
+  z-index: 99999;
   position: fixed;
   top: 50px;
   left: 50%;
@@ -65,6 +66,7 @@ $gColor: #AEAEAE;
 }
 
 /****** footer ******/
+
 .pc-main-footer {
   width: 1360px;
   height: 467px;
@@ -145,18 +147,18 @@ $gColor: #AEAEAE;
 /****** page-product-slideShow product-slideShow ******/
 .product-slideShow {
   width: 100%;
+  overflow: hidden;
   .product-slideShow-text {
     @include enFont(600, 30px, $gColor);
     margin: 0 0 0 90px;
   }
   .product-slideShow-wrapper {
-    width: 100%;
+    width: 500%;
     display: flex;
-    overflow: hidden;
     padding-top: 110px;
     .product-slideShow-item {
       margin-left: 40px;
-      width: 100%;
+      width: 300px;
       height: 100%;
       margin-bottom: 210px;
       &:hover {
