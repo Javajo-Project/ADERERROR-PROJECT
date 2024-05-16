@@ -20,6 +20,7 @@
   <link rel="stylesheet" href="./assets/styles/jost.css">
   <link rel="stylesheet" href="./assets/styles/pretendard.css">
   <!-- plugIn style -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> <!-- 추가한것 -->
   <!-- 공통된 style -->
   <link rel="stylesheet" href="./assets/styles/global.css">
   <link rel="stylesheet" href="./assets/styles/global.css.map">
@@ -33,6 +34,7 @@
   <script src="./assets/Js/jquery-3.7.1.min.js"></script>
   <!-- plugIn js -->
   <script src="./assets/Js/jquery-ui.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> <!-- 추가한것 -->
   <!-- 공통된 js -->
   <script src="./assets/Js/global.js"></script>
 
@@ -44,26 +46,50 @@
   <img src="./assets/images/global/symbolLogo.png" alt="symbolLogo">
 </div>
   
-  <!----- collabo-intro -----> 
-  <nav class="pc-main-nav">
-    <div class="logo-img">logo area</div>
-    <ul class="menu-wrapper">
-      <li class="menu-item"><a href="#">About +</a></li>
-      <li class="menu-item"><a href="#">Significant +</a></li>
-      <li class="menu-item"><a href="#">A-ventory +</a></li>
-      <li class="menu-item"><a href="#">Collaboration +</a></li>
-    </ul> 
-  </nav>
+  <!------- header ------->
+  <header class="allPage-header">
+    <!----- nav ----->
+    <nav class="pc-main-nav">
+      <div class="logo-img">logo area</div>
+      <ul class="menu-wrapper">
+        <li class="menu-item"><a href="#">About +</a></li>
+        <li class="menu-item"><a href="#">Significant +</a></li>
+        <li class="menu-item"><a href="#">A-ventory +</a></li>
+        <li class="menu-item"><a href="#">Collaboration +</a></li>
+      </ul>
+    </nav>
 
+    <div class="mo-main-header">
+      <div class="mo-header-top">
+        <img src="./assets/images/global/logo_b.png" alt="logo_b" class="logo-b">
+        <div class="icon-wrapper">
+          <a href="#"><img src="./assets/images/global/icon _search.png" alt="searchIcon"></a>
+          <a href="#"><img src="./assets/images/global/icon _user.png" alt="userIcon"></a>
+          <a href="#"><img src="./assets/images/global/icon _bag.png" alt="bagIcon"></a>
+        </div>
+      </div>
+      <ul class="menu-wrapper">
+        <li><a href="#">About</a></li>
+        <li><a href="#">Significant</a></li>
+        <li><a href="#">A-ventory</a></li>
+        <li><a href="#">Collaboration</a></li>
+      </ul>
+    </div>
+
+  </header>
+
+ <!----- collabo-intro -----> 
   <section class="collabo-intro center">
-    <img src="./assets/images/collabo/collabo-logo.png" alt="collaboration logo">
+    <!-- <img src="./assets/images/collabo/collabo-logo.png" alt="collaboration logo"> -->
+    <div class="intro-wrapper">
+    <h3 class="main-title">ader error X converse</h3>
+    <h2 class="main-title">create next</h2>
+  </div>
   </section>
 
   <!----- collabo-main ----->
   <section class="collabo-main">
     <div class="main-wrapper">
-      <h2 class="main-title-w">create next</h2>
-      <h2 class="main-title-w">the new is not new</h2>
       <img class="shoes" src="./assets/images/collabo/collabo-shoes.png" alt="collaboration shoes" class="main-shoes">
       <img class="collabo-logo" src="./assets/images/collabo/collabo-logo.png" alt="collaboration logo">
       <p class="inner-text-sm">
@@ -79,27 +105,27 @@
   <!----- collabo-through ----->
   <section class="collabo-through">
     <div class="through-wrapper through-wrapper1">
-      <img src="./assets/images/collabo/through-img1.png" alt="collaboration img1" class="through-img">
-      <h3 class="sub-title">Through Editism</h3>
-      <p class="inner-text-lg">
+      <img  data-aos="fade-left" data-aos-duration="1500" src="./assets/images/collabo/through-img1.png" alt="collaboration img1" class="through-img">
+      <h3 data-aos="fade-left" data-aos-duration="1500"class="sub-title">Through Editism</h3>
+      <p data-aos="fade-left" data-aos-duration="1500" class="inner-text-lg">
         <span>모든 사물들은 정교하고 긴밀한 연결을 형성한다는 것을 인지하며, </span>
         <span>서로 다른 대상의 접점을 발견하고 합성하여 의외성을 만들어내는 것</span>
       </p>
-      <p class="inner-text-sm">
+      <p data-aos="fade-left" data-aos-duration="1500" class="inner-text-sm">
         <span>이것을 '재편집'이라 부르며 그로부터 고유의 가치가 발현된다고 믿고 있습니다. </span>
         <span>이러한 '재편집' 정신을 기반으로 ADER ERROR X CONVERSE의 첫 번째 협업 컬렉션을 공개합니다.</span>
       </p>
     </div>
 
     <div class="through-wrapper through-wrapper2">
-      <img src="./assets/images/collabo/through-img2.png" alt="collaboration img2" class="through-img">
-      <h3 class="sub-title">Through Archiving</h3>
-      <p class="inner-text-lg">
+      <img  data-aos="fade-right" data-aos-duration="1500" src="./assets/images/collabo/through-img2.png" alt="collaboration img2" class="through-img">
+      <h3 data-aos="fade-right" data-aos-duration="1500" class="sub-title">Through Archiving</h3>
+      <p data-aos="fade-right" data-aos-duration="1500" class="inner-text-lg">
         <span>아더에러와 컨버스는 '창의성'이라는 공통된 목표 지점을 향해 서로의 철학을 공유하며 </span>
         <span>예술, 패션, 공간, 음악 등 범주의 지평을 넓혀간다는 메시지를 전하며 </span>
         <span>이번 컬렉션과 팝업 전시를 완성하였습니다</span>
       </p>
-      <p class="inner-text-sm">
+      <p data-aos="fade-right" data-aos-duration="1500" class="inner-text-sm">
         <span>본질의 이면을 집중하는 두 브랜드의 시선은 더 넓게는 근원적인 구조를 새롭게 경험하게 하고 </span>
         <span>다양한 콘텐츠를 통해 고객과의 접점을 이어갑니다. 이 모든 창의성을 아우르는 '재편집' 정신에 초점을 맞춰, </span>
         <span>세상에 보다 나은 새로운 가치를 제안하며 첫 번째 글로벌 협업 컬렉션을 선보입니다.</span>
@@ -110,7 +136,7 @@
   <!----- collabo-campain ----->
   <section class="collabo-campain">
     <div class="campain-wrapper">
-        <h2 class="campain-title">converse X ader error</h2>
+        <h3 class="campain-title"><span>ader error</span> <span>X</span> <span>converse</span> </h3>
         <p class="inner-text-lg">
           <span>아더에러와 컨버스의 두 번째 컬렉션은 컨버스의 스테디셀러인 척 70 하이와 로우 </span>
           <span>그리고 모든 사람의 체형을 기반으로 디자인된 젠더 프리 셰입스 어패럴을 공개합니다</span>
@@ -148,46 +174,111 @@
   </ul>
 </section>
 
-  <!----- footer ----->
-  <footer class="pc-main-footer">
+ <!------- footer ------->
+ <footer>
+  <div class="pc-main-footer">
     <div class="footer-companyIntroduction">
-     <div class="companyIntroduction-wrapper">
-       <div class="companyIntroduction-item-logo"><img src="./assets/images/global/logo-w.png" alt="logo-w"></div>
-       <p class="companyIntroduction-item-text">Business License 02-792-2232</p>
-       <p class="companyIntroduction-item-text">Office hour Mon - Fri AM 9:30 - PM 5:00</p>
-     </div>
-     <div class="companyIntroduction-wrapper">
-       <p class="companyIntroduction-item-title">Information</p>
-       <p class="companyIntroduction-item-text">Shipping</p>
-       <p class="companyIntroduction-item-text">Care</p>
-       <p class="companyIntroduction-item-text">Stockists</p>
-       <p class="companyIntroduction-item-text">Size Chart</p>
-       <p class="companyIntroduction-item-text">Refund & Exchabge</p>
-     </div>
-     <div class="companyIntroduction-wrapper">
-       <p class="companyIntroduction-item-title">Company ADER</p>
-       <p class="companyIntroduction-item-text">Business Name FIVE SPACE CO.,LTD </p>   
-       <p class="companyIntroduction-item-text">Business License 760-87-01757</p>   
-       <p class="companyIntroduction-item-text">office 14, Yeonmujang 9-gil, Seongdong-gu, Seoul, South Korea</p>   
-       <p class="companyIntroduction-item-text">MAIL-ORDER LICENSE NO. 2021-서울성동-01588</p>   
-       <p class="companyIntroduction-item-text">TEL. 02-792-2232  Office hour Mon - Fri AM 9:30 - PM 5:00</p>   
-     </div>
+      <div class="companyIntroduction-wrapper">
+        <div class="companyIntroduction-item-logo"><img src="./assets/images/global/logo-w.png" alt="logo-w"></div>
+        <p class="companyIntroduction-item-text">Business License 02-792-2232</p>
+        <p class="companyIntroduction-item-text">Office hour Mon - Fri AM 9:30 - PM 5:00</p>
+      </div>
+      <div class="companyIntroduction-wrapper">
+        <p class="companyIntroduction-item-title">Information</p>
+        <p class="companyIntroduction-item-text">Shipping</p>
+        <p class="companyIntroduction-item-text">Care</p>
+        <p class="companyIntroduction-item-text">Stockists</p>
+        <p class="companyIntroduction-item-text">Size Chart</p>
+        <p class="companyIntroduction-item-text">Refund & Exchabge</p>
+      </div>
+      <div class="companyIntroduction-wrapper">
+        <p class="companyIntroduction-item-title">Company ADER</p>
+        <p class="companyIntroduction-item-text">Business Name FIVE SPACE CO.,LTD </p>
+        <p class="companyIntroduction-item-text">Business License 760-87-01757</p>
+        <p class="companyIntroduction-item-text">office 14, Yeonmujang 9-gil, Seongdong-gu, Seoul, South Korea</p>
+        <p class="companyIntroduction-item-text">MAIL-ORDER LICENSE NO. 2021-서울성동-01588</p>
+        <p class="companyIntroduction-item-text">TEL. 02-792-2232 Office hour Mon - Fri AM 9:30 - PM 5:00</p>
+      </div>
     </div>
     <div class="footer-companyContact">
-     <p class="companyContact-language">Language +</p>
-     <ul class="companyContact-companyLogo-wrapper">
-       <li><a href="https://www.instagram.com/ader_error/" target="_blank">Instagram</a></li>
-       <li><a href="https://www.facebook.com/adererror" target="_blank">Facebook</a></li>
-       <li><a href="https://pf.kakao.com/_mQzRxl" target="_blank">Kakao Talk</a></li>
-       <li><a href="https://www.youtube.com/channel/UCu8Oj6fqmD5tG4Nch2ijG4Q" target="_blank">Youtube</a></li>
-     </ul>
-     <p class=”companyContact-copyRight”>©2021 ADER All Rights Reserved</p>
+      <p class="companyContact-language">Language +</p>
+      <ul class="companyContact-companyLogo-wrapper">
+        <li><a href="https://www.instagram.com/ader_error/" target="_blank">Instagram</a></li>
+        <li><a href="https://www.facebook.com/adererror" target="_blank">Facebook</a></li>
+        <li><a href="https://pf.kakao.com/_mQzRxl" target="_blank">Kakao Talk</a></li>
+        <li><a href="https://www.youtube.com/channel/UCu8Oj6fqmD5tG4Nch2ijG4Q" target="_blank">Youtube</a></li>
+      </ul>
+      <p class=”companyContact-copyRight”>©2021 ADER All Rights Reserved</p>
     </div>
- </footer>
+  </div>
+
+  <div class="mo-main-footer">
+    <img src="./assets/images/global/logo_m.png" alt="logoMainColor" class="logo-mainColor">
+    <div class="topContents">
+      <p class="title">Information</p>
+      <p class="text">Shipping</p>
+      <p class="text">Care</p>
+      <p class="text">Stockists</p>
+      <p class="text">Size Chart</p>
+      <p class="text">Refund & Exchabge</p>
+      <p class="text">Business License 02-792-2232</p>
+      <p class="text">Office hour Mon - Fri AM 9:30 - PM 5:00 </p>
+    </div>
+    <ul class="companyContact-companyLogo-wrapper">
+      <li><a href="https://www.instagram.com/ader_error/" target="_blank"><img
+            src="./assets/images/global/companyLogoInstagram.png" alt="instagram"></a></li>
+      <li><a href="https://www.facebook.com/adererror" target="_blank"><img
+            src="./assets/images/global/companyLogoFacebook.png" alt="facebook"></a></li>
+      <li><a href="https://pf.kakao.com/_mQzRxl" target="_blank"><img
+            src="./assets/images/global/companyLogoKakaoTalk.png" alt="kakaotalk"></a></li>
+      <li><a href="https://www.youtube.com/channel/UCu8Oj6fqmD5tG4Nch2ijG4Q" target="_blank"><img
+            src="./assets/images/global/companyLogoYoutube.png" alt="youtube"></a></li>
+    </ul>
+    <p class=”companyContact-copyRight”>©2021 ADER All Rights Reserved</p>
+  </div>
+
+</footer>
 
 
   <!-- 이 페이지에만 들어가는 js -->
   <!-- <script src=""></script> -->
+  <script>
+    // 플러그인
+    AOS.init();
+
+    // main-text 
+    document.addEventListener('DOMContentLoaded',function(event){
+  var dataText = [ "create next", "the new is not new"];
+  
+  function typeWriter(text, i, fnCallback) {
+    if (i < (text.length)) {
+     document.querySelector("h2").innerHTML = text.substring(0, i+1);
+
+      setTimeout(function() {
+        typeWriter(text, i + 1, fnCallback)
+      }, 100);
+    }
+    else if (typeof fnCallback == 'function') {
+      setTimeout(fnCallback, 700);
+    }
+  }
+   function StartTextAnimation(i) {
+     if (typeof dataText[i] == 'undefined'){
+        setTimeout(function() {
+          StartTextAnimation(0);
+        }, 1000);
+     }
+    if (i < dataText[i].length) {
+     typeWriter(dataText[i], 0, function(){
+       StartTextAnimation(i + 1);
+     });
+    }
+  }
+  StartTextAnimation(0);
+});
+
+    
+  </script>
 
 </body>
 

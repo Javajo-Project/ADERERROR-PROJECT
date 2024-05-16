@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <title>index-logo-zoom</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+  <script src="../assets/jquery-3.7.1.min.js"></script>
+    <!-- plugIn js -->
+    <script src="https://unpkg.co/gsap@3/dist/gsap.min.js"></script>
+    <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+    
+  <style>
+
+#zoom-in, #slogan{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+#zoom-in .logo {
+    width: 70%;
+}
+
+#slogan {
+  margin: 0 auto;
+  text-align: center;
+  font-family: "Pretendard", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.5;
+  color: #fff;
+  background-color: #0000C5;
+}
+#slogan p span {
+display: block;
+}
+#slogan p {
+  padding: 20px 0;
+}
+  </style>
+</head>
+
+<body>
+<section id="zoom-in">
+    <img class="logo" src="./assets/images/global/logo-b.svg" alt="logo">
+</section>
+
+<section id="slogan">
+  <div class="slogan-wrapper">
+  <img src="./assets/images/global/A-logo.png" alt="A-logo">
+  <p><span>우리 브랜드는 옷보다 이를 통해 표현하는 스토리가 중요합니다.</span>
+    <span>우리들 중 대부분은 소위 말하는 ‘비전공자’입니다.</span>
+    <span>그런 면에서 우리는 패션을 좋아하지만 ‘불완전’한 존재들이죠.</span>
+    <span>그래서 ADERERROR가 패션으로 많이 알려져있지만</span>
+    <span>전면에 나서고 싶지 않은 이유도 그 때문입니다.</span>
+  </div>
+</section>
+
+  <script>
+    const { innerHeight } = window;
+
+// zoom-in
+gsap.to("#zoom-in .logo", {
+    scale: 80, stagger: 0.25, duration: 10, /*3*/
+    scrollTrigger: {
+        trigger: "#zoom-in",
+        pin: true,
+        end: `+=${innerHeight * 2}`, /*1.3*/
+        scrub: 3
+    }
+});
+  </script>
+</body>
+</html>
