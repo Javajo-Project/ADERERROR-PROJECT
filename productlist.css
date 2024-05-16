@@ -51,12 +51,17 @@
   .list-lookbook-wrapper .list-lookbook1-wrapper{
     position: absolute;
     padding:120px 90px;
-    height: 900px;
+    height: 1000px;
     display: flex;
     background-color: #fff;
   }
   .list-lookbook-wrapper .list-lookbook1-wrapper img{
     width:45vw;
+  }
+  .list-lookbook-wrapper .list-lookbook1-wrapper .list-lookbook1-wrappera{
+    width:45vw;
+    height: 1000px;
+    display: block;
   }
   .list-lookbook-wrapper .list-lookbook1-wrapper .box{
     padding:5vw 10vw;
@@ -78,6 +83,7 @@
     margin:0;
     padding:0;
     padding-left:90px;
+    width: 100%;
   }
   .list-content-wrapper .list-content li a{
    display: block;
@@ -224,4 +230,45 @@
 
   .pc-main-footer p {
     margin: 0;
+  }
+
+  @media screen and (max-width:430px){
+    p{
+      font-size: 14px;
+      margin:0;
+    }
+    .list-lookbook-wrapper{
+      height: 300px;
+    }
+    .list-img-main{
+      height: 500px;
+    }
+    .list-lookbook-wrapper .list-lookbook1-wrapper{
+      padding:50px 40px;
+      height: 300px;
+    }
+    .list-lookbook-wrapper .list-lookbook1-wrapper .box{
+      padding:2vw 5vw;
+    }
+    .list-lookbook-wrapper .list-lookbook1-wrapper .box .list-content{
+      margin-top:2vw;
+    }
+    .list-lookbook-wrapper .list-lookbook1-wrapper .list-lookbook1-wrappera{
+      height: 220px;
+    }
+    .list-content-wrapper .list-content {
+      padding: 0 40px;
+    }
+    .list-content-wrapper .list-content li{
+      font-size: 10px;
+    }
+    .list-content-wrapper .list-content li a{
+      margin:0;
+      padding-right:10px;
+    }
+    .list-product-wrapper {
+      padding:0 40px;
+      grid-template-columns: repeat(2,45%);
+      gap:20px;
+    }
   }
