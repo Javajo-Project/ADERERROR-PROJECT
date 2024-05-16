@@ -16,9 +16,11 @@
 
   <!-- reset -->
   <link rel="stylesheet" href="./assets/styles/reset.css">
+  
   <!-- font -->
   <link rel="stylesheet" href="./assets/styles/pretendard.css">
   <link rel="stylesheet" href="./assets/styles/jost.css">
+
   <!-- style -->
   <link rel="stylesheet" href="./assets/styles/global.css">
   <link rel="stylesheet" href="./assets/styles/global.css.map">
@@ -35,6 +37,16 @@
   <script src="./assets/Js/global.js" defer></script>
   <script src="./productlist.js" defer></script>
 </head>
+
+<!-- 할 일 ~~~~~!!!!
+1. 배경 이벤트
+곡선 -> 직선으로 (svg - path효과로..?)
+
+3. 섹션 2
+색 변하는 이벤트 넣기 - <span> 말고는 방법이 없을지.... ㅠㅠ
+gsap 사이트 찾아보기
+
+-->
 
 <body>
   <!-- mouseEmoji -->
@@ -62,22 +74,25 @@
       끝에 나온다고 생각해 이를 성장의 의미로 사용했습니다. <br>
       ADER ERROR는 ERROR를 통해 하나의 콘텐츠를 더 나은 존재로 표현합니다.</p>
 
+    <!-- <div class="brand-main-imgList">
+      <img class="brand-main-img1" src="./assets/images/brand/brand-main-img1.png" alt="brand-main-img1">
+      <img class="brand-main-img2" src="./assets/images/brand/brand-main-img2.png" alt="brand-main-img2">
+      <img class="brand-main-img3" src="./assets/images/brand/brand-main-img3.png" alt="brand-main-img3">
+      <img class="brand-main-img4" src="./assets/images/brand/brand-main-img4.png" alt="brand-main-img4">
+      <img class="brand-main-img5" src="./assets/images/brand/brand-main-img5.png" alt="brand/brand-main-img5">
+    </div> -->
+  
     <div class="brand-main-imgList">
-      <img class="brand-main-img1" src="./assets/images/brand/brand_main_img1.png" alt="brand_main_img1">
-      <img class="brand-main-img2" src="./assets/images/" alt="">
-      <img class="brand-main-img3" src="./assets/images/brand/brand_main_img3.png" alt="brand_main_img3">
-      <img class="brand-main-img4" src="./assets/images/brand/brand_main_img4.png" alt="brand_main_img4">
+      <img src="./assets/images/brand/brand-main-img.png" alt="brand-main-img">
     </div>
   </section>
 
   <!------- section 2 - brand-text-wrapper1 ------->
   <section class="brand-text-wrapper1">
-    <h1>ADER ERROR는 2014년 한국을 기반으로 설립된<br>
-      패션 문화 커뮤니케이션 브랜드입니다. <br>
-      패션뿐 아니라 새로운 시각적 변화에 초점을 맞춰 <br>
-      활동하고 있으며, 공간과 디자인, 패션, 예술 등 <br>
-      다방면의 문화 콘텐츠를 다루고 낯선 경험과 기대를 <br>
-      통해 고객들에게 새로운 경험과 재미를 제안합니다.</h1>
+    <h1 class="fade-in-text">
+      ADER ERROR는 2014년 한국을 기반으로 설립된 패션 문화 커뮤니케이션 브랜드입니다. 
+      패션뿐 아니라 새로운 시각적 변화에 초점을 맞춰 활동하고 있으며, 공간과 디자인, 패션, 예술 등 다방면의 문화 콘텐츠를 다루고 낯선 경험과 기대를 통해 고객들에게 새로운 경험과 재미를 제안합니다.
+    </h1>
 
     <p>ADER는 기존의 패션의 카테고리에서 벗어나 모든 장르를 편집하여 독창적인 <br>
       코어 스타일을 창조합니다. 복종 믹스, 변형, 왜곡을 통해 실루엣을 창조하는 <br>
@@ -89,10 +104,10 @@
       재정립하고 다양한 장르의 믹스를 통해 탄생한 새로운 개념의 ‘뉴 컬처’로 <br>
       주체적인 문화 흐름을 보여줍니다.</p>
 
-    <div class="brand-text-img"><img src="./assets/images/brand/brand_text1_img.png" alt="brand_text1_img"></div>
+    <div class="brand-text-img"><img src="./assets/images/brand/brand-text1-img.png" alt="brand-text1-img"></div>
 
-    <button class="brand-text-btn">
-      <img src="./assets/images/brand/brand_text1_btnImage.png" alt="">History Of ADER's Logo</button>
+    <a href="#"><button class="brand-text-btn">
+      <img src="./assets/images/brand/brand-text1-btnImage.png" alt="brand-text1-btnImage">History Of ADER's Logo</button></a>
   </section>
 
   <!------- section 3 - brand-text-wrapper2 ------->
@@ -108,7 +123,7 @@
     <!-- <iframe src="https://www.youtube.com/embed/4ciN4HUCqXE?si=9U1CecXocalkpZuW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
 
     <video class="brand-textWrapper2-video" autoplay muted loop>
-      <source src="./assets/images/brand/brand_text2_video.mp4">
+      <source src="./assets/images/brand/brand-text2-video.mp4">
     </video>
   </section>
 
@@ -149,6 +164,21 @@
     </div>
   </footer>
 
-</body>
+  <!-- 이벤트 -->
+  <script>
+  window.addEventListener('scroll', function () {
+    const textElement = document.querySelector('.fade-in-text');
+    const textTop = textElement.getBoundingClientRect().top;
+    const screenHeight = window.innerHeight;
 
+    // 화면에 보이는 영역에 텍스트가 들어오면 페이드인 효과를 적용합니다.
+    if (textTop < screenHeight) {
+        textElement.style.opacity = '1'; // 투명도를 1로 변경하여 텍스트가 흰색으로 페이드인됩니다.
+    } else {
+        textElement.style.opacity = '0'; // 투명도를 0으로 변경하여 텍스트가 다시 회색으로 되돌아갑니다.
+    }
+});
+  </script>
+  
+</body>
 </html>
