@@ -28,7 +28,7 @@ body {
 } */
 .main-title {
   font-family: "Jost", sans-serif;
-  font-size: 90px;
+  font-size: 80px;
   font-weight: 600;
   color: #fff;
   line-height: 1.5;
@@ -123,10 +123,11 @@ p span {
   height: 90vh;
   background: url(./assets/images/collabo/collabo_bg1.png) no-repeat 20% 0% ;
 }
-/* 
-.collabo-intro img {
-  opacity: 70%;
-  width: 500px;
+/* .collabo-intro .intro-logo {
+  display: block;
+  opacity: 0.7;
+  width: 300px;
+  margin: 0 auto 30px; 
 } */
 
 /***** collabo-main *****/
@@ -136,16 +137,16 @@ p span {
   text-align: center;
 }
 
-.collabo-main img {
-  display: block;
-  margin:0 auto;
-}
+
 .collabo-main .shoes {
-  /* padding: 100px 0 60px; */
-  padding: 60px 150px 60px 0;
+  display: block;
+  margin:20px auto 40px;
+  width: 90%;
+  max-width: 800px;
+  padding-right: 8%;
 }
 
-/* 할지 말지 모르겠음 */
+
 .collabo-main .shoes {
   transition: 1.5s;
   animation: shoes infinite 1.5s cubic-bezier(0.33, 1, 0.68, 1);
@@ -174,26 +175,26 @@ p span {
 
 /***** collabo-through *****/
  .collabo-through {
-  max-width: 1440px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr 1fr;
   margin: 0 auto;
-  padding: 160px 90px;
+  padding: 160px 10%;
   overflow: auto;
   overflow: hidden;
 } 
-.through-wrapper {
-  max-width: 1000px;
-}
 .through-wrapper1 {
+  grid-column: 2 / 5;
   text-align: left;
   margin-bottom: 120px;
-  float: right;
 }
 .through-wrapper2 {
+  grid-column: 1 / 4;
   text-align: right;
-  float: left;
 }
 .through-wrapper img{
   width: 100%;
+  min-width: 500px;
 }
 .through-wrapper h3 {
   padding: 40px 5px 20px;
@@ -224,7 +225,7 @@ p span {
   display: block;
 } */
 .btn-wrapper {
-  width: 500px;
+  max-width: 500px;
   margin:0 auto;
   padding: 30px 0;
 }
@@ -232,18 +233,83 @@ p span {
 /***** collabo-shop *****/
 
 
+/***** tablet *****/
+@media screen and (max-width: 1100px) {
+  body {
+    white-space: wrap;
+  }
+  .main-title{
+    font-size: 50px;
+    white-space: nowrap;
+  }
+  p span {
+    display: inline;
+  }
+  /***** collabo-intro *****/
+  .collabo-intro  {
+    background: url(./assets/images/collabo/collabo_bg1.png) no-repeat 30% 0% ;
+  }
+
+  /***** collabo-main *****/
+  .collabo-main {
+    padding: 100px 0px;
+  }
+  .collabo-main .collabo-logo {
+    width: 120px;
+  }
+    .collabo-main p {
+      max-width:700px;
+      padding: 0 40px;
+  }
+  
+
+  /***** collabo-through *****/
+  .collabo-through {
+    padding: 0 0 100px;
+    display: block;
+  } 
+  .through-wrapper h3 {
+    padding: 30px 0;
+    text-align: center;
+  }
+  .through-wrapper p {
+    padding: 0 40px 10px 40px;
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
+    }
+  .through-wrapper1 {
+    margin-bottom: 60px;
+  }
+  
+  /***** collabo-campain *****/
+  .collabo-campain {
+    padding: 80px 0px;
+  }
+  .campain-title {
+    font-size: 40px;
+    white-space: nowrap;
+    
+  }
+  .collabo-campain p {
+    padding: 30px 40px; 
+    max-width: 700px;
+  }
+  .btn-wrapper {
+    display: flex;
+    gap: 10px;
+    margin: 20px auto;
+  }
+}
 
 /***** mobile *****/
 @media screen and (max-width: 430px) {
   body {
-    margin: 0 auto;
-    line-height: 1.5;
-    word-break: break-all;
-    word-wrap: break-word;
     white-space: wrap;
   }
   .main-title{
     font-size: 30px;
+    white-space: nowrap;
   }
   .sub-title {
     font-size: 30px;
@@ -281,25 +347,30 @@ p span {
   
   /***** header *****/
   /***** collabo-intro *****/
+  .collabo-intro  {
+    height: 80vh;
+    background: url(./assets/images/collabo/collabo_bg1.png) no-repeat 30% 0% ;
+  }
+
   /***** collabo-main *****/
   .collabo-main {
     padding: 80px 0px;
   }
   .collabo-main .shoes {
-    padding: 30px 30px 30px 0;
-    width: 85%;
+    padding-right: 14%;
+    margin: 5px auto 30px;
   }
   .collabo-main .collabo-logo {
     width: 100px;
   }
   .collabo-main p {
-    color: #fff;
     margin: 40px auto 20px;
   }
   
   /***** collabo-through *****/
   .collabo-through {
-    padding: 80px 0;
+    padding: 0 0 80px;
+    display: block;
   } 
   .through-wrapper h3 {
     padding: 20px 0;
@@ -307,14 +378,10 @@ p span {
   }
   .through-wrapper p {
     padding: 0 40px 5px 40px;
-  }
-  .through-wrapper2 {
     text-align: left;
-    float: none;
   }
   .through-wrapper1 {
     margin-bottom: 60px;
-    float: none;
   }
   /***** collabo-campain *****/
   .collabo-campain {
@@ -324,7 +391,7 @@ p span {
     display: block;
   }
   .collabo-campain p {
-    padding: 30px 40px; 
+    padding: 30px 40px;
   }
   .btn-wrapper{
     padding: 15px 0;

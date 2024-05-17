@@ -50,44 +50,43 @@
   <img src="./assets/images/global/symbolLogo.png" alt="symbolLogo">
 </div>
   
-  <!------- header ------->
-  <header class="allPage-header">
-    <!----- nav ----->
-    <nav class="pc-main-nav">
-      <div class="logo-img">logo area</div>
-      <ul class="menu-wrapper">
-        <li class="menu-item"><a href="#">About +</a></li>
-        <li class="menu-item"><a href="#">Significant +</a></li>
-        <li class="menu-item"><a href="#">A-ventory +</a></li>
-        <li class="menu-item"><a href="#">Collaboration +</a></li>
-      </ul>
-    </nav>
-
-    <div class="mo-main-header">
-      <div class="mo-header-top">
-        <img src="./assets/images/global/logo_b.png" alt="logo_b" class="logo-b">
-        <div class="icon-wrapper">
-          <a href="#"><img src="./assets/images/global/icon _search.png" alt="searchIcon"></a>
-          <a href="#"><img src="./assets/images/global/icon _user.png" alt="userIcon"></a>
-          <a href="#"><img src="./assets/images/global/icon _bag.png" alt="bagIcon"></a>
+    <!------- header ------->
+    <header class="allPage-header">
+      <!----- nav ----->
+      <nav class="pc-main-nav">
+        <div class="logo-img">logo area</div>
+        <ul class="menu-wrapper">
+          <li class="menu-item"><a href="./brand.html">About +</a></li>
+          <li class="menu-item"><a href="./productlist.html">Significant +</a></li>
+          <li class="menu-item"><a href="./productlist.html">A-ventory +</a></li>
+          <li class="menu-item"><a href="./collabo.html">Collaboration +</a></li>
+        </ul>
+      </nav>
+  
+      <div class="mo-main-header">
+        <div class="mo-header-top">
+          <img src="./assets/images/global/logo_b.png" alt="logo_b" class="logo-b">
+          <div class="icon-wrapper">
+            <a href="#"><img src="./assets/images/global/icon _search.png" alt="searchIcon"></a>
+            <a href="#"><img src="./assets/images/global/icon _user.png" alt="userIcon"></a>
+            <a href="#"><img src="./assets/images/global/icon _bag.png" alt="bagIcon"></a>
+          </div>
         </div>
+        <ul class="menu-wrapper">
+          <li><a href="./brand.html">About</a></li>
+          <li><a href="./productlist.html">Significant</a></li>
+          <li><a href="./productlist.html">A-ventory</a></li>
+          <li><a href="./collabo.html">Collaboration</a></li>
+        </ul>
       </div>
-      <ul class="menu-wrapper">
-        <li><a href="#">About</a></li>
-        <li><a href="#">Significant</a></li>
-        <li><a href="#">A-ventory</a></li>
-        <li><a href="#">Collaboration</a></li>
-      </ul>
-    </div>
-
-  </header>
-
+  
+    </header>
  <!----- collabo-intro -----> 
   <section class="collabo-intro center">
-    <!-- <img src="./assets/images/collabo/collabo-logo.png" alt="collaboration logo"> -->
     <div class="intro-wrapper">
-    <h3 class="main-title">ader error X converse</h3>
-    <h2 class="main-title">create next</h2>
+      <!-- <img class="intro-logo" src="./assets/images/collabo/collabo-logo.png" alt="collaboration logo"> -->
+    <h2 class="main-title">ader error X converse</h2>
+    <h2 class="main-title title-move">create next</h2>
   </div>
   </section>
 
@@ -153,8 +152,7 @@
     </div>
   </section>
 
-   <!----- collabo-shop ----->
-  <section class="collabo-shop"></section>
+
  <!------- section - page-product-slideShow product-slideShow ------->
  <section class="product-slideShow">
   <h2 class="product-slideShow-text">Related Product +</h2>
@@ -252,11 +250,11 @@
 
     // main-text 
     document.addEventListener('DOMContentLoaded',function(event){
-  var dataText = [ "create next", "the new is not new"];
+  var dataText = [ "create next", "the new is not new", "Through Editism", "Through Archiving"];
   
   function typeWriter(text, i, fnCallback) {
     if (i < (text.length)) {
-     document.querySelector("h2").innerHTML = text.substring(0, i+1);
+     document.querySelector(".title-move").innerHTML = text.substring(0, i+1);
 
       setTimeout(function() {
         typeWriter(text, i + 1, fnCallback)
