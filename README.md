@@ -12,6 +12,11 @@
 - haeder, footer mobile 구현 완료
 - index page magazine section 구현 완료
 
+**김예진**
+-collabo page mobile html, css 구현
+-collabo page js 구현
+-index page zoom section 구현 1차 완료
+
 # 240515_수
 **정진영**
 - productlist page js 구현 및 page 완성
@@ -26,6 +31,11 @@
 - productPage html 완성
 - productPage scss 완성
 
+**김예진**
+-collabo page pc html, css 1차 완성
+-collabo page pc js 구현
+-favicon 추가
+ 
 # 240514_화 
 퍼블리싱 가이드(section전 주석문 표기 및 표기법)정함, 서브페이지 퍼블리싱, 
 Github Organization 개설 ^^    
@@ -37,6 +47,10 @@ Github Organization 개설 ^^
 
 **정진영**
 - productlist page html 및 css 구현
+
+**김예진**
+-collabo page pc htrml 및 css 구현
+-collabo page 모바일 디자인 수정
 
 # 240513_월
 - 앞으로의 진행방향 회의 및 퍼블리싱 가이드(클래스명 및 파일명)
