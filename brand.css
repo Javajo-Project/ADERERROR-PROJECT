@@ -196,6 +196,7 @@ body {
 .brand-text-btn:hover {
   background-color: #fff;
   color: #0000C5;
+  transition: all 0.3s ease;
 }
 .brand-text-btn .svg-container svg path {
   fill: #fff;
