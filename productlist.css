@@ -121,11 +121,12 @@
     text-indent: -9999px;
   }
   .list-product-wrapper .list-img-wrapper p{
-    line-height: 0.8;
+    line-height: 1.7;
   }
   .list-product-wrapper .list-img-wrapper ul{
     list-style: none;
     margin:0;
+    margin-top: 5px;
     padding:0;
     display: flex;
   }
@@ -135,6 +136,12 @@
     border-radius: 50%;
     text-indent: -9999px;
     cursor: pointer;
+  }
+  .list-product-wrapper .list-img-wrapper .list-img-atag{
+    margin-top: 20px;
+  }
+  .list-text{
+    margin-top:20px;
   }
 
   /* list product img change */
@@ -231,33 +238,63 @@
   .pc-main-footer p {
     margin: 0;
   }
+  @media screen and (max-width:1500px){
+    .list-lookbook-wrapper{
+      height: 1000px;
+    }
+    .list-lookbook-wrapper .list-lookbook1-wrapper{
+      height: 1000px;
+    }
+  }
+  @media screen and (max-width:1300px){
+    .list-lookbook-wrapper{
+      height: 95vh;
+    }
+    .list-lookbook-wrapper .list-lookbook1-wrapper{
+      height: 95vh;
+    }
+  }
+
+  @media screen and (max-width:1000px){
+    .list-lookbook-wrapper{
+      height: 75vh;
+    }
+    .list-lookbook-wrapper .list-lookbook1-wrapper{
+      height: 75vh;
+    }
+  }
 
   @media screen and (max-width:430px){
-    p{
-      font-size: 14px;
-      margin:0;
-    }
-    .list-lookbook-wrapper{
-      height: 300px;
-    }
+
+    /****** list img main ******/
     .list-img-main{
       height: 500px;
     }
+
+    /****** list lookbook ******/
+    .list-lookbook-wrapper{
+      height: 285px;
+    }
     .list-lookbook-wrapper .list-lookbook1-wrapper{
       padding:50px 40px;
-      height: 300px;
+      height: 285px;
     }
     .list-lookbook-wrapper .list-lookbook1-wrapper .box{
-      padding:2vw 5vw;
+      padding:4vw 5vw;
+    }
+    .list-lookbook-wrapper .list-lookbook1-wrapper .box p{
+      font-size: 10px;
     }
     .list-lookbook-wrapper .list-lookbook1-wrapper .box .list-content{
-      margin-top:2vw;
+      margin-top:5vw;
     }
     .list-lookbook-wrapper .list-lookbook1-wrapper .list-lookbook1-wrappera{
       height: 220px;
     }
+
+    /****** list content ******/
     .list-content-wrapper .list-content {
-      padding: 0 40px;
+      padding: 10px 40px 0 40px;
     }
     .list-content-wrapper .list-content li{
       font-size: 10px;
@@ -266,9 +303,39 @@
       margin:0;
       padding-right:10px;
     }
+
+    /****** list product ******/
     .list-product-wrapper {
       padding:0 40px;
-      grid-template-columns: repeat(2,45%);
-      gap:20px;
+      grid-template-columns: repeat(2,47%);
+      gap:80px 25px;
+    }
+    .list-product-wrapper .list-img-wrapper .list-img-atag{
+      margin-top: 10px;
+    }
+    .list-text{
+      margin-top:10px;
+    }
+    .list-product-wrapper .list-img-wrapper p{
+      line-height: 1.4;
+      font-size: 12px;
+    }
+    .list-product-wrapper .list-img-wrapper ul .selectColor{
+      width:10px;
+      height: 10px;
+    }
+    .list-product-wrapper .list-img-wrapper{
+      margin-top:30px;
+    }
+  }
+  @media screen and (max-width:800px){
+    .list-lookbook-wrapper{
+      height: 65vh;
+    }
+    .list-lookbook-wrapper .list-lookbook1-wrapper{
+      height: 65vh;
+    }
+    .list-content-wrapper .list-content li{
+      font-size: 14px;
     }
   }

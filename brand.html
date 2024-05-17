@@ -38,16 +38,29 @@
   <script src="./assets/Js/global.js" defer></script>
   <script src="./productlist.js" defer></script>
   <script src="./brand.js" defer></script>
+
+  <!-- 곡선 -> 직선 쉐입변경 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/ScrollTrigger.min.js"></script>
+
+
+
+</head>
 </head>
 
 <!-- 할 일 ~~~~~!!!!
-1. 배경 이벤트(곡선 -> 직선으로) 
-- svg - path효과로
-- 배경에 border-radius 50 % + scrollTrigger + animation
-- gsap 강의 참고
+모바일 (max-width:430px)
 
-2. 모바일 미디어쿼리(max-width:430px)
+1. 메인 페이지
+- 맨 아래 이미지 5장 트렌지션 넣기
 
+2. 배경 이벤트 
+- 첫 페이지에서 안보이도록 위치 아래로 내리기
+
+3. 버튼 마우스 호버 시 svg 색상 변경
+
+3. openGraph 
+header+footer.html 위에 복사해서 붙여 넣
 -->
 
 <body>
@@ -97,21 +110,21 @@
       끝에 나온다고 생각해 이를 성장의 의미로 사용했습니다. <br>
       ADER ERROR는 ERROR를 통해 하나의 콘텐츠를 더 나은 존재로 표현합니다.</p>
 
-    <!-- <div class="brand-main-imgList">
-      <img class="brand-main-img1" src="./assets/images/brand/brand-main-img1.png" alt="brand-main-img1">
-      <img class="brand-main-img2" src="./assets/images/brand/brand-main-img2.png" alt="brand-main-img2">
-      <img class="brand-main-img3" src="./assets/images/brand/brand-main-img3.png" alt="brand-main-img3">
-      <img class="brand-main-img4" src="./assets/images/brand/brand-main-img4.png" alt="brand-main-img4">
-      <img class="brand-main-img5" src="./assets/images/brand/brand-main-img5.png" alt="brand/brand-main-img5">
-    </div> -->
-
     <div class="brand-main-imgList">
       <img src="./assets/images/brand/brand-main-img.png" alt="brand-main-img">
     </div>
   </section>
 
+  <!------- section 1-2 - brand-mainBottom-wrapper ------->
+  <section class="brand-main-bottom">
+    <div class="brand-mainBottom-wrapper" id="wrapper">
+      <div class="brand-mainBottom-shape" id="shape"></div>
+    </div>
+  </section>
+
   <!------- section 2 - brand-text-wrapper1 ------->
   <section class="brand-text-wrapper1">
+
     <h1 class="color-changing-text" id="changing-text">
       ADER ERROR는 2014년 한국을 기반으로 설립된 패션 문화 커뮤니케이션 브랜드입니다.
       패션뿐 아니라 새로운 시각적 변화에 초점을 맞춰 활동하고 있으며, 공간과 디자인, 패션, 예술 등 다방면의 문화 콘텐츠를 다루고 낯선 경험과 기대를 통해 고객들에게 새로운 경험과 재미를 제안합니다.
@@ -121,7 +134,7 @@
       패션뿐 아니라 새로운 시각적 변화에 초점을 맞춰 활동하고 있으며, 공간과 디자인, 패션, 예술 등 다방면의 문화 콘텐츠를 다루고 낯선 경험과 기대를 통해 고객들에게 새로운 경험과 재미를 제안합니다.
     </h1>
 
-    <p>ADER는 기존의 패션의 카테고리에서 벗어나 모든 장르를 편집하여 독창적인 <br>
+    <!-- <p>ADER는 기존의 패션의 카테고리에서 벗어나 모든 장르를 편집하여 독창적인 <br>
       코어 스타일을 창조합니다. 복종 믹스, 변형, 왜곡을 통해 실루엣을 창조하는 <br>
       방식으로 복장의 경계를 허물고 조합하여 새로운 문화를 시각화 합니다. <br>
       기존의 형태를 왜곡하는 행위로 ADER의 시즌 로고 아트워크가 탄생 하였으 <br>
@@ -129,13 +142,32 @@
     <p>장르, 성별의 경계를 허물고 어느 한 분야에서 열정적으로 자신을 표현하는 <br>
       프로페셔널리스트로서의 청춘들의 모습을 지향하며 기존에 정해진 개념을 <br>
       재정립하고 다양한 장르의 믹스를 통해 탄생한 새로운 개념의 ‘뉴 컬처’로 <br>
-      주체적인 문화 흐름을 보여줍니다.</p>
+      주체적인 문화 흐름을 보여줍니다.</p> -->
 
-    <div class="brand-text-img"><img src="./assets/images/brand/brand-text1-img.png" alt="brand-text1-img"></div>
+    <p>ADER는 기존의 패션의 카테고리에서 벗어나 모든 장르를 편집하여 독창적인 코어 스타일을 창조합니다. 복종 믹스, 변형, 왜곡을 통해 실루엣을 창조하는 방식으로 복장의 경계를 허물고 조합하여 새로운 문화를 시각화 합니다. 기존의 형태를 왜곡하는 행위로 ADER의 시즌 로고 아트워크가 탄생 하였으며, 의복에서도 왜곡의 요소를 활용하여 다채로운 경험을 제공하고 있습니다.
+    <p>장르, 성별의 경계를 허물고 어느 한 분야에서 열정적으로 자신을 표현하는 프로페셔널리스트로서의 청춘들의 모습을 지향하며 기존에 정해진 개념을 재정립하고 다양한 장르의 믹스를 통해 탄생한 새로운 개념의 ‘뉴 컬처’로 주체적인 문화 흐름을 보여줍니다.</p>
 
-    <a href="#"><button class="brand-text-btn">
-        <img src="./assets/images/brand/brand-text1-btnImage.png" alt="brand-text1-btnImage">History Of ADER's
-        Logo</button></a>
+    <div class="brand-text-img">
+      <img class="img1" src="./assets/images/brand/brand-text1-img1.png" alt="brand-text1-img1">
+      <img class="img2" src="./assets/images/brand/brand-text1-img2.png" alt="brand-text1-img">
+    </div>
+
+    <!-- <a href="#" class="brand-text-btn">
+      <div class="svg-container">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 20.2"><path d="M9.36 3.77c.17-.79.34-1.56.51-2.33C7.65.96 5.46.48 3.26 0 2.18 4.99 1.09 9.98 0 14.98c2.22.48 4.41.96 6.64 1.45-.17.79-.34 1.56-.51 2.33 2.21.48 4.4.96 6.6 1.44 1.09-5 2.18-9.98 3.27-14.98-2.22-.48-4.41-.96-6.64-1.45Z" style="fill:#fff;isolation:isolate;stroke-width:0"/></svg>
+      </div>
+      <span class="text">History Of ADER's Logo</span>
+    </a> -->
+
+    <a href="#" class="brand-text-btn">
+      <div class="svg-container">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 20.2" width="16">
+          <path d="M9.36 3.77c.17-.79.34-1.56.51-2.33C7.65.96 5.46.48 3.26 0 2.18 4.99 1.09 9.98 0 14.98c2.22.48 4.41.96 6.64 1.45-.17.79-.34 1.56-.51 2.33 2.21.48 4.4.96 6.6 1.44 1.09-5 2.18-9.98 3.27-14.98-2.22-.48-4.41-.96-6.64-1.45Z" style="fill:#fff;isolation:isolate;stroke-width:0"/>
+        </svg>
+      </div>
+      <span class="text">History Of ADER's Logo</span>
+    </a>
+    
   </section>
 
   <!------- section 3 - brand-text-wrapper2 ------->

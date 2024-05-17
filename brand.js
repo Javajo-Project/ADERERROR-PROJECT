@@ -24,12 +24,29 @@ document.addEventListener("DOMContentLoaded", function() {
     }, 20); // 약간의 딜레이
   }
 
-  // 페이지가 로드될 때마다 p 요소에 애니메이션 적용
   showP();
 });
 
-/****** brand text fadeIn ******/
+/****** brand mainBottom wrapper ******/
+/* 직선 -> 곡선 이벤트 */
+gsap.registerPlugin(ScrollTrigger);
 
+gsap.to("#shape", {
+  scrollTrigger: {
+    trigger: "#shape",
+    start: "top 30%", // 요소의 상단이 닿을 때 스크롤 이벤트 트리거
+    end: "bottom 80%", // 요소의 하단이 닿을 때 스크롤 이벤트 트리거
+    scrub: true,
+    markers: true
+  },
+  width: "100vw",
+  height: "400px",
+  borderRadius: "0%",
+  duration: 2
+});
+
+
+/****** brand text fadeIn ******/
 window.onload = function () {
   const text = document.getElementById('changing-text');
   const textContent = text.textContent;

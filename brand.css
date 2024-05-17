@@ -3,7 +3,6 @@
 body {
   font-family: "Pretendard", sans-serif;
 }
-
 /****** mouseEmoji ******/
 .logo-emoji {
   position: fixed;
@@ -15,7 +14,7 @@ body {
 /****** section 1 - brand-main-wrapper ******/
 .brand-main-wrapper {
   width: 100%;
-  height: 100vh;
+  height: 1000px;
   padding-top: 200px;
   background-color: #0000C5;
   position: relative;
@@ -24,7 +23,6 @@ body {
   margin: 0 auto;
   display: flex;
 
-  /* padding-bottom: 5px; */
   position: relative;
   opacity: 0;
   transform: translateY(30px);
@@ -47,7 +45,6 @@ body {
   opacity: 0;
   transition: opacity 0.3s ease-in-out 0.1s;
 }
-
 .show {
   opacity: 1;
 }
@@ -55,10 +52,31 @@ body {
   width: 100%;
 }
 
+/***** 배경 곡선 -> 직선 이벤트 *****/
+/****** section 1-2 - brand-mainBottom-wrapper ******/
+.brand-mainBottom-wrapper {
+  position: absolute;
+  top: 1000px;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  width: 100%;
+  overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+}
+.brand-mainBottom-shape {
+  width: 100vw;
+  height: 350px;
+  background: #000;
+  border-radius: 180% 180% 0 0;
+  transition: all 0.5s ease-out; 
+}
+
+
 /****** section 2 - brand-text-wrapper1 ******/
 .brand-text-wrapper1 {
   padding-top: 100px;
-  height: 1400px;
+  height: 1300px;
   background-color: #000;
   position: relative;
 }
@@ -78,9 +96,9 @@ body {
 } */
 
 .color-changing-text {
-  width: 70vw;
+  width: 68vw;
   margin: 0 120px 82px;
-  font-size: 45px;
+  font-size: 50px;
   font-weight: 700;
   line-height: 4.5rem;
   /* color: gray; */
@@ -92,32 +110,53 @@ body {
 
 /***** 밑에 이미 깔려있는 회색 글자 *****/
 .brand-text-wrapper1 .fade-in-bgText {
-  width: 70vw;
+  width: 68vw;
   margin: 0 120px 82px;
-  font-size: 45px;
+  font-size: 50px;
   font-weight: 700;
   line-height: 4.5rem;
-  color: #616161;
+  color: #3d3d3d;
 
   position: absolute;
   top: 100px;
 }
 
 .brand-text-wrapper1 p {
-  margin: 0 120px 55px;
+  width: 40vw;
+  margin: 0 120px 50px;
   font-size: 22px;
-  line-height: 2rem;
+  line-height: 2.2rem;
   color: #fff;
 }
-.brand-text-wrapper1 .brand-text-img {
+
+/****** 움직이는 이미지 두개 *****/
+.brand-text-img .img1 {
+  width: 310px;
   position: absolute;
-  top: 400px;
-  left: 750px;
+  top: 630px;
+  left: 950px;
 }
-.brand-text-wrapper1 .brand-text-img > img {
+.brand-text-img .img1 {
+  transition: 1.5s;
+  animation: metal infinite 1.45s cubic-bezier(0.33, 1, 0.68, 1);
+}
+@keyframes metal {
+  0%, 100% {
+    transform: translateX(3px) rotate(3deg);
+  }
+  50% {
+    transform: translateX(0) rotate(-3deg);
+  }
+}
+.brand-text-img .img2 {
+  width: 370px;
+  position: absolute;
+  top: 470px;
+  left: 1150px;
+}
+.brand-text-img .img2 {
   transition: 1.5s;
   animation: bear infinite 1.5s cubic-bezier(0.33, 1, 0.68, 1);
-  width: 750px;
 }
 @keyframes bear {
   0%, 100% {
@@ -127,9 +166,10 @@ body {
     transform: translateX(0) rotate(-3deg);
   }
 }
-.brand-text-wrapper1 .brand-text-btn {
-  margin: 27px 120px;
-  width: 235px;
+
+.brand-text-btn {
+  margin: 32px 120px;
+  width: 245px;
   height: 40px;
   border: 1px solid #0000C5;
   border-radius: 10px;
@@ -138,11 +178,32 @@ body {
   text-align: center;
   font-size: 18px;
   font-family: "Jost", sans-serif;
+  font-weight: 500;
+  display: inline-block;
+  line-height: 40px;
 }
-.brand-text-wrapper1 .brand-text-btn > img {
-  margin: 2px 7px 2px 0;
+
+.svg-container {
   width: 16px;
+  vertical-align: middle;
+  margin: 0 5px; 
+  display: inline-block;
 }
+.text {
+  display: inline-block;
+}
+
+.brand-text-btn:hover {
+  background-color: #fff;
+  color: #0000C5;
+}
+.brand-text-btn .svg-container svg path {
+  fill: #fff;
+}
+.brand-text-btn:hover .svg-container svg path {
+  fill: #0000C5;
+}
+
 
 /****** section 3 - brand-text-wrapper2 ******/
 .brand-text-wrapper2 {
