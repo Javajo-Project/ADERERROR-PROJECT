@@ -238,6 +238,7 @@ footer .pc-main-footer .footer-companyContact .companyContact-companyLogo-wrappe
     padding: 0 10px;
   }
   header .mo-main-header .menu-wrapper {
+    margin-bottom: 20px;
     width: 100%;
     display: flex;
     justify-content: space-evenly;
