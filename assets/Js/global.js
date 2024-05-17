@@ -25,5 +25,4 @@ const emojiMov = () => {
 emojiMov();
 
 /***** product-slideShow ******/
-
 });
