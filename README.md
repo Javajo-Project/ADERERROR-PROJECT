@@ -7,6 +7,11 @@
 - 메인 이미지 레이아웃 수정 및 교체
 - 글자 페이드인 이벤트 구현 완료
 
+**문지영**
+- product-slideShow Js 구현(수정 필요)
+- haeder, footer mobile 구현 완료
+- index page magazine section 구현 완료
+
 # 240515_수
 **정진영**
 - productlist page js 구현 및 page 완성
