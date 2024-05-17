@@ -177,7 +177,7 @@ footer {
   position: fixed;
   top: 20px;
   left: 20px;
-  pointer-events: none;
+  user-select: none;
   will-change: transform;
   z-index: 99999999;
 
@@ -186,7 +186,6 @@ footer {
     height: 100%;
   }
 }
-
 /****** page-product-slideShow product-slideShow ******/
 .product-slideShow {
   width: 100%;

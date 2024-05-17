@@ -31,3 +31,16 @@ sections.forEach(section=>{
         }
     })
 })
+/***** index zoom in ******/
+const { innerHeight } = window;
+
+// zoom-in
+gsap.to("#zoom-in .logo", {
+    scale: 70, stagger: 0.25, duration: 10, /*3*/
+    scrollTrigger: {
+        trigger: "#zoom-in",
+        pin: true,
+        end: `+=${innerHeight * 2}`, /*1.3*/
+        scrub: 3
+    }
+});
