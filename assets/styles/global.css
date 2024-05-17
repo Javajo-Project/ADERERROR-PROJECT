@@ -125,10 +125,16 @@ footer .pc-main-footer .footer-companyContact .companyContact-companyLogo-wrappe
   pointer-events: none;
   will-change: transform;
   z-index: 99999999;
+  pointer-events: none;
 }
 .logo-emoji img {
   width: 100%;
   height: 100%;
+}
+
+a:hover .logo-emoji {
+  transform: scale(2);
+  opacity: 0.5;
 }
 
 /****** page-product-slideShow product-slideShow ******/

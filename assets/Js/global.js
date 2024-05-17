@@ -26,12 +26,4 @@ emojiMov();
 
 /***** product-slideShow ******/
 
-const boxChange = () => $('.product-slideShow-wrapper li').first().appendTo('.product-slideShow-wrapper')
-setInterval(boxChange, 4000)
-let mainSlide = setInterval(boxChange, 4000);
-
-$('.product-slideShow-wrapper').on({
-  mouseenter: () => { clearInterval(mainSlide) },
-  mouseleave: () => { mainSlide = setInterval(boxChange, 4000) },
-})
 });
