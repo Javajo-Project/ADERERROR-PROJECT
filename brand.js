@@ -40,7 +40,7 @@ gsap.to("#shape", {
     markers: true
   },
   width: "100vw",
-  height: "500px",
+  height: "400px",
   borderRadius: "0%",
   duration: 2
 });
