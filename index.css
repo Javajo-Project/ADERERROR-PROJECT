@@ -291,6 +291,7 @@
   position: relative;
   padding: 0;
   overflow: hidden;
+  margin-bottom: 200px;
 }
 .index-magazine .grid-img-wrapper img {
   vertical-align: middle;
