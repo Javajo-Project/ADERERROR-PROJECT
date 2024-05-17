@@ -178,6 +178,7 @@ p span {
   margin: 0 auto;
   padding: 160px 90px;
   overflow: auto;
+  overflow: hidden;
 } 
 .through-wrapper {
   max-width: 1000px;

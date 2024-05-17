@@ -5,10 +5,11 @@
   <title>index-logo-zoom</title>
   <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
   <script src="../assets/jquery-3.7.1.min.js"></script>
+  <link rel="stylesheet" href="./assets/styles/reset.css">
     <!-- plugIn js -->
     <script src="https://unpkg.co/gsap@3/dist/gsap.min.js"></script>
     <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
-    
+
   <style>
 
 #zoom-in, #slogan{
@@ -63,7 +64,7 @@ display: block;
 
 // zoom-in
 gsap.to("#zoom-in .logo", {
-    scale: 80, stagger: 0.25, duration: 10, /*3*/
+    scale: 70, stagger: 0.25, duration: 10, /*3*/
     scrollTrigger: {
         trigger: "#zoom-in",
         pin: true,
