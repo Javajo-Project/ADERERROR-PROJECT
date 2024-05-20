@@ -27,20 +27,21 @@ document.addEventListener("DOMContentLoaded", function() {
   showP();
 });
 
-/****** brand mainBottom wrapper ******/
+
 /* 직선 -> 곡선 이벤트 */
+/****** brand mainBottom wrapper ******/
 gsap.registerPlugin(ScrollTrigger);
 
 gsap.to("#shape", {
   scrollTrigger: {
     trigger: "#shape",
-    start: "top 30%", // 요소의 상단이 닿을 때 스크롤 이벤트 트리거
+    start: "top 50%", // 요소의 상단이 닿을 때 스크롤 이벤트 트리거
     end: "bottom 80%", // 요소의 하단이 닿을 때 스크롤 이벤트 트리거
     scrub: true,
-    markers: true
+    markers: false
   },
-  width: "100vw",
-  height: "400px",
+  width: "120%",
+  height: "600px",
   borderRadius: "0%",
   duration: 2
 });

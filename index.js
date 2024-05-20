@@ -1,3 +1,23 @@
+/****** index main Bottom ******/
+/****** 곡선 > 직선 이벤트 ******/
+
+gsap.registerPlugin(ScrollTrigger);
+
+gsap.to("#shape", {
+  scrollTrigger: {
+    trigger: "#shape",
+    start: "top 50%", // 요소의 상단이 닿을 때 스크롤 이벤트 트리거
+    end: "bottom 80%", // 요소의 하단이 닿을 때 스크롤 이벤트 트리거
+    scrub: true,
+    markers: false
+  },
+  width: "120%",
+  height: "1000px",
+  borderRadius: "0%",
+  duration: 2
+});
+
+
 /****** index horizontal lookbook ******/
 
 const container=document.querySelector('.index-collabo-horizontal');

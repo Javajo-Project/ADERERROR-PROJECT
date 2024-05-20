@@ -16,10 +16,10 @@
 .index-main .index-main-text h2 {
   position: absolute;
   font-family: 'Jost';
-  font-size: 100px;
+  font-size: 130px;
   color: #fff;
-  top: 40%;
-  line-height: 1.25;
+  top: 23%;
+  line-height: 1.05;
   font-weight: 700;
   margin-left: 120px;
 }
@@ -31,27 +31,57 @@
 .index-main .index-main-text p {
   position: absolute;
   color: #fff;
-  width: 400px;
-  font-size: 18px;
+  width: 500px;
+  font-size: 20px;
   font-family: 'pretendard';
-  line-height: 1.5;
-}  
+  line-height: 1.7;
+
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out 0.2s;
+}
+.index-main .index-main-text p.show {
+  opacity: 1;
+}
 
 .index-main .index-main-text p:first-of-type {
-  top: 45%;
-  right: 10%;
+  top: 55%;
+  right: 7%;
 }
 
 .index-main .index-main-text p:last-of-type {
-  top: 65%;
-  right: 10%;
+  top: 75%;
+  right: 7%;
 }
+
+/****** index main Bottom ******/
+/****** 곡선 > 직선 이벤트 ******/
+.index-mainBtm-wrapper {
+  position: absolute;
+  top: 1000px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 120%;
+  overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+}
+.index-mainBtm-shape {
+  width: 100%;
+  height: 350px;
+  background: #000;
+  border-radius: 180% 180% 0 0;
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
 
 /****** index collabo brand list ******/
 .index-collab {
   height: 50vh;
   background-color: #000;
   margin-top: 190px;
+
+  position: relative;
+  z-index: 9999;
 }
 
 /****** index collaboration horizontal lookbook ******/
@@ -143,32 +173,33 @@
 /****** index product list ******/
 .index-productlist-wrapper {
   width: 100%;
+  height: 2550px;
 }
 
 .index-productlist-wrapper h2 {
   text-align: center;
   font-family: 'Jost';
-  font-size: 40px;
+  font-size: 70px;
   margin-top: 130px;
 }
 
 .index-productlist-wrapper .collection {
-  width: 39vw;
+  width: 33vw;
   text-align: center;
-  margin: 50px auto;
+  margin: 40px auto 0;
   font-family: 'pretendard';
   font-size: 18px;
-  line-height: 1.3;
+  line-height: 1.8rem;
 }
 
 .index-productlist-wrapper .index-productlist-container {
   width: 100%;
-  height: 100vh;
+  /* height: 100vh; */
   display: grid;
   grid-template-columns: repeat(2, 40vw);
   gap: 5%;
   justify-content: center;
-  margin-top: 100px;
+  margin-top: 115px;
 }
 
 .speakerimg {
@@ -185,6 +216,9 @@
   font-size: 30px;
   font-family: 'Jost';
   font-weight: 700;
+}
+.index-productlist-wrapper .index-productlist-container .index-product-list1 .productname {
+  margin-top: 25px;
 }
 
 .index-productlist-wrapper .index-productlist-container .index-product-list1 .index-product {
@@ -220,7 +254,9 @@
   font-family: 'Jost';
   font-weight: 700;
 }
-
+.index-productlist-wrapper .index-productlist-container .index-product-list2 .productname {
+  margin-top: 25px;
+}
 .index-productlist-wrapper .index-productlist-container .index-product-list2 .index-product {
   display: block;
   aspect-ratio: 1/1;
@@ -255,6 +291,7 @@
 #zoom-in,
 #slogan {
   height: 100vh;
+  background-color: #F3F3F3;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -266,17 +303,19 @@
 }
 
 #slogan {
+  height: 130vh;
   margin: 0 auto;
   text-align: center;
   font-family: "Pretendard", sans-serif;
-  font-size: 1.5rem;
-  font-weight: 600;
+  font-size: 25px;
+  font-weight: 500;
   line-height: 1.5;
   color: #fff;
   background-color: #0000C5;
 }
 
 #slogan p span {
+  margin: 5px;
   display: block;
 }
 

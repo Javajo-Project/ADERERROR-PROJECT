@@ -3,6 +3,7 @@
 body {
   font-family: "Pretendard", sans-serif;
 }
+
 /****** mouseEmoji ******/
 .logo-emoji {
   position: fixed;
@@ -14,20 +15,21 @@ body {
 /****** section 1 - brand-main-wrapper ******/
 .brand-main-wrapper {
   width: 100%;
-  height: 1000px;
+  height: 1200px;
   padding-top: 200px;
   background-color: #0000C5;
   position: relative;
 }
+
 .brand-main-logo {
   margin: 0 auto;
   display: flex;
 
-  position: relative;
   opacity: 0;
   transform: translateY(30px);
   transition: opacity 0.3s ease-in-out 0.1s, transform 0.35s ease-in-out 0.1s;
 }
+
 .show {
   opacity: 1;
   transform: translateY(0);
@@ -45,62 +47,61 @@ body {
   opacity: 0;
   transition: opacity 0.3s ease-in-out 0.1s;
 }
+
 .show {
   opacity: 1;
 }
+
 .brand-main-imgList img {
   width: 100%;
+
+  /* transform: translateY(-30px);
+  opacity: 0;
+  transition: opacity 0.3s ease-in 0.1s, transform 0.35s ease-in-out 0.1s; */
 }
+
+.show-img {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 
 /***** 배경 곡선 -> 직선 이벤트 *****/
 /****** section 1-2 - brand-mainBottom-wrapper ******/
 .brand-mainBottom-wrapper {
   position: absolute;
-  top: 1000px;
+  top: 1200px;
   left: 50%;
-  transform: translate(-50%, -50%); 
-  width: 100%;
+  transform: translate(-50%, -50%);
+  width: 120%;
   overflow-x: hidden;
   display: flex;
   justify-content: center;
 }
+
 .brand-mainBottom-shape {
-  width: 100vw;
+  width: 100%;
   height: 350px;
   background: #000;
   border-radius: 180% 180% 0 0;
-  transition: all 0.5s ease-out; 
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 
 /****** section 2 - brand-text-wrapper1 ******/
 .brand-text-wrapper1 {
   padding-top: 100px;
-  height: 1300px;
+  height: 1350px;
   background-color: #000;
   position: relative;
 }
-
-/* 글자 이벤트 */
-/* .brand-text-wrapper1 .fade-in-text {
-  width: 70vw;
-  margin: 0 120px 82px;
-  font-size: 45px;
-  font-weight: 700;
-  line-height: 4.5rem;
-  color: gray;
-  opacity: 0; 
-  transition: opacity 0.5s ease;
-  position: relative;
-  z-index: 9999;
-} */
 
 .color-changing-text {
   width: 68vw;
   margin: 0 120px 82px;
   font-size: 50px;
   font-weight: 700;
-  line-height: 4.5rem;
+  line-height: 5rem;
   /* color: gray; */
   display: inline-block;
 
@@ -114,7 +115,7 @@ body {
   margin: 0 120px 82px;
   font-size: 50px;
   font-weight: 700;
-  line-height: 4.5rem;
+  line-height: 5rem;
   color: #3d3d3d;
 
   position: absolute;
@@ -133,35 +134,46 @@ body {
 .brand-text-img .img1 {
   width: 310px;
   position: absolute;
-  top: 630px;
+  top: 700px;
   left: 950px;
 }
+
 .brand-text-img .img1 {
   transition: 1.5s;
   animation: metal infinite 1.45s cubic-bezier(0.33, 1, 0.68, 1);
 }
+
 @keyframes metal {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: translateX(3px) rotate(3deg);
   }
+
   50% {
     transform: translateX(0) rotate(-3deg);
   }
 }
+
 .brand-text-img .img2 {
   width: 370px;
   position: absolute;
-  top: 470px;
+  top: 520px;
   left: 1150px;
 }
+
 .brand-text-img .img2 {
   transition: 1.5s;
   animation: bear infinite 1.5s cubic-bezier(0.33, 1, 0.68, 1);
 }
+
 @keyframes bear {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: translateX(3px) rotate(3deg);
   }
+
   50% {
     transform: translateX(0) rotate(-3deg);
   }
@@ -171,7 +183,6 @@ body {
   margin: 32px 120px;
   width: 245px;
   height: 40px;
-  border: 1px solid #0000C5;
   border-radius: 10px;
   background-color: #0000C5;
   color: #fff;
@@ -181,14 +192,17 @@ body {
   font-weight: 500;
   display: inline-block;
   line-height: 40px;
+
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .svg-container {
   width: 16px;
   vertical-align: middle;
-  margin: 0 5px; 
+  margin: 0 5px;
   display: inline-block;
 }
+
 .text {
   display: inline-block;
 }
@@ -196,14 +210,16 @@ body {
 .brand-text-btn:hover {
   background-color: #fff;
   color: #0000C5;
-  transition: all 0.3s ease;
 }
-.brand-text-btn .svg-container svg path {
+
+/* .brand-text-btn .svg-container svg path {
   fill: #fff;
+  transition: fill 0.3s ease;
 }
 .brand-text-btn:hover .svg-container svg path {
   fill: #0000C5;
-}
+  transition: fill 0.3s ease;
+} */
 
 
 /****** section 3 - brand-text-wrapper2 ******/
@@ -211,6 +227,7 @@ body {
   height: 1800px;
   text-align: center;
 }
+
 .brand-text-wrapper2 h1 {
   margin: 200px 0 60px;
   font-size: 100px;
@@ -220,6 +237,7 @@ body {
   line-height: 100px;
   color: #0000C5;
 }
+
 .brand-text-wrapper2 .brand-textWrapper2-txt {
   border: #0000C5 2px solid;
   border-radius: 25px;
@@ -235,6 +253,98 @@ body {
   font-weight: 500;
   line-height: 1.7rem;
 }
+
 .brand-text-wrapper2 .brand-textWrapper2-video {
   width: 50%;
+}
+
+
+
+/****** mo ******/
+/****** section 1 - brand-main-wrapper ******/
+@media screen and (max-width: 430px) {
+.brand-main-wrapper {
+  padding: 160px 40px 0;
+
+  width: 100%;
+  height: 700px;
+  background-color: #0000C5;
+  position: relative;
+}
+
+.brand-main-logo {
+  width: 100%;
+  margin: 0 auto;
+
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.3s ease-in-out 0.1s, transform 0.35s ease-in-out 0.1s;
+}
+.show {
+  margin: 0;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.brand-main-txt {
+  margin: auto;
+  padding: 70px 0 85px;
+  width: 100%;
+  font-size: 16px;
+  text-align: center;
+  line-height: 1.6rem;
+  color: #fff;
+
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out 0.1s;
+}
+
+.show {
+  opacity: 1;
+}
+.brand-main-imgList {
+  display: none;
+}
+
+
+}
+
+
+/***** footer *****/
+.companyContact-companyLogo-wrapper a {
+  color: inherit;
+}
+
+.pc-main-footer p {
+  margin: 0;
+}
+
+@media screen and (max-width:1500px) {
+  .list-lookbook-wrapper {
+    height: 1000px;
+  }
+
+  .list-lookbook-wrapper .list-lookbook1-wrapper {
+    height: 1000px;
+  }
+}
+
+@media screen and (max-width:1300px) {
+  .list-lookbook-wrapper {
+    height: 95vh;
+  }
+
+  .list-lookbook-wrapper .list-lookbook1-wrapper {
+    height: 95vh;
+  }
+}
+
+@media screen and (max-width:1000px) {
+  .list-lookbook-wrapper {
+    height: 75vh;
+  }
+
+  .list-lookbook-wrapper .list-lookbook1-wrapper {
+    height: 75vh;
+  }
 }
