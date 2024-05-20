@@ -27,6 +27,7 @@ document.addEventListener("DOMContentLoaded", function() {
   showP();
 });
 
+/****** brand mainImg showUp ******/
 document.addEventListener("DOMContentLoaded", function() {
   var main = document.querySelector(".brand-main-img");
 
