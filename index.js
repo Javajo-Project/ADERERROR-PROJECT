@@ -55,14 +55,27 @@ sections.forEach(section=>{
 /***** index zoom in ******/
 const { innerHeight } = window;
 
-// zoom-in
 gsap.to("#zoom-in .logo", {
-    scale: 100, stagger: 0.25, duration: 3,
+    scale: 80, stagger: 0.25, duration: 3,
     scrollTrigger: {
         trigger: "#zoom-in",
         pin: true,
-        start: "20%",
-        end: `+=${innerHeight * 2}`,
-        scrub: 3
+        // start: "10%",
+        end: `+=${innerHeight * 1}`,
+        scrub: 3,
+        // markers: true
+    }
+});
+
+gsap.to(".slogan-wrapper", {
+    duration: 1,
+    opacity: 1,
+    y: -250,
+       ease: "easeOutExpo",
+    scrollTrigger: {
+        trigger: "#slogan",
+        start: "top bottom",
+        end: "center center",
+        scrub: true
     }
 });
