@@ -34,7 +34,6 @@
   font-size: 20px;
   font-family: 'pretendard';
   line-height: 1.7;
-
   opacity: 0;
   transition: opacity 0.5s ease-in-out 0.2s;
 }
@@ -385,4 +384,25 @@
   right: 50px;
   z-index: 999999;
   width: 50vw;
+}
+@media screen and (max-width:430px){
+  .index-main{
+    overflow: hidden;
+  }
+  .index-main .youtube {
+    width:5000px;
+  }
+  .index-main .index-main-text h2{
+    font-size: 70px;
+    top:10%;
+    margin-left:20px;
+  }
+  .index-main .index-main-text p{
+    font-size: 18px;
+    width:350px;
+  }
+  .index-main .index-main-text p:first-of-type {
+    top: 60%;
+    margin-left: 20px;
+  }
 }
