@@ -23,7 +23,6 @@
   font-weight: 700;
   margin-left: 120px;
 }
-
 .index-main .index-main-text span {
   display: block;
 }
@@ -60,7 +59,7 @@
   top: 1000px;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 120%;
+  width: 100%;
   overflow-x: hidden;
   display: flex;
   justify-content: center;
@@ -119,6 +118,7 @@
   font-weight: 600;
   margin-left: 120px;
   font-family: 'Jost';
+  text-wrap: nowrap;
 }
 
 .index-collabo-horizontal .index-collab-wrapper .index-collabo-horizontaltext {
@@ -143,31 +143,32 @@
 .index-collabo-horizontal .index-collab-wrapper .index-collabo-horizontalwrapper1 {
   display: flex;
   width: 100vw;
-  gap: 20px;
+  gap: 40px;
   overflow: hidden;
 }
 
 .index-collabo-horizontal .index-collab-wrapper .index-collabo-horizontalwrapper1 img {
   margin-top: 100px;
-  width: 350px;
+  width: 420px;
   object-fit: cover;
   opacity: 0.6;
 }
 
 .index-collabo-horizontal .index-collab-wrapper .index-collabo-horizontalwrapper1 img:hover {
-  transition: 1.3s;
+  transition: 0.8s;
   transform: scale(1.1);
   opacity: 1;
 }
 
 .index-collabo-horizontal .index-collab-wrapper .index-collabo-horizontalwrapper1 .text {
   position: absolute;
-  top: 50%;
+  top: 35%;
   z-index: 999;
 }
 
 .index-collabo-horizontal .index-collab-wrapper .index-collabo-horizontalwrapper1 .index-text-margin {
   padding-top: 60vh;
+  margin-left: -80px;
 }
 
 /****** index product list ******/
@@ -295,15 +296,19 @@
   overflow: hidden;
   height: 150vh;
 <<<<<<< HEAD
+<<<<<<< HEAD
   background-color: #F3F3F3; /* 섹션구분을 위한 배경색 */
 =======
 }
 #zoom-in {
   background-color: #f3f3f3;
 >>>>>>> 0dbdeff20b15f511d1e1c7c2ff2bba89188cffff
+=======
+  background-color: #F3F3F3;
+>>>>>>> 7933fef00c345c37d66f76a2d566058906a3bde7
 }
 #zoom-in .logo {
-  width: 60%;
+  width: 70%;
 }
 #slogan {
   text-align: center;

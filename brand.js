@@ -1,17 +1,17 @@
 /****** brand logo showUp ******/
 document.addEventListener("DOMContentLoaded", function() {
-  var meetOtisElement = document.querySelector(".brand-main-logo");
+  var main = document.querySelector(".brand-main-logo");
 
-  function showMeetOtis() {
+  function showLogo() {
     // 강제로 클래스를 제거하여 애니메이션이 다시 시작되도록 함
-    meetOtisElement.classList.remove("show");
+    main.classList.remove("show");
     // 다음 프레임에서 클래스를 추가하여 애니메이션 효과를 보이도록 함
     requestAnimationFrame(function() {
-      meetOtisElement.classList.add("show");
+      main.classList.add("show");
     });
   }
 
-  showMeetOtis();
+  showLogo();
 });
 
 /****** brand mainTxt show ******/
@@ -21,12 +21,24 @@ document.addEventListener("DOMContentLoaded", function() {
   function showP() {
     setTimeout(function() {
       pElement.classList.add("show");
-    }, 20); // 약간의 딜레이
+    }, 20);
   }
 
   showP();
 });
 
+document.addEventListener("DOMContentLoaded", function() {
+  var main = document.querySelector(".brand-main-img");
+
+  function showImg() {
+    main.classList.remove("show");
+    requestAnimationFrame(function() {
+      main.classList.add("show");
+    });
+  }
+
+  showImg();
+});
 
 
 /* 직선 -> 곡선 이벤트 */

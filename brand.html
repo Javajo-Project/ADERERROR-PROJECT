@@ -16,7 +16,8 @@
   <!-- open graph -->
   <meta property="og:title" content="ADERERROR">
   <meta property="og:description" content="아더에러 공식 온라인 사이트">
-  <meta property="og:image" content="https://javajo-project.github.io/ADERERROR-PROJECT/assets/images/global/openGraph.jpg">
+  <meta property="og:image"
+    content="https://javajo-project.github.io/ADERERROR-PROJECT/assets/images/global/openGraph.jpg">
   <meta property="og:url" content="https://javajo-project.github.io/ADERERROR-PROJECT/header+footer.html">
 
   <!-- reset -->
@@ -39,6 +40,7 @@
   <!-- jQuery -->
   <script src="./assets/Js/jquery-3.7.1.min.js"></script>
   <script src="./assets/Js/jquery-ui.min.js"></script>
+  <script src="./assets/Js/global.js" defer></script>
   <script src="./brand.js" defer></script>
 
   <!-- 곡선 -> 직선 쉐입변경 -->
@@ -48,16 +50,15 @@
 </head>
 
 <!-- To do list **************************
-0. index 할일
+0. 태블릿 버전 만들기!!
+
+0. index 
 - 세로형 동영상 찾기
-
-1. 메인 페이지
-- 맨 아래 이미지 트렌지션 <--- 왜 안돼....ㅠ ㅠ
-
-2. 버튼 마우스 호버 시 svg 색상 변경 <--- 왜 안돼....
 
 3. 블루 마크
 - 이미지 추가(?)
+
+***** 모바일
 
 -->
 
@@ -71,18 +72,22 @@
   <header class="allPage-header">
     <!----- nav ----->
     <nav class="pc-main-nav">
-      <div class="logo-img">logo area</div>
+      <a href="./index.html">
+        <h1 class="logo-img">logo area</h1>
+      </a>
       <ul class="menu-wrapper">
-        <li class="menu-item"><a href="#">About +</a></li>
-        <li class="menu-item"><a href="#">Significant +</a></li>
-        <li class="menu-item"><a href="#">A-ventory +</a></li>
-        <li class="menu-item"><a href="#">Collaboration +</a></li>
+        <li class="menu-item"><a href="./brand.html">About +</a></li>
+        <li class="menu-item"><a href="./productlist.html">Significant +</a></li>
+        <li class="menu-item"><a href="./productlist.html">A-ventory +</a></li>
+        <li class="menu-item"><a href="./collabo.html">Collaboration +</a></li>
       </ul>
     </nav>
 
     <div class="mo-main-header">
       <div class="mo-header-top">
-        <img src="./assets/images/global/logo_b.png" alt="logo_b" class="logo-b">
+        <a href="./index.html">
+          <h1><img src="./assets/images/global/logo_b.png" alt="logo_b" class="logo-b"></h1>
+        </a>
         <div class="icon-wrapper">
           <a href="#"><img src="./assets/images/global/icon _search.png" alt="searchIcon"></a>
           <a href="#"><img src="./assets/images/global/icon _user.png" alt="userIcon"></a>
@@ -90,12 +95,13 @@
         </div>
       </div>
       <ul class="menu-wrapper">
-        <li><a href="#">About</a></li>
-        <li><a href="#">Significant</a></li>
-        <li><a href="#">A-ventory</a></li>
-        <li><a href="#">Collaboration</a></li>
+        <li><a href="./brand.html">About</a></li>
+        <li><a href="./productlist.html">Significant</a></li>
+        <li><a href="./productlist.html">A-ventory</a></li>
+        <li><a href="./collabo.html">Collaboration</a></li>
       </ul>
     </div>
+
   </header>
 
   <!------- section 1 - brand-main-wrapper ------->
@@ -108,12 +114,11 @@
       끝에 나온다고 생각해 이를 성장의 의미로 사용했습니다. <br>
       ADER ERROR는 ERROR를 통해 하나의 콘텐츠를 더 나은 존재로 표현합니다.
     </p>
-  
-    <div class="brand-main-imgList show">
-      <img src="./assets/images/brand/brand-main-img.png" alt="brand-main-img">
+
+    <div class="brand-main-imgList">
+      <img class="brand-main-img" src="./assets/images/brand/brand-main-img.png" alt="brand-main-img">
     </div>
   </section>
-  
 
   <!------- section 1-2 - brand-main-bottom ------->
   <section class="brand-main-bottom">
@@ -124,7 +129,6 @@
 
   <!------- section 2 - brand-text-wrapper1 ------->
   <section class="brand-text-wrapper1">
-
     <h1 class="color-changing-text" id="changing-text">
       ADER ERROR는 2014년 한국을 기반으로 설립된 패션 문화 커뮤니케이션 브랜드입니다.
       패션뿐 아니라 새로운 시각적 변화에 초점을 맞춰 활동하고 있으며, 공간과 디자인, 패션, 예술 등 다방면의 문화 콘텐츠를 다루고 낯선 경험과 기대를 통해 고객들에게 새로운 경험과 재미를 제안합니다.
@@ -136,8 +140,7 @@
 
     <p>ADER는 기존의 패션의 카테고리에서 벗어나 모든 장르를 편집하여 독창적인 코어 스타일을 창조합니다. 복종 믹스, 변형, 왜곡을 통해 실루엣을 창조하는 방식으로 복장의 경계를 허물고 조합하여 새로운
       문화를 시각화 합니다. 기존의 형태를 왜곡하는 행위로 ADER의 시즌 로고 아트워크가 탄생 하였으며, 의복에서도 왜곡의 요소를 활용하여 다채로운 경험을 제공하고 있습니다.
-    <p>장르, 성별의 경계를 허물고 어느 한 분야에서 열정적으로 자신을 표현하는 프로페셔널리스트로서의 청춘들의 모습을 지향하며 기존에 정해진 개념을 재정립하고 다양한 장르의 믹스를 통해 탄생한 새로운 개념의
-      ‘뉴 컬처’로 주체적인 문화 흐름을 보여줍니다.</p>
+    <p>장르, 성별의 경계를 허물고 어느 한 분야에서 열정적으로 자신을 표현하는 프로페셔널리스트로서의 청춘들의 모습을 지향하며 기존에 정해진 개념을 재정립하고 다양한 장르의 믹스를 통해 탄생한 새로운 개념의 ‘뉴 컬처’로 주체적인 문화 흐름을 보여줍니다.</p>
 
     <div class="brand-text-img">
       <img class="img1" src="./assets/images/brand/brand-text1-img1.png" alt="brand-text1-img1">
@@ -146,13 +149,13 @@
 
     <a href="#" class="brand-text-btn">
       <div class="svg-container">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 20.2" width="16">
+        <svg class="white-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 20.2" width="16">
           <path
             d="M9.36 3.77c.17-.79.34-1.56.51-2.33C7.65.96 5.46.48 3.26 0 2.18 4.99 1.09 9.98 0 14.98c2.22.48 4.41.96 6.64 1.45-.17.79-.34 1.56-.51 2.33 2.21.48 4.4.96 6.6 1.44 1.09-5 2.18-9.98 3.27-14.98-2.22-.48-4.41-.96-6.64-1.45Z"
             style="fill:#fff;isolation:isolate;stroke-width:0" />
         </svg>
-        <svg class="hover-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 20.2" width="16" style="display: none;">
-          <!-- 다른 SVG 파일의 경로 -->
+        
+        <svg class="hover-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 20.2" width="16">
           <path
             d="M9.36 3.77c.17-.79.34-1.56.51-2.33C7.65.96 5.46.48 3.26 0 2.18 4.99 1.09 9.98 0 14.98c2.22.48 4.41.96 6.64 1.45-.17.79-.34 1.56-.51 2.33 2.21.48 4.4.96 6.6 1.44 1.09-5 2.18-9.98 3.27-14.98-2.22-.48-4.41-.96-6.64-1.45Z"
             style="fill:#0000C5;isolation:isolate;stroke-width:0" />
