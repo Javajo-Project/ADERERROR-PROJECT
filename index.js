@@ -57,7 +57,7 @@ const { innerHeight } = window;
 
 // zoom-in
 gsap.to("#zoom-in .logo", {
-    scale: 70, stagger: 0.25, duration: 3,
+    scale: 100, stagger: 0.25, duration: 3,
     scrollTrigger: {
         trigger: "#zoom-in",
         pin: true,
