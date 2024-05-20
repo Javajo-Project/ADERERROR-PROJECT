@@ -181,6 +181,7 @@ p span {
   background-color: var(--color-gray-bg);
   text-align: center;
   padding: 160px 0 160px;
+  margin-bottom: 100px;
 }
 .collabo-campain .campain-wrapper p {
   padding: 60px 0;
