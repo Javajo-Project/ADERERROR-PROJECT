@@ -16,6 +16,11 @@
 - slide list에 click even 완료
 - productPage 모바일 완성
 
+**김예진**
+-collabo page 태블릿버전 구현
+-collabo page js 구현
+-index page js 수정
+
 # 240516_목
 **정진영**
 - index page 60% 작업 완료 html 및 css js 구현(이벤트 추가)
