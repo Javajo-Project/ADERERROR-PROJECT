@@ -29,17 +29,19 @@
 
   <!------ style ------>
   <link rel="stylesheet" href="./assets/styles/global.css">
-  <link rel="stylesheet" href="./index.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="./index.css" defer>
 
   <!------ jQuery ------>
   <script src="./assets/Js/jquery-3.7.1.min.js"></script>
   <script src="./assets/Js/jquery-ui.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="./assets/Js/global.js" defer></script>
   <script src="./index.js" defer></script>
 
-  <!-- 곡선 > 직선 쉐입변경 -->
+  <!-- 곡선 - 직선 배경 변경 -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/ScrollTrigger.min.js"></script>
 </head>
@@ -71,21 +73,23 @@
   </div>
 
   <!------- header ------->
+  <!------ nav ------>
+  <!----- nav ----->
   <header class="allPage-header">
     <!----- nav ----->
     <nav class="pc-main-nav">
-      <div class="logo-img">logo area</div>
+      <a href="./index.html"><h1 class="logo-img">logo area</h1></a>
       <ul class="menu-wrapper">
-        <li class="menu-item"><a href="#">About +</a></li>
-        <li class="menu-item"><a href="#">Significant +</a></li>
-        <li class="menu-item"><a href="#">A-ventory +</a></li>
-        <li class="menu-item"><a href="#">Collaboration +</a></li>
+        <li class="menu-item"><a href="./brand.html">About +</a></li>
+        <li class="menu-item"><a href="./productlist.html">Significant +</a></li>
+        <li class="menu-item"><a href="./productlist.html">A-ventory +</a></li>
+        <li class="menu-item"><a href="./collabo.html">Collaboration +</a></li>
       </ul>
     </nav>
 
     <div class="mo-main-header">
       <div class="mo-header-top">
-        <img src="./assets/images/global/logo_b.png" alt="logo_b" class="logo-b">
+        <a href="./index.html"><h1><img src="./assets/images/global/logo_b.png" alt="logo_b" class="logo-b"></h1></a>
         <div class="icon-wrapper">
           <a href="#"><img src="./assets/images/global/icon _search.png" alt="searchIcon"></a>
           <a href="#"><img src="./assets/images/global/icon _user.png" alt="userIcon"></a>
@@ -93,10 +97,10 @@
         </div>
       </div>
       <ul class="menu-wrapper">
-        <li><a href="#">About</a></li>
-        <li><a href="#">Significant</a></li>
-        <li><a href="#">A-ventory</a></li>
-        <li><a href="#">Collaboration</a></li>
+        <li><a href="./brand.html">About</a></li>
+        <li><a href="./productlist.html">Significant</a></li>
+        <li><a href="./productlist.html">A-ventory</a></li>
+        <li><a href="./collabo.html">Collaboration</a></li>
       </ul>
     </div>
   </header>
@@ -108,7 +112,7 @@
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
       referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="youtube"></iframe>
     <div class="index-main-text">
-    <h2><span>NEW</span><span>DROP</span><span>THE</span><span>BLUEISM</span></h2>
+    <h2  data-aos="fade-up" data-aos-duration="3000"><span>NEW</span><span>DROP</span><span>THE</span><span>BLUEISM</span></h2>
     <p class="show">아더에러와 뱅앤울룹슨의 첫 번째 글로벌 협업은 혁신 정신을 바탕으로 새로운 문화를 제안한다는 가치를 공유하는 두 브랜드의 만남을 통해 성사 되었습니다.</p>
     <p class="show">'The Blueism'은 사운드를 기반으로 한 크리에이티브를 통해 두 브랜드가 함께 선보이고자 하는 새로운 움직임을 의미하며, 아더에러와 뱅앤올룹슨은 베오사운드 A1 스피커를 매개체로 새로운 영감의 창을 형성, 확장된 물결을 만들어 나가고자 합니다.
     </p>
@@ -148,16 +152,16 @@
         </div>
         <img src="./assets/images/index/lookbook-1.jpg" alt="lookbook1">
         <img src="./assets/images/index/lookbook-2.jpg" alt="lookbook2">
-        <img src="./assets/images/index/lookbook-3.jpg" alt="lookbook3">
+     
       </div>
       <div class="index-collabo-horizontalwrapper1">
         <p class="index-collabo-horizontaltext text">ADER ERROR X BANG& OLUFSEN</p>
-
+        <img src="./assets/images/index/lookbook-3.jpg" alt="lookbook3">
         <img src="./assets/images/index/lookbook-4.jpg" alt="lookbook4">
         <img src="./assets/images/index/lookbook-5.jpg" alt="lookbook5">
         <img src="./assets/images/index/lookbook-6.jpg" alt="lookbook6">
-        <img src="./assets/images/index/lookbook-7.jpg" alt="lookbook3">
-        <img src="./assets/images/index/lookbook-8.jpg" alt="lookbook4">
+        <!-- <img src="./assets/images/index/lookbook-7.jpg" alt="lookbook3"> -->
+        <!-- <img src="./assets/images/index/lookbook-8.jpg" alt="lookbook4"> -->
       </div>
       <div class="index-collabo-horizontalwrapper1">
         <img src="./assets/images/index/lookbook-9.jpg" alt="lookbook5">
@@ -217,6 +221,7 @@
   <section id="zoom-in">
     <img class="logo" src="./assets/images/global/logo-b.svg" alt="logo">
   </section>
+
   <section id="slogan">
     <div class="slogan-wrapper">
       <img src="./assets/images/global/A-logo.png" alt="A-logo">
@@ -306,6 +311,9 @@
       <p class=”companyContact-copyRight”>©2021 ADER All Rights Reserved</p>
     </div>
   </footer>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>
