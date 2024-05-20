@@ -313,6 +313,7 @@ footer .pc-main-footer .footer-companyContact .companyContact-companyLogo-wrappe
   }
   footer .mo-main-footer .topContents .text {
     padding-bottom: 14px;
+    display: block;
   }
   footer .mo-main-footer .topContents .text:nth-of-type(7) {
     margin-top: 22px;
