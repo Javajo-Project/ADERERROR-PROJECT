@@ -70,10 +70,10 @@ body {
 /***** section 1-2 - brand-mainBottom-wrapper *****/
 .brand-mainBottom-wrapper {
   position: absolute;
-  top: 1200px;
+  top: 1100px;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 120%;
+  width: 100%;
   overflow: hidden;
   display: flex;
   justify-content: center;
