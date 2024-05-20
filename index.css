@@ -294,7 +294,17 @@
   align-items: center;
   overflow: hidden;
   height: 150vh;
+<<<<<<< HEAD
+<<<<<<< HEAD
+  background-color: #F3F3F3; /* 섹션구분을 위한 배경색 */
+=======
+}
+#zoom-in {
+  background-color: #f3f3f3;
+>>>>>>> 0dbdeff20b15f511d1e1c7c2ff2bba89188cffff
+=======
   background-color: #F3F3F3;
+>>>>>>> 7933fef00c345c37d66f76a2d566058906a3bde7
 }
 #zoom-in .logo {
   width: 70%;

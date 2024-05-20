@@ -21,6 +21,7 @@ body {
   position: relative;
 }
 
+/***** show *****/
 .brand-main-logo {
   margin: 0 auto;
   display: flex;
@@ -29,7 +30,6 @@ body {
   transform: translateY(30px);
   transition: opacity 0.3s ease-in-out 0.1s, transform 0.35s ease-in-out 0.1s;
 }
-
 .show {
   opacity: 1;
   transform: translateY(0);
@@ -47,20 +47,19 @@ body {
   opacity: 0;
   transition: opacity 0.3s ease-in-out 0.1s;
 }
-
 .show {
   opacity: 1;
+  transform: translateY(0);
 }
 
-.brand-main-imgList img {
+.brand-main-img {
   width: 100%;
 
-  /* transform: translateY(-30px);
   opacity: 0;
-  transition: opacity 0.3s ease-in 0.1s, transform 0.35s ease-in-out 0.1s; */
+  transform: translateY(-30px);
+  transition: opacity 0.3s ease-in-out 0.1s, transform 0.35s ease-in-out 0.1s;
 }
-
-.show-img {
+.show {
   opacity: 1;
   transform: translateY(0);
 }
@@ -84,7 +83,7 @@ body {
   height: 350px;
   background: #000;
   border-radius: 180% 180% 0 0;
-  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: all 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 
@@ -197,8 +196,16 @@ body {
 .svg-container {
   width: 16px;
   vertical-align: middle;
-  margin: 0 5px;
+  margin: 4px 5px;
   display: inline-block;
+  position: relative;
+}
+
+.svg-container .hover-svg {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .text {
@@ -210,15 +217,12 @@ body {
   color: #0000C5;
 }
 
-/* .brand-text-btn .svg-container svg path {
-  fill: #fff;
-  transition: fill 0.3s ease;
+.brand-text-btn:hover .white-svg {
+  display: none;
 }
-.brand-text-btn:hover .svg-container svg path {
-  fill: #0000C5;
-  transition: fill 0.3s ease;
-} */
-
+.brand-text-btn:hover .hover-svg {
+  display: block;
+}
 
 /***** section 3 - brand-text-wrapper2 *****/
 .brand-text-wrapper2 {
@@ -303,8 +307,6 @@ body {
 .brand-main-imgList {
   display: none;
 }
-/* 이미지 5장 넣을건지 말건지.. */
-
 }
 
 /***** 배경 곡선 -> 직선 이벤트 *****/
@@ -331,6 +333,33 @@ body {
 }
 
 /***** section 2 - brand-text-wrapper1 *****/
+
+/***** 움직이는 이미지 1개 *****/
+@media screen and (max-width: 430px) {
+.brand-text-img .img1 {
+  width: 230px;
+  position: absolute;
+  top: 25%;
+  left: 57%;
+}
+
+.brand-text-img .img1 {
+  transition: 1.5s;
+  animation: metal infinite 1.45s cubic-bezier(0.33, 1, 0.68, 1);
+}
+
+@keyframes metal {
+  0%,
+  100% {
+    transform: translateX(3px) rotate(3deg);
+  }
+
+  50% {
+    transform: translateX(0) rotate(-3deg);
+  }
+}
+}
+
 @media screen and (max-width: 430px) {
 .brand-text-wrapper1 {
   padding: 0 40px;
@@ -360,6 +389,7 @@ body {
 
   position: absolute;
   top: 0px;
+  z-index: 1;
 }
 .brand-text-wrapper1 p {
   margin: 30px 0 0;
@@ -433,44 +463,4 @@ body {
 .brand-text-wrapper2 .brand-textWrapper2-video {
   width: 100%;
 }
-}
-
-
-/***** footer *****/
-.companyContact-companyLogo-wrapper a {
-  color: inherit;
-}
-
-.pc-main-footer p {
-  margin: 0;
-}
-
-@media screen and (max-width:1500px) {
-  .list-lookbook-wrapper {
-    height: 1000px;
-  }
-
-  .list-lookbook-wrapper .list-lookbook1-wrapper {
-    height: 1000px;
-  }
-}
-
-@media screen and (max-width:1300px) {
-  .list-lookbook-wrapper {
-    height: 95vh;
-  }
-
-  .list-lookbook-wrapper .list-lookbook1-wrapper {
-    height: 95vh;
-  }
-}
-
-@media screen and (max-width:1000px) {
-  .list-lookbook-wrapper {
-    height: 75vh;
-  }
-
-  .list-lookbook-wrapper .list-lookbook1-wrapper {
-    height: 75vh;
-  }
 }
