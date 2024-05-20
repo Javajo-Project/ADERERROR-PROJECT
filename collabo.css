@@ -165,8 +165,8 @@ p span {
   text-align: right;
 }
 .collabo-through .through-wrapper img{
+  /* min-width: 500px; */
   width: 100%;
-  min-width: 500px;
 }
 .collabo-through .through-wrapper h3 {
   padding: 40px 5px 20px;
@@ -229,6 +229,9 @@ p span {
     padding: 0 0 100px;
     display: block;
   } 
+  .collabo-through .through-wrapper img{
+    width: 100%;
+  }
   .collabo-through .through-wrapper h3 {
     padding: 30px 0;
     text-align: center;
@@ -323,6 +326,9 @@ p span {
     padding: 0 0 80px;
     display: block;
   } 
+  .collabo-through .through-wrapper img{
+    width: 100%;
+  }
   .collabo-through .through-wrapper h3 {
     padding: 20px 0;
     text-align: center;

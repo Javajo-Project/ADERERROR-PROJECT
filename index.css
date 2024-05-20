@@ -60,7 +60,7 @@
   top: 1000px;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 100%;
+  width: 120%;
   overflow-x: hidden;
   display: flex;
   justify-content: center;
@@ -294,10 +294,12 @@
   align-items: center;
   overflow: hidden;
   height: 150vh;
-  background-color: #F3F3F3;
+}
+#zoom-in {
+  background-color: #f3f3f3;
 }
 #zoom-in .logo {
-  width: 70%;
+  width: 60%;
 }
 #slogan {
   text-align: center;
