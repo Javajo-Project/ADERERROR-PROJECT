@@ -40,9 +40,9 @@
   <script src="./assets/Js/jquery-ui.min.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <!-- 공통된 js -->
-  <script src="./assets/Js/global.js"></script>
+  <script src="./assets/Js/global.js" defer></script>
   <!-- 이 페이지에만 들어가는 js -->
-  <script src="./collabo.js"></script>
+  <script src="./collabo.js" defer></script>
 
 </head>
 
@@ -95,7 +95,7 @@
   <!----- collabo-main ----->
   <section class="collabo-main">
     <div class="main-wrapper">
-      <img class="shoes" src="./assets/images/collabo/collabo-shoes.png" alt="collaboration shoes" class="main-shoes">
+      <img data-aos="zoom-in-up" data-aos-duration="1000" class="shoes" src="./assets/images/collabo/collabo-shoes.png" alt="collaboration shoes" class="main-shoes">
       <img class="collabo-logo" src="./assets/images/collabo/collabo-logo.png" alt="collaboration logo">
       <p class="inner-text-sm">
         <span>아더에러와 컨버스의 첫 번째 글로벌 협업은 ‘Create Next : The new is not new’라는</span>
