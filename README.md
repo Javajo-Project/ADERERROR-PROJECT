@@ -1,4 +1,6 @@
 # 240520_월
+**하은혜**
+- index에 배경스크롤 이벤트 추가 후 push
 
 # 240517_금
 **정진영**
@@ -13,6 +15,11 @@
 - global Js 수정하기(Js가 아니라 css로 구현 완료)
 - slide list에 click even 완료
 - productPage 모바일 완성
+
+**김예진**
+-collabo page 태블릿버전 구현
+-collabo page js 구현
+-index page js 수정
 
 # 240516_목
 **정진영**

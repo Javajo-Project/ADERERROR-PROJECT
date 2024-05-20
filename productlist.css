@@ -264,7 +264,106 @@
       height: 75vh;
     }
   }
+  @media screen and (max-width:800px){
+    .list-lookbook-wrapper .list-lookbook1-wrapper .box p{
+      font-size: 12px;
+    }
+    .list-lookbook-wrapper{
+      height: 65vh;
+    }
+    .list-lookbook-wrapper .list-lookbook1-wrapper{
+      height: 65vh;
+    }
+    .list-content-wrapper .list-content li{
+      font-size: 12px;
+    }
+    .list-product-wrapper .list-img-wrapper p{
+      font-size: 12px;
+    }
+  }
+  @media screen and (max-width:600px){
+    .list-lookbook-wrapper .list-lookbook1-wrapper .box p{
+      font-size: 12px;
+    }
+    .list-lookbook-wrapper{
+      height: 50vh;
+    }
+    .list-lookbook-wrapper .list-lookbook1-wrapper{
+      height: 50vh;
+    }
+    .list-content-wrapper .list-content li{
+      font-size: 12px;
+    }
+    .list-product-wrapper .list-img-wrapper p{
+      font-size: 12px;
+    }
+    .list-content-wrapper .list-content li a {
+      padding-right: 0;
+    }
+  }
+  @media screen and (max-width:500px){
+    /****** list img main ******/
+    .list-img-main{
+      height: 500px;
+    }
 
+    /****** list lookbook ******/
+    .list-lookbook-wrapper{
+      height: 320px;
+    }
+    .list-lookbook-wrapper .list-lookbook1-wrapper{
+      padding:50px 40px;
+      height: 320px;
+    }
+    .list-lookbook-wrapper .list-lookbook1-wrapper .box{
+      padding:4vw 5vw;
+    }
+    .list-lookbook-wrapper .list-lookbook1-wrapper .box p{
+      font-size: 10px;
+    }
+    .list-lookbook-wrapper .list-lookbook1-wrapper .box .list-content{
+      margin-top:5vw;
+    }
+    .list-lookbook-wrapper .list-lookbook1-wrapper .list-lookbook1-wrappera{
+      height: 220px;
+    }
+
+    /****** list content ******/
+    .list-content-wrapper .list-content {
+      padding: 10px 40px 0 40px;
+    }
+    .list-content-wrapper .list-content li{
+      font-size: 10px;
+    }
+    .list-content-wrapper .list-content li a{
+      margin:0;
+      padding-right:10px;
+    }
+
+    /****** list product ******/
+    .list-product-wrapper {
+      padding:0 40px;
+      grid-template-columns: repeat(2,47%);
+      gap:80px 25px;
+    }
+    .list-product-wrapper .list-img-wrapper .list-img-atag{
+      margin-top: 10px;
+    }
+    .list-text{
+      margin-top:10px;
+    }
+    .list-product-wrapper .list-img-wrapper p{
+      line-height: 1.4;
+      font-size: 12px;
+    }
+    .list-product-wrapper .list-img-wrapper ul .selectColor{
+      width:10px;
+      height: 10px;
+    }
+    .list-product-wrapper .list-img-wrapper{
+      margin-top:30px;
+    }
+  }
   @media screen and (max-width:430px){
 
     /****** list img main ******/
@@ -329,14 +428,4 @@
       margin-top:30px;
     }
   }
-  @media screen and (max-width:800px){
-    .list-lookbook-wrapper{
-      height: 65vh;
-    }
-    .list-lookbook-wrapper .list-lookbook1-wrapper{
-      height: 65vh;
-    }
-    .list-content-wrapper .list-content li{
-      font-size: 14px;
-    }
-  }
+ 
