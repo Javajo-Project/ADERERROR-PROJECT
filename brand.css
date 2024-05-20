@@ -47,17 +47,15 @@ body {
   opacity: 0;
   transition: opacity 0.3s ease-in-out 0.1s;
 }
-
 .show {
   opacity: 1;
 }
 
 .brand-main-imgList img {
   width: 100%;
-
-  /* transform: translateY(-30px);
+  transform: translateY(-30px);
   opacity: 0;
-  transition: opacity 0.3s ease-in 0.1s, transform 0.35s ease-in-out 0.1s; */
+  transition: opacity 0.5s ease-in 0.1s, transform 0.5s ease-in 0.1s;
 }
 
 .show-img {
@@ -433,44 +431,4 @@ body {
 .brand-text-wrapper2 .brand-textWrapper2-video {
   width: 100%;
 }
-}
-
-
-/***** footer *****/
-.companyContact-companyLogo-wrapper a {
-  color: inherit;
-}
-
-.pc-main-footer p {
-  margin: 0;
-}
-
-@media screen and (max-width:1500px) {
-  .list-lookbook-wrapper {
-    height: 1000px;
-  }
-
-  .list-lookbook-wrapper .list-lookbook1-wrapper {
-    height: 1000px;
-  }
-}
-
-@media screen and (max-width:1300px) {
-  .list-lookbook-wrapper {
-    height: 95vh;
-  }
-
-  .list-lookbook-wrapper .list-lookbook1-wrapper {
-    height: 95vh;
-  }
-}
-
-@media screen and (max-width:1000px) {
-  .list-lookbook-wrapper {
-    height: 75vh;
-  }
-
-  .list-lookbook-wrapper .list-lookbook1-wrapper {
-    height: 75vh;
-  }
 }

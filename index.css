@@ -294,7 +294,7 @@
   align-items: center;
   overflow: hidden;
   height: 150vh;
-  background-color: #F3F3F3;
+  background-color: #F3F3F3; /* 섹션구분을 위한 배경색 */
 }
 #zoom-in .logo {
   width: 70%;

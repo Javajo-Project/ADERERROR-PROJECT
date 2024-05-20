@@ -20,14 +20,18 @@
   <meta property="og:url" content="https://javajo-project.github.io/ADERERROR-PROJECT/header+footer.html">
 
   <!-- reset -->
-  <link rel="stylesheet" href="./assets/styles/reset.css" defer>
+  <link rel="stylesheet" href="./assets/styles/reset.css">
 
   <!-- font -->
   <link rel="stylesheet" href="./assets/styles/pretendard.css">
   <link rel="stylesheet" href="./assets/styles/jost.css">
 
   <!-- style -->
-  <link rel="stylesheet" href="./assets/styles/global.css" defer>
+  <link rel="stylesheet" href="./assets/styles/global.css">
+  <link rel="stylesheet" href="./assets/styles/global.css.map">
+  <link rel="stylesheet" href="./assets/styles/global.scss">
+  <link rel="stylesheet" href="./assets/styles/header+footer.css">
+  <link rel="stylesheet" href="./assets/styles/header+footer.css.map">
 
   <!-- 이 페이지에만 들어가는 style -->
   <link rel="stylesheet" href="./brand.css" defer>
@@ -35,7 +39,6 @@
   <!-- jQuery -->
   <script src="./assets/Js/jquery-3.7.1.min.js"></script>
   <script src="./assets/Js/jquery-ui.min.js"></script>
-  <script src="./assets/Js/global.js" defer></script>
   <script src="./brand.js" defer></script>
 
   <!-- 곡선 -> 직선 쉐입변경 -->
@@ -102,7 +105,7 @@
   <!------- section 1 - brand-main-wrapper ------->
   <section class="brand-main-wrapper">
     <h1><img class="brand-main-logo" src="./assets/images/global/logo-w.png" alt="logo"></h1>
-    <p class="brand-main-txt">
+    <p class="brand-main-txt" id="show-txt">
       ADER ERROR는 미적 표현을 뜻하는 ‘Aesthetic Drawing’에 'er'을 합친 단어로 <br>
       ‘다양한 콘텐츠를 제작, 편집하고 공유하는 사람이 모인 집단’이라는 뜻입니다. <br>
       ADER의 부제인 ERROR는 말 그대로 오류를 뜻하는데 모든 결과는 반복되는 오류 <br>
@@ -111,7 +114,7 @@
     </p>
 
     <div class="brand-main-imgList">
-      <img class="show" src="./assets/images/brand/brand-main-img.png" alt="brand-main-img">
+      <img class="show-img" src="./assets/images/brand/brand-main-img.png" alt="brand-main-img">
     </div>
   </section>
 

@@ -28,6 +28,7 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
+
 /* 직선 -> 곡선 이벤트 */
 /****** brand mainBottom wrapper ******/
 gsap.registerPlugin(ScrollTrigger);
