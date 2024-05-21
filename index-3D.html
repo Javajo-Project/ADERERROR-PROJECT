@@ -5,14 +5,25 @@
   <meta charset="utf-8">
   <title>index-3d</title>
   <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
-  <link rel="stylesheet" href="../assets/style/reset.css">
+  <link rel="stylesheet" href="./assets/styles/reset.css">
+  
   <style>
+        @keyframes rotation {
+      from {
+        transform: rotateY(0deg);
+      }
+
+      to {
+        transform: rotateY(360deg);
+      }
+    }
     .container {
       margin: 100px auto;
-      width: 300px;
+      width: 320px;
       height: 140px;
       position: relative;
       perspective: 1000px;
+      transition: 0.3s;
     }
 
     #carousel {
@@ -34,39 +45,39 @@
     }
 
     #carousel figure:nth-child(1) {
-      transform: rotateY(0deg) translateZ(450px);
+      transform: rotateY(0deg) translateZ(470px);
     }
 
     #carousel figure:nth-child(2) {
-      transform: rotateY(40deg) translateZ(450px);
+      transform: rotateY(40deg) translateZ(470px);
     }
 
     #carousel figure:nth-child(3) {
-      transform: rotateY(80deg) translateZ(450px);
+      transform: rotateY(80deg) translateZ(470px);
     }
 
     #carousel figure:nth-child(4) {
-      transform: rotateY(120deg) translateZ(450px);
+      transform: rotateY(120deg) translateZ(470px);
     }
 
     #carousel figure:nth-child(5) {
-      transform: rotateY(160deg) translateZ(450px);
+      transform: rotateY(160deg) translateZ(470px);
     }
 
     #carousel figure:nth-child(6) {
-      transform: rotateY(200deg) translateZ(450px);
+      transform: rotateY(200deg) translateZ(470px);
     }
 
     #carousel figure:nth-child(7) {
-      transform: rotateY(240deg) translateZ(450px);
+      transform: rotateY(240deg) translateZ(470px);
     }
 
     #carousel figure:nth-child(8) {
-      transform: rotateY(280deg) translateZ(450px);
+      transform: rotateY(280deg) translateZ(470px);
     }
 
     #carousel figure:nth-child(9) {
-      transform: rotateY(320deg) translateZ(450px);
+      transform: rotateY(320deg) translateZ(470px);
     }
 
     iframe {
@@ -77,15 +88,101 @@
       object-fit: cover;
     }
 
-    @keyframes rotation {
-      from {
-        transform: rotateY(0deg);
-      }
+/****** 테블릿 ******/
+@media (max-width: 1100px) {
+  .container {
+    width: 220px;
+  }
+  
+  #carousel figure {
+    width: 200px;
+    height: 113px;
+  }
+  
+  #carousel figure:nth-child(1) {
+    transform: rotateY(0deg) translateZ(300px);
+  }
 
-      to {
-        transform: rotateY(360deg);
-      }
+  #carousel figure:nth-child(2) {
+    transform: rotateY(40deg) translateZ(300px);
+  }
+  
+  #carousel figure:nth-child(3) {
+    transform: rotateY(80deg) translateZ(300px);
+  }
+  
+  #carousel figure:nth-child(4) {
+    transform: rotateY(120deg) translateZ(300px);
+  }
+  
+  #carousel figure:nth-child(5) {
+    transform: rotateY(160deg) translateZ(300px);
+  }
+  
+  #carousel figure:nth-child(6) {
+    transform: rotateY(200deg) translateZ(300px);
+  }
+  
+  #carousel figure:nth-child(7) {
+    transform: rotateY(240deg) translateZ(300px);
+  }
+  
+  #carousel figure:nth-child(8) {
+    transform: rotateY(280deg) translateZ(300px);
+  }
+  
+  #carousel figure:nth-child(9) {
+    transform: rotateY(320deg) translateZ(300px);
+  }
+}
+/****** 모바일 ******/
+@media (max-width: 430px) {
+  .container {
+    width: 110px;
+  }
+  
+  #carousel figure {
+    width: 100px;
+    height: 57px;
+  }
+
+    #carousel figure:nth-child(1) {
+      transform: rotateY(0deg) translateZ(150px);
     }
+
+    #carousel figure:nth-child(2) {
+      transform: rotateY(40deg) translateZ(150px);
+    }
+
+    #carousel figure:nth-child(3) {
+      transform: rotateY(80deg) translateZ(150px);
+    }
+
+    #carousel figure:nth-child(4) {
+      transform: rotateY(120deg) translateZ(150px);
+    }
+
+    #carousel figure:nth-child(5) {
+      transform: rotateY(160deg) translateZ(150px);
+    }
+
+    #carousel figure:nth-child(6) {
+      transform: rotateY(200deg) translateZ(150px);
+    }
+
+    #carousel figure:nth-child(7) {
+      transform: rotateY(240deg) translateZ(150px);
+    }
+
+    #carousel figure:nth-child(8) {
+      transform: rotateY(280deg) translateZ(150px);
+    }
+
+    #carousel figure:nth-child(9) {
+      transform: rotateY(320deg) translateZ(150px);
+    }
+    }
+
   </style>
   <script src="../assets/jquery-3.7.1.min.js"></script>
   <script src="../assets/jquery-ui.min.js"></script>
