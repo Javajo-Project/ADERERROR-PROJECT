@@ -400,9 +400,10 @@
 @media screen and (max-width:430px){
   .index-main{
     overflow: hidden;
+    height: 927px;
   }
   .index-main .youtube {
-    width:5000px;
+    width:2000px;
   }
   .index-main .index-main-text h2{
     font-size: 70px;
@@ -414,8 +415,12 @@
     width:350px;
   }
   .index-main .index-main-text p:first-of-type {
-    top: 60%;
-    margin-left: 20px;
+    top: 48%;
+    left:20px;
+  }
+  .index-main .index-main-text p:last-of-type {
+    top:65%;
+    left:20px;
   }
 
   /***** index product list *****/
