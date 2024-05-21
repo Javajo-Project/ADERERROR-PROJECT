@@ -17,9 +17,6 @@ body {
   gap: 100px;
   padding: 0 90px;
 }
-.page-main-productContaine .mo-img {
-  display: none;
-}
 .page-main-productContaine .page-sidebarImages-container {
   margin-top: 130px;
 }
@@ -69,7 +66,7 @@ body {
 }
 .page-main-productContaine .page-mainContent-container .page-mainContent-mainTextBox .sticy .size {
   font-weight: 600;
-  margin-bottom: 117px;
+  margin-bottom: 100px;
 }
 .page-main-productContaine .page-mainContent-container .page-mainContent-mainTextBox .sticy .size span {
   text-decoration: underline;
@@ -138,41 +135,74 @@ body {
 /****** mo ******/
 @media (max-width: 431px) {
   .page-main-productContaine {
-    display: block;
-    padding: 0;
-  }
-  .page-main-productContaine .mo-img {
-    display: block;
+    margin-bottom: 100px;
     width: 100%;
-    height: 100%;
-    margin: 0 40px;
+    display: block;
+    padding: 0 40px;
   }
-  .page-main-productContaine .mo-img .mo-img-wrapper li {
+  .page-main-productContaine .page-sidebarImages-container {
+    margin-top: 0;
+    margin-left: 0;
+    position: relative;
     width: 300px;
     height: 375px;
   }
-  .page-main-productContaine .page-sidebarImages-container {
-    display: none;
+  .page-main-productContaine .page-sidebarImages-container .page-sidebarImages-wrapper {
+    display: flex;
+  }
+  .page-main-productContaine .page-sidebarImages-container .page-sidebarImages-wrapper .page-sidebarImages-item {
+    margin-bottom: 20px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+  }
+  .page-main-productContaine .page-sidebarImages-container .page-sidebarImages-wrapper .page-sidebarImages-item img {
+    width: 300px;
+    height: 375px;
+    vertical-align: middle;
   }
   .page-main-productContaine .page-mainContent-container {
     margin-top: 0;
   }
   .page-main-productContaine .page-mainContent-container .page-mainContent-mainTextBox {
-    margin: 0 40px;
+    position: static;
     max-width: 100%;
     min-width: 100px;
   }
-  .page-main-productContaine .page-mainContent-container .page-mainContent-mainTextBox .tag {
+  .page-main-productContaine .page-mainContent-container .page-mainContent-mainTextBox .sticy {
+    position: static;
+  }
+  .page-main-productContaine .page-mainContent-container .page-mainContent-mainTextBox .sticy .tag {
     font-size: 14px;
-    margin-bottom: 50px;
+    margin-bottom: 35px;
   }
-  .page-main-productContaine .page-mainContent-container .page-mainContent-mainTextBox .size {
-    margin-bottom: 50px;
+  .page-main-productContaine .page-mainContent-container .page-mainContent-mainTextBox .sticy .information {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 400;
+    margin: 10px 0;
   }
-  .page-main-productContaine .page-mainContent-container .page-mainContent-mainTextBox .size span {
-    margin-left: 110px;
+  .page-main-productContaine .page-mainContent-container .page-mainContent-mainTextBox .sticy .information p:first-child {
+    position: relative;
   }
-  .page-main-productContaine .page-mainContent-container .page-mainContent-mainTextBox .clickButton-wrapper li a {
+  .page-main-productContaine .page-mainContent-container .page-mainContent-mainTextBox .sticy .information p:first-child::after {
+    content: "";
+    position: absolute;
+    right: -25px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #0000C5;
+  }
+  .page-main-productContaine .page-mainContent-container .page-mainContent-mainTextBox .sticy .selectColor {
+    display: none;
+  }
+  .page-main-productContaine .page-mainContent-container .page-mainContent-mainTextBox .sticy .size {
+    margin-bottom: 35px;
+  }
+  .page-main-productContaine .page-mainContent-container .page-mainContent-mainTextBox .sticy .clickButton-wrapper li a {
     margin-bottom: 15px;
     height: 30px;
     border-radius: 30px;
@@ -180,35 +210,41 @@ body {
     display: grid;
     place-items: center;
     font-size: 14px;
-    font-weight: 500;
-    font-family: "Pretendard", sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    color: #000;
+    font-weight: 400;
   }
-  .page-main-productContaine .page-mainContent-container .page-mainContent-mainTextBox .clickButton-wrapper li:nth-child(3) {
+  .page-main-productContaine .page-mainContent-container .page-mainContent-mainTextBox .sticy .clickButton-wrapper li:nth-child(3) {
     display: none;
   }
-  .page-main-productContaine .page-mainContent-container .page-mainContent-mainTextBox .clickButton-wrapper .clickButton-b a {
+  .page-main-productContaine .page-mainContent-container .page-mainContent-mainTextBox .sticy .clickButton-wrapper li .clickButton-b a {
     background-color: #000;
     color: #fff;
   }
-  .page-main-productContaine .page-mainContent-container .page-mainContent-mainTextBox .subINformation {
+  .page-main-productContaine .page-mainContent-container .page-mainContent-mainTextBox .sticy .subINformation {
     font-family: "Pretendard", sans-serif;
     font-weight: 400;
     font-size: 10px;
     color: #000;
     color: #ff0000;
     text-align: center;
-    margin-bottom: 10px;
-  }
-  .page-main-productContaine .page-mainContent-container .page-mainContent-imgWrapper {
-    display: none;
+    margin-bottom: 60px;
   }
   .page-main-productContaine .page-mainContent-container .page-mainContent-subTextBox {
-    margin: 40px;
+    font-family: "Pretendard", sans-serif;
+    font-weight: -weight;
+    font-size: -size;
+    color: #000;
+    max-width: 600px;
+  }
+  .page-main-productContaine .page-mainContent-container .page-mainContent-subTextBox .subTextBox-wrapper {
+    min-width: 200px;
   }
   .page-main-productContaine .page-mainContent-container .page-mainContent-subTextBox .subTextBox-wrapper .subTextBox-item {
-    margin-bottom: 20px;
+    margin-bottom: 22px;
   }
-}/*# sourceMappingURL=수정용페이지.css.map */
+  .page-main-productContaine .page-mainContent-container .page-mainContent-subTextBox .subTextBox-wrapper .subTextBox-item:last-child {
+    margin-bottom: 100px;
+  }
+  .page-main-productContaine .page-mainContent-container .page-mainContent-subTextBox .subTextBox-wrapper .subTextBox-item .subTextBox-item-title {
+    font-size: 14px;
+  }
+}/*# sourceMappingURL=productPage2.css.map */
