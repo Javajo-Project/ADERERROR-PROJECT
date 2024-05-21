@@ -5,10 +5,10 @@
 - index에 배경스크롤 이벤트 추가 후 push
 - brand 모바일 완성 + 수정완료
 
-  **문지영**
-  - index-magazine 재구성
-  - 3D slide로 구성 및 완성
-  - productPage 수정(전체적인 레이아웃)
+**문지영**
+- index-magazine 재구성
+- 3D slide로 구성 및 완성
+- productPage 수정(전체적인 레이아웃)
 
 # 240517_금
 **정진영**
