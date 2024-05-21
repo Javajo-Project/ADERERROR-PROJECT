@@ -80,28 +80,30 @@ sections.forEach(section => {
 
 /***** index zoom in ******/
 const { innerHeight } = window;
+    if (innerWidth > 1100) {
 
-gsap.to("#zoom-in .logo", {
-    scale: 80, stagger: 0.25, duration: 3,
-    scrollTrigger: {
-        trigger: "#zoom-in",
-        pin: true,
-        // start: "10%",
-        end: `+=${innerHeight * 1}`,
-        scrub: 3,
-        // markers: true
-    }
-});
+    gsap.to("#zoom-in .logo", {
+        scale: 100, stagger: 0.25, duration: 3,
+        scrollTrigger: {
+            trigger: "#zoom-in",
+            pin: true,
+            // start: "10%",
+            end: `+=${innerHeight * 1.5}`,
+            scrub: 10
+            // markers: true
+        }
+    });
 
-gsap.to(".slogan-wrapper", {
-    duration: 1,
-    opacity: 1,
-    y: -250,
-    ease: "easeOutExpo",
-    scrollTrigger: {
-        trigger: "#slogan",
-        start: "top bottom",
-        end: "center center",
-        scrub: true
-    }
-});
+    gsap.to(".slogan-wrapper", {
+        duration: 1,
+        opacity: 1,
+        y: -250,
+        ease: "easeOutExpo",
+        scrollTrigger: {
+            trigger: "#slogan",
+            start: "top bottom",
+            end: "center center",
+            scrub: 1
+        }
+    });
+}
