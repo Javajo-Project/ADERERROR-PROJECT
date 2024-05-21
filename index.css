@@ -18,11 +18,12 @@
   font-family: 'Jost';
   font-size: 130px;
   color: #fff;
-  top: 23%;
+  top: 20%;
   line-height: 1.05;
   font-weight: 700;
   margin-left: 120px;
 }
+
 .index-main .index-main-text span {
   display: block;
 }
@@ -34,32 +35,32 @@
   font-size: 20px;
   font-family: 'pretendard';
   line-height: 1.7;
+
   opacity: 0;
-  transition: opacity 0.5s ease-in-out 0.2s;
+  transition: opacity 0.2s ease-in-out 0.2s;
 }
 .index-main .index-main-text p.show {
   opacity: 1;
 }
 
 .index-main .index-main-text p:first-of-type {
-  top: 55%;
+  top: 52%;
   right: 7%;
 }
-
 .index-main .index-main-text p:last-of-type {
-  top: 75%;
-  right: 7%;
-}
+  top: 70%;
+  right: 7%;}
+
 
 /****** index main Bottom ******/
 /****** 곡선 > 직선 이벤트 ******/
 .index-mainBtm-wrapper {
   position: absolute;
-  top: 1000px;
+  top: 950px;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
-  overflow-x: hidden;
+  overflow: hidden;
   display: flex;
   justify-content: center;
 }
@@ -67,7 +68,7 @@
   width: 100%;
   height: 350px;
   background: #000;
-  border-radius: 180% 180% 0 0;
+  border-radius: 150% 150% 0 0;
   transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
@@ -83,6 +84,7 @@
 }
 
 /****** index collaboration horizontal lookbook ******/
+/****** 가로 스크롤 ******/
 .index-collabo-horizontal {
   overflow-x: hidden;
 }
@@ -93,7 +95,7 @@
   font-size: 40px;
   font-weight: 500;
   font-family: 'Jost';
-  padding-top: 150px;
+  padding-top: 100px;
 }
 
 .index-collab .index-collab-brand {
@@ -116,6 +118,7 @@
   font-size: 50px;
   font-weight: 600;
   margin-left: 120px;
+  /* margin-right: 50px; */
   font-family: 'Jost';
   text-wrap: nowrap;
 }
@@ -189,6 +192,7 @@
   margin: 40px auto 0;
   font-family: 'pretendard';
   font-size: 18px;
+  font-weight: 600;
   line-height: 1.8rem;
 }
 
@@ -304,8 +308,8 @@
 #slogan {
   text-align: center;
   font-family: "Pretendard", sans-serif;
-  font-size: 1.5rem;
-  font-weight: 600;
+  font-size: 25px;
+  font-weight: 500;
   line-height: 1.5;
   color: #fff;
   background-color: #0000C5;
@@ -321,7 +325,7 @@
   /* transform: translateY(150px); */
 }
 #slogan .slogan-wrapper p {
-  padding: 20px 0;
+  padding: 30px 0;
 }
 #slogan .slogan-wrapper p span {
   display: block;

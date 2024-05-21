@@ -45,23 +45,29 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/ScrollTrigger.min.js"></script>
 </head>
 
+<!-- To do list *******
+수정 사항(pc기준) ****
 
-<!-- To do list **************************
-모바일 (max-width:430px)
+1. 메인
+- 제목 트렌지션 시간 단축 / 조절
+- 본문 텍스트 트렌지션 추가
 
-1. 메인 영상 페이지
-- 제목 / 내용 -> 트렌지션 적용
+2. 배경 곡선-직선 이벤트
+- 위치 / 높이 조정
 
-2. 콜라보 가로 스크롤 페이지
-- 스크롤시 가로로 긴 텍스트 중앙배치
+3. 가로 스크롤 화보집
+- 이미지 간격 일정하게 수정
 
-3. Ader's collection
-- 컨버스 사진 2번째 조금 아래로 이동
+4. Ader's Collection
+- 본문 폰트 웨이트 수정
+- 컨버스 사진 2번째 조금 더 아래로
 
-4. 브랜드 로고 줌인 페이지
-- 스크롤 타이밍 조절 
-- 설명 페이지 올라올 때 트렌지션 적용(위로 더 빠르게)
--->
+5. 로고 줌인
+- 글자 웨이트 조절
+- 스크롤 위치 조정: 위로 스크롤백했을때 타이밍이 안맞음
+
+6. 매거진 영역
+- 교체
 
 <body>
   <!-- mouseEmoji -->
@@ -107,11 +113,17 @@
     <iframe src="https://www.youtube.com/embed/aS03HxAoULw?si=waR4iFxHQysnicMS&amp;controls=0&loop=1&mute=1&autoplay=1"
       title="YouTube video player" frameborder="0"
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="youtube"></iframe>
+      referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="youtube">
+    </iframe>
+
     <div class="index-main-text">
-    <h2  data-aos="fade-up" data-aos-duration="3000"><span>NEW</span><span>DROP</span><span>THE</span><span>BLUEISM</span></h2>
-    <p class="show">아더에러와 뱅앤울룹슨의 첫 번째 글로벌 협업은 혁신 정신을 바탕으로 새로운 문화를 제안한다는 가치를 공유하는 두 브랜드의 만남을 통해 성사 되었습니다.</p>
-    <p class="show">'The Blueism'은 사운드를 기반으로 한 크리에이티브를 통해 두 브랜드가 함께 선보이고자 하는 새로운 움직임을 의미하며, 아더에러와 뱅앤올룹슨은 베오사운드 A1 스피커를 매개체로 새로운 영감의 창을 형성, 확장된 물결을 만들어 나가고자 합니다.
+    <h2><span data-aos="fade-up" data-aos-duration="550">NEW</span>
+      <span data-aos="fade-up" data-aos-duration="800">DROP</span><span data-aos="fade-up" data-aos-duration="950">THE</span><span data-aos="fade-up" data-aos-duration="1000">BLUEISM</span>
+    </h2>
+
+    <!-- p는 script 로 제어 -->
+    <p class="show1">아더에러와 뱅앤울룹슨의 첫 번째 글로벌 협업은 혁신 정신을 바탕으로 새로운 문화를 제안한다는 가치를 공유하는 두 브랜드의 만남을 통해 성사 되었습니다.</p>
+    <p class="show2">'The Blueism'은 사운드를 기반으로 한 크리에이티브를 통해 두 브랜드가 함께 선보이고자 하는 새로운 움직임을 의미하며, 아더에러와 뱅앤올룹슨은 베오사운드 A1 스피커를 매개체로 새로운 영감의 창을 형성, 확장된 물결을 만들어 나가고자 합니다.
     </p>
     </div>
   </section>
