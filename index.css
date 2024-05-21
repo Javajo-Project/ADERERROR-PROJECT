@@ -288,16 +288,18 @@
 }
 
 /****** index zoom in ******/
-#zoom-in, #slogan {
+
+#zoom-in {
+  background-color: #f3f3f3;
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  height: 150vh;
-  background-color: #F3F3F3;
+  height: 100vh;
 }
 #zoom-in .logo {
-  width: 70%;
+  width: 60%;
+  transition: transform 0.3s ease; 
 }
 #slogan {
   text-align: center;
@@ -307,6 +309,16 @@
   line-height: 1.5;
   color: #fff;
   background-color: #0000C5;
+  /* display: flex;
+  justify-content: center;
+  align-items: start; */
+  margin: 0 auto;
+  height: 70vh; 
+}
+#slogan .slogan-wrapper {
+  transition: transform 0.3s cubic-bezier(0.33, 1, 0.68, 1);
+  opacity: 0.5;
+  /* transform: translateY(150px); */
 }
 #slogan .slogan-wrapper p {
   padding: 20px 0;
@@ -404,5 +416,57 @@
   .index-main .index-main-text p:first-of-type {
     top: 60%;
     margin-left: 20px;
+  }
+
+  /***** index product list *****/
+
+  .index-productlist-wrapper .collection {
+    width: 100%;
+  }
+  .index-productlist-wrapper {
+    height: auto;
+  }
+  .index-productlist-wrapper h2 {
+    font-weight: 600;
+    margin-top: 60px;
+  }
+  .index-productlist-wrapper .collection {
+    margin: 40px; 
+    width: auto;
+  }
+  .index-productlist-wrapper .index-productlist-container {
+    margin: 0;
+    display: block;
+  }
+  .index-productlist-wrapper .index-productlist-container .index-product-list1, .index-product-list2{
+    width: 100%;
+    padding: 0 20px;
+  }
+  .index-productlist-wrapper .speakerimg {
+    width: 100%;
+    height: 100%;
+  } 
+  .index-productlist-wrapper .index-productlist-container .index-product-list1 .index-product {
+    width: 100%;
+    height: 100%;
+  }
+  .index-productlist-wrapper .index-productlist-container .index-product-list2 .index-product {
+    width: 100%;
+    height: 100%;
+  }
+  .index-productlist-wrapper .index-productlist-container .index-product-list2 {
+    margin: 0;
+  }
+  .index-productlist-wrapper .index-productlist-container .index-product-list1 .productname {
+    margin: 0;
+    margin-bottom: 40px;
+  }
+  .index-productlist-wrapper .index-productlist-container .index-product-list2 .productname {
+    margin: 0;
+    margin-bottom: 50px;
+  }
+  /****** index zoom in ******/
+  #zoom-in {
+    display: none;
   }
 }

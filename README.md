@@ -10,6 +10,11 @@
 - 3D slide로 구성 및 완성
 - productPage 수정(전체적인 레이아웃)
 
+**김예진**
+- collabo page 모바일, 태블릿 사이즈 수정
+- index zoom-in 스크립트 수정
+- index product list 모바일 버전 구현
+
 # 240517_금
 **정진영**
 - productlist page 모바일 버전 완료
@@ -25,9 +30,9 @@
 - productPage 모바일 완성
 
 **김예진**
--collabo page 태블릿버전 구현
--collabo page js 구현
--index page js 수정
+- collabo page 태블릿버전 구현
+- collabo page js 구현
+- index page js 수정
 
 # 240516_목
 **정진영**
@@ -44,9 +49,9 @@
 - index page magazine section 구현 완료
 
 **김예진**
--collabo page mobile html, css 구현
--collabo page js 구현
--index page zoom section 구현 1차 완료
+- collabo page mobile html, css 구현
+- collabo page js 구현
+- index page zoom section 구현 1차 완료
 
 # 240515_수
 **정진영**
@@ -63,9 +68,9 @@
 - productPage scss 완성
 
 **김예진**
--collabo page pc html, css 1차 완성
--collabo page pc js 구현
--favicon 추가
+- collabo page pc html, css 1차 완성
+- collabo page pc js 구현
+- favicon 추가
  
 # 240514_화 
 퍼블리싱 가이드(section전 주석문 표기 및 표기법)정함, 서브페이지 퍼블리싱, 
@@ -80,8 +85,8 @@ Github Organization 개설 ^^
 - productlist page html 및 css 구현
 
 **김예진**
--collabo page pc htrml 및 css 구현
--collabo page 모바일 디자인 수정
+- collabo page pc htrml 및 css 구현
+- collabo page 모바일 디자인 수정
 
 # 240513_월
 - 앞으로의 진행방향 회의 및 퍼블리싱 가이드(클래스명 및 파일명)
