@@ -1,6 +1,9 @@
 @charset "utf-8";
 
 /****************** 태블릿 ******************/
+body {
+  overflow-x: hidden;
+}
 
 /***** section 1 - brand-main-wrapper *****/
 @media screen and (max-width: 1101px) {
@@ -69,6 +72,8 @@
     position: absolute;
     top: 500px;
     left: 760px;
+
+    display: none;
   }
 
   .brand-text-img .img2 {
@@ -78,8 +83,8 @@
 }
 
 /***** section 3 - brand-text-wrapper2 *****/
-@media screen and (max-width: 1101px) {
-.brand-text-wrapper2 {
+@media screen and (max-width: 1101px) and (min-width: 500px) {
+  .brand-text-wrapper2 {
   height: 1300px;
   text-align: center;
 }
