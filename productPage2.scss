@@ -56,10 +56,6 @@ body {
   gap: 100px;
   padding: 0 90px;
 
-  .mo-img {
-    display: none;
-  }
-
   .page-sidebarImages-container {
     margin-top: 130px;
     // margin-left: 90px;
@@ -116,7 +112,7 @@ body {
 
         .size {
           font-weight: 600;
-          margin-bottom: 117px;
+          margin-bottom: 100px;
 
           span {
             text-decoration: underline;
@@ -156,6 +152,7 @@ body {
     .page-mainContent-subTextBox {
       @include koFont(-weight, -size, );
       max-width: 600px;
+
       .subTextBox-wrapper {
         min-width: 200px;
 
@@ -195,49 +192,83 @@ body {
 /****** mo ******/
 @include mobile {
   .page-main-productContaine {
+    margin-bottom: 100px;
+    width: 100%;
     display: block;
-    padding: 0;
-    .mo-img {
-      display: block;
-      .mo-img-wrapper {
-        margin: 0 40px;
-        li{
+    padding: 0 40px;
+
+    .page-sidebarImages-container {
+      margin-top: 0;
+      margin-left: 0;
+      position: relative;
+      width: 300px;
+      height: 375px;
+
+      .page-sidebarImages-wrapper {
+        display: flex;
+
+        .page-sidebarImages-item {
+          margin-bottom: 20px;
           width: 100%;
+          position: absolute;
+          top: 0;
+
           img {
-            width: 100%;
+            width: 300px;
+            height: 375px;
+            vertical-align: middle;
           }
         }
       }
-    }
-    }
-
-    .page-sidebarImages-container {
-      display: none;
     }
 
     .page-mainContent-container {
       margin-top: 0;
 
       .page-mainContent-mainTextBox {
-        margin: 0 40px;
+        position: static;
         max-width: 100%;
         min-width: 100px;
-        position: static;
+
         .sticy {
           position: static;
+
           .tag {
             font-size: 14px;
-            margin-bottom: 50px;
+            margin-bottom: 35px;
           }
-  
-          .size {
-            margin-bottom: 50px;
-  
-            span {
-              margin-left: 110px;
+
+          .information {
+            display: flex;
+            justify-content: space-between;
+            font-weight: 400;
+            margin: 10px 0;
+
+            p:first-child {
+              position: relative;
+            }
+
+            p:first-child::after {
+              content: "";
+              position: absolute;
+              right: -25px;
+              top: 50%;
+              transform: translateY(-50%);
+              width: 10px;
+              height: 10px;
+              border-radius: 50%;
+              background-color: $mColor;
             }
           }
-  
+
+          .selectColor {
+            display: none;
+          }
+
+          .size {
+            margin-bottom: 35px;
+          }
+
           .clickButton-wrapper {
             li {
               a {
@@ -248,40 +279,47 @@ body {
                 display: grid;
                 place-items: center;
                 font-size: 14px;
-                font-weight: 500;
-                @include koFont(500, 16px, );
+                font-weight: 400;
               }
-  
+
               &:nth-child(3) {
                 display: none;
               }
-            }
-  
-            .clickButton-b a {
-              background-color: $bColor;
-              color: $wColor;
+
+
+              .clickButton-b a {
+                background-color: $bColor;
+                color: $wColor;
+              }
             }
           }
-  
+
           .subINformation {
             @include koFont(400, 10px, );
             color: #ff0000;
             text-align: center;
-            margin-bottom: 10px;
+            margin-bottom: 60px
           }
         }
       }
 
-      .page-mainContent-imgWrapper {
-        display: none
-      }
-
       .page-mainContent-subTextBox {
-        margin: 40px;
+        @include koFont(-weight, -size, );
+        max-width: 600px;
 
         .subTextBox-wrapper {
+          min-width: 200px;
+
           .subTextBox-item {
-            margin-bottom: 20px;
+            margin-bottom: 22px;
+
+            &:last-child {
+              margin-bottom: 100px;
+            }
+
+            .subTextBox-item-title {
+              font-size: 14px;
+            }
           }
         }
       }
