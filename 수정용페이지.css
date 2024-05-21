@@ -147,9 +147,6 @@ body {
     height: 100%;
     margin: 0 40px;
   }
-  .page-main-productContaine .mo-img .mo-img-wrapper {
-    display: flex;
-  }
   .page-main-productContaine .mo-img .mo-img-wrapper li {
     width: 300px;
     height: 375px;
