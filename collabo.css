@@ -1,24 +1,17 @@
 @charset "UTF-8";
 
-:root {
-  --color-blue: #0000C5; 
-  --color-gray-bg: #F3F3F3;
-  --color-gray-text: #f7f7f7;
-}
-
 body {
   margin: 0 auto;
-  line-height: 1.5;
+  line-height: var(--lineHeight-sm);
   word-break: break-all;
   word-wrap: break-word;
 }
 
 .main-title {
   font-family: "Jost", sans-serif;
-  font-size: 70px;
+  font-size: 80px;
   font-weight: 600;
   color: #fff;
-  line-height: 1.5;
   text-transform: uppercase;
   text-align: center;
   display: block;
@@ -27,20 +20,20 @@ body {
 
 .sub-title {
   font-family: "Jost", sans-serif;
-  font-size: 2.5rem;
+  font-size: 40px;
   font-weight: 600;
 }
 
 .inner-text-sm {
   font-family: "Pretendard", sans-serif;
-  font-size: 1rem;
+  font-size: 16px;
   font-weight: 500;
   line-height: 1.6;
 }
 
 .inner-text-lg {
   font-family: "Pretendard", sans-serif;
-  font-size: 1.25rem;
+  font-size: 20px;
   font-weight: 600;
   line-height: 1.6;
 }
@@ -48,14 +41,14 @@ body {
 .campain-title {
   font-family: "Jost", sans-serif;
   font-weight: 600;
-  font-size: 3.125rem;
+  font-size: 50px;
   text-transform: uppercase;
 }
 
 .mini-title {
   font-family: "Jost", sans-serif;
   font-weight: 600;
-  font-size: 1.125rem;
+  font-size: 18px;
 }
 
 .btn {
@@ -71,21 +64,21 @@ body {
 }
 
 .btn-w {
-  color: #000;
-  background-color: #fff;
+  color: var(--color-b);
+  background-color: var(--color-w);
   text-align: center;
   margin: 30px auto;
 }
 
 .btn-bk {
-  color: #fff;
-  background-color: #000;
+  color: var(--color-w);
+  background-color: var(--color-b);
   margin: 0 auto;
 }
 
 .btn:hover {
   transition: 0.3s;
-  background-color: var(--color-blue);
+  background-color: var(--color-main);
   color: #fff;
 }
 
@@ -103,17 +96,20 @@ p span {
 .collabo-intro  {
   height: 90vh;
   background: url(./assets/images/collabo/collabo_bg1.png) no-repeat 20% 0% ;
+  position: relative;
 }
-/* .collabo-intro .intro-logo {
+.collabo-intro .intro-logo {
   display: block;
   opacity: 0.7;
-  width: 300px;
-  margin: 0 auto 30px; 
-} */
+  width: 200px;
+  position: absolute;
+  bottom: 40px;
+  right: 40px;
+}
 
 /***** collabo-main *****/
 .collabo-main {
-  background-color: #000;
+  background-color: var(--color-b);
   padding: 120px 0px;
   text-align: center;
 }
@@ -142,7 +138,7 @@ p span {
 }
 
 .collabo-main .main-wrapper p {
-  color: #fff;
+  color: var(--color-w);
   margin: 40px auto;
 }
 
@@ -165,7 +161,6 @@ p span {
   text-align: right;
 }
 .collabo-through .through-wrapper img{
-  /* min-width: 500px; */
   width: 100%;
 }
 .collabo-through .through-wrapper h3 {
@@ -178,7 +173,7 @@ p span {
 
 /***** collabo-campain *****/
 .collabo-campain {
-  background-color: var(--color-gray-bg);
+  background-color: #F3F3F3;
   text-align: center;
   padding: 160px 0 160px;
   margin-bottom: 100px;
@@ -211,6 +206,12 @@ p span {
   .collabo-intro  {
     background: url(./assets/images/collabo/collabo_bg1.png) no-repeat 30% 0% ;
   }
+  .collabo-intro .intro-logo {
+    width: 150px;
+    right: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 
   /***** collabo-main *****/
   .collabo-main {
@@ -223,7 +224,6 @@ p span {
       max-width:700px;
       padding: 0 40px;
   }
-  
 
   /***** collabo-through *****/
   .collabo-through {

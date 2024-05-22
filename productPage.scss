@@ -48,9 +48,9 @@ body {
   @include enFont(-weight, -size, )
 }
 
-.page-main-productContaine {
+.page-main-productContainer {
   margin-bottom: 100px;
-  width: 100%;
+  width: var(--full-size);
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 100px;
@@ -111,7 +111,7 @@ body {
 
         .tag {
           font-size: 16px;
-          font-weight: 600px;
+          font-weight: 600;
           margin-bottom: 75px;
         }
 
@@ -212,7 +212,7 @@ body {
 
 /****** mo ******/
 @include mobile {
-  .page-main-productContaine {
+  .page-main-productContainer {
     margin-bottom: 100px;
     width: 100%;
     display: block;

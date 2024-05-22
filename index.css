@@ -50,6 +50,7 @@ body {
   position: absolute;
   width: 100%;
   aspect-ratio: 16/9;
+  border: none;
 }
 
 .index-main .index-main-text h2 {
@@ -564,6 +565,7 @@ body {
   .index-productlist-wrapper h2 {
     font-weight: 600;
     margin-top: 60px;
+    font-size: 40px;
   }
   .index-productlist-wrapper .collection {
     margin: 40px 0; 
