@@ -336,6 +336,90 @@
   display: block;
 }
 
+/****** index 3d video ******/
+@keyframes rotation {
+  from {
+    transform: rotateY(0deg);
+  }
+
+  to {
+    transform: rotateY(360deg);
+  }
+}
+.index-3d-video  {
+  background-color: var(--color-main);
+  padding: 10vh 0 20vh;
+}
+.index-3d-video .container {
+  margin: 100px auto;
+  width: 320px;
+  height: 140px;
+  position: relative;
+  perspective: 1000px;
+  transition: 0.3s;
+}
+
+.index-3d-video #carousel {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  animation: rotation 20s infinite linear;
+}
+
+.index-3d-video #carousel figure {
+  display: block;
+  position: absolute;
+  width: 300px;
+  height: 169px;
+  left: 10px;
+  top: 10px;
+  overflow: hidden;
+}
+
+.index-3d-video #carousel figure:nth-child(1) {
+  transform: rotateY(0deg) translateZ(470px);
+}
+
+.index-3d-video #carousel figure:nth-child(2) {
+  transform: rotateY(40deg) translateZ(470px);
+}
+
+.index-3d-video #carousel figure:nth-child(3) {
+  transform: rotateY(80deg) translateZ(470px);
+}
+
+.index-3d-video #carousel figure:nth-child(4) {
+  transform: rotateY(120deg) translateZ(470px);
+}
+
+.index-3d-video #carousel figure:nth-child(5) {
+  transform: rotateY(160deg) translateZ(470px);
+}
+
+.index-3d-video #carousel figure:nth-child(6) {
+  transform: rotateY(200deg) translateZ(470px);
+}
+
+.index-3d-video #carousel figure:nth-child(7) {
+  transform: rotateY(240deg) translateZ(470px);
+}
+
+.index-3d-video #carousel figure:nth-child(8) {
+  transform: rotateY(280deg) translateZ(470px);
+}
+
+.index-3d-video #carousel figure:nth-child(9) {
+  transform: rotateY(320deg) translateZ(470px);
+}
+
+.index-3d-video iframe {
+  cursor: pointer;
+  transition: all .5s ease;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 /****** index maggzine ******/
 .index-magazine {
   position: relative;
@@ -440,6 +524,51 @@
     font-size: 20px;
     max-width: 700px;
     margin: 0 auto;
+  }
+  /****** index 3d video ******/
+  .index-3d-video .container {
+    width: 220px;
+  }
+  
+  .index-3d-video #carousel figure {
+    width: 200px;
+    height: 113px;
+  }
+  
+  .index-3d-video #carousel figure:nth-child(1) {
+    transform: rotateY(0deg) translateZ(300px);
+  }
+
+  .index-3d-video #carousel figure:nth-child(2) {
+    transform: rotateY(40deg) translateZ(300px);
+  }
+  
+  .index-3d-video #carousel figure:nth-child(3) {
+    transform: rotateY(80deg) translateZ(300px);
+  }
+  
+  .index-3d-video #carousel figure:nth-child(4) {
+    transform: rotateY(120deg) translateZ(300px);
+  }
+  
+  .index-3d-video #carousel figure:nth-child(5) {
+    transform: rotateY(160deg) translateZ(300px);
+  }
+  
+  .index-3d-video #carousel figure:nth-child(6) {
+    transform: rotateY(200deg) translateZ(300px);
+  }
+  
+  .index-3d-video #carousel figure:nth-child(7) {
+    transform: rotateY(240deg) translateZ(300px);
+  }
+  
+  .index-3d-video #carousel figure:nth-child(8) {
+    transform: rotateY(280deg) translateZ(300px);
+  }
+  
+  .index-3d-video #carousel figure:nth-child(9) {
+    transform: rotateY(320deg) translateZ(300px);
   }
 }
 
