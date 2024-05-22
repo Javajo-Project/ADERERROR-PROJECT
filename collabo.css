@@ -173,7 +173,7 @@ p span {
 
 /***** collabo-campain *****/
 .collabo-campain {
-  background-color: #F3F3F3;
+  background-color: var(--color-lg);
   text-align: center;
   padding: 160px 0 160px;
   margin-bottom: 100px;
