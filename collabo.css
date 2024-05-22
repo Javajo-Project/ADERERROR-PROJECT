@@ -15,7 +15,7 @@ body {
 
 .main-title {
   font-family: "Jost", sans-serif;
-  font-size: 70px;
+  font-size: 80px;
   font-weight: 600;
   color: #fff;
   line-height: 1.5;
@@ -103,13 +103,16 @@ p span {
 .collabo-intro  {
   height: 90vh;
   background: url(./assets/images/collabo/collabo_bg1.png) no-repeat 20% 0% ;
+  position: relative;
 }
-/* .collabo-intro .intro-logo {
+.collabo-intro .intro-logo {
   display: block;
   opacity: 0.7;
-  width: 300px;
-  margin: 0 auto 30px; 
-} */
+  width: 200px;
+  position: absolute;
+  bottom: 40px;
+  right: 40px;
+}
 
 /***** collabo-main *****/
 .collabo-main {
@@ -211,6 +214,12 @@ p span {
   .collabo-intro  {
     background: url(./assets/images/collabo/collabo_bg1.png) no-repeat 30% 0% ;
   }
+  .collabo-intro .intro-logo {
+    width: 150px;
+    right: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 
   /***** collabo-main *****/
   .collabo-main {
@@ -223,7 +232,6 @@ p span {
       max-width:700px;
       padding: 0 40px;
   }
-  
 
   /***** collabo-through *****/
   .collabo-through {
