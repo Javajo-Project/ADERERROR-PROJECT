@@ -1,10 +1,16 @@
+# 240522_수
+
 # 240521_화
 **하은혜**
 - brand 모바일/태블릿 완성
 - index page PC.ver 수정 완료
 
+**문지영**
+- productPage 모바일 구현
+- header + footer 수정
+
 # 240520_월
-**정진영 **
+**정진영**
 - index pc 메인 효과 및 가로 스크롤 사진 크기 등 수정
 - index page 상단 모바일 버전 작업 시작
 
