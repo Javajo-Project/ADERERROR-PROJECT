@@ -16,7 +16,8 @@
 --primary-font-en: 'Jost', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 --primary-font-kn: 'Pretendard', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 /*** size ***/
---size-xs: 10px;
+--size-xxs: 10px;
+--size-xs: 12px;
 --size-sm: 14px;
 --size-md: 16px;
 --size-lg: 18px;
@@ -25,7 +26,7 @@
 --weight-xs: 400;
 --weight-sm: 500;
 --weight-md: 600;
---weight-md: 700;
+--weight-lg: 700;
 
 /****** color ******/
 --color-b: #000;
@@ -42,5 +43,8 @@
 --zIndex-2: 999999;
 --zIndex-1: 9999999;
 
-/****** transition ******/
+
+/****** 기타 ******/
+--full-size: 100%;
+--text-indent: -9999px;
 }
