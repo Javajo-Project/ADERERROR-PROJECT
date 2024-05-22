@@ -11,6 +11,11 @@
 - productPage 모바일 구현
 - header + footer 수정
 
+**김예진**
+- index zoom-in 스크립트 수정
+- index zoom-in, product list 모바일/태블릿 완성
+- collabo pc 수정
+
 # 240520_월
 **정진영**
 - index pc 메인 효과 및 가로 스크롤 사진 크기 등 수정
