@@ -3,27 +3,18 @@
 body {
   font-family: var(--primary-font-ko);
 }
-
-/***** mouseEmoji *****/
-.logo-emoji {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 99999;
-}
-
 /***** section 1 - brand-main-wrapper *****/
 .brand-main-wrapper {
-  width: 100%;
+  width: var(--full-size);
   height: 1200px;
   padding-top: 200px;
-  background-color: #0000C5;
+  background-color: var(--color-main);
   position: relative;
 }
 
 /***** show *****/
 .brand-main-logo {
-  margin: 0 auto;
+  margin: var(--primary-center);
   display: flex;
 
   opacity: 0;
@@ -39,10 +30,10 @@ body {
   margin: auto;
   padding: 70px 0 85px;
   width: 680px;
-  font-size: 18px;
+  font-size: var(--size-lg);
   text-align: center;
-  line-height: 1.8rem;
-  color: #fff;
+  line-height: var(--lineHeight-md);
+  color: var(--color-w);
 
   opacity: 0;
   transition: opacity 0.3s ease-in-out 0.1s;
@@ -53,7 +44,7 @@ body {
 }
 
 .brand-main-img {
-  width: 100%;
+  width: var(--full-size);
 
   opacity: 0;
   transform: translateY(-30px);
@@ -72,14 +63,14 @@ body {
   top: 125%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 100%;
+  width: var(--full-size);
   overflow: hidden;
   display: flex;
   justify-content: center;
 }
 
 .brand-mainBottom-shape {
-  width: 100%;
+  width: var(--full-size);
   height: 350px;
   background: #000;
   border-radius: 180% 180% 0 0;

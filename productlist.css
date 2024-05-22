@@ -82,8 +82,8 @@
     font-family: 'pretendard';
     list-style: none;
     display: flex;
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
     padding-left:90px;
     width: var(--full-size);
   }
@@ -117,13 +117,13 @@
     object-fit: cover;
   }
   .list-product-wrapper .list-img-wrapper .list-img{
-    margin:0;
+    margin: 0;
     width: var(--full-size);
     height: var(--full-size);
     text-indent: var(--text-indent);
   }
   .list-product-wrapper .list-img-wrapper p{
-    line-height: 1.7;
+    line-height: var(--lineHeight-md);
   }
   .list-product-wrapper .list-img-wrapper ul{
     list-style: none;
@@ -133,8 +133,8 @@
     display: flex;
   }
   .list-product-wrapper .list-img-wrapper ul .selectColor{
-    width:14px;
-    height: 14px;
+    width: var(--size-sm);
+    height: var(--size-sm);
     border-radius: 50%;
     text-indent: var(--text-indent);
     cursor: pointer;
@@ -191,45 +191,45 @@
   }
   .list-product-wrapper .list-img-wrapper .list-img2-black{
     background-color: var(--color-b);
-    margin-right: 10px;
+    margin-right: var(--size-xxs);
   }
   .list-product-wrapper .list-img-wrapper .list-img2-gray{
     background-color: #ddd;
-    margin-right: 10px;
+    margin-right: var(--size-xxs);
   }
   .list-product-wrapper .list-img-wrapper .list-img2-brown{
     background-color: #5a1a1a;
-    margin-right: 10px;
+    margin-right: var(--size-xxs);
   }
   .list-product-wrapper .list-img-wrapper .list-img3-black{
     background-color: var(--color-b);
-    margin-right: 10px;
+    margin-right: var(--size-xxs)x;
   }
   .list-product-wrapper .list-img-wrapper .list-img3-blue{
     background-color: var(--color-main);
-    margin-right: 10px;
+    margin-right: var(--size-xxs);
   }
   .list-product-wrapper .list-img-wrapper .list-img3-white{
     background-color: var(--color-w);
     border:1px solid var(--color-b);
     box-sizing: border-box;
-    margin-right: 10px;
+    margin-right: var(--size-xxs);
   }
   .list-product-wrapper .list-img-wrapper .list-img4-blue{
     background-color: var(--color-main);
-    margin-right: 10px;
+    margin-right: var(--size-xxs);
   }
   .list-product-wrapper .list-img-wrapper .list-img5-gray{
     background-color: #ddd;
-    margin-right: 10px;
+    margin-right: var(--size-xxs);
   }
   .list-product-wrapper .list-img-wrapper .list-img6-blue{
     background-color: var(--color-main);
-    margin-right: 10px;
+    margin-right: var(--size-xxs);
   }
   .list-product-wrapper .list-img-wrapper .list-img6-brown{
     background-color: #5a1a1a;
-    margin-right: 10px;
+    margin-right: var(--size-xxs);
   }
 
   /* footer */
@@ -322,7 +322,7 @@
     }
     .list-content-wrapper .list-content li a{
       margin:0;
-      padding-right:10px;
+      padding-right: var(--size-xxs);
     }
 
     /****** list product ******/
@@ -332,18 +332,18 @@
       gap:80px 25px;
     }
     .list-product-wrapper .list-img-wrapper .list-img-atag{
-      margin-top: 10px;
+      margin-top: var(--size-xxs);
     }
     .list-text{
-      margin-top:10px;
+      margin-top: var(--size-xxs);
     }
     .list-product-wrapper .list-img-wrapper p{
       line-height: 1.4;
       font-size: var(--size-xs);
     }
     .list-product-wrapper .list-img-wrapper ul .selectColor{
-      width:10px;
-      height: 10px;
+      width: var(--size-xxs);
+      height: var(--size-xxs);
     }
     .list-product-wrapper .list-img-wrapper{
       margin-top:30px;
@@ -385,7 +385,7 @@
     }
     .list-content-wrapper .list-content li a{
       margin:0;
-      padding-right:10px;
+      padding-right: var(--size-xxs);
     }
 
     /****** list product ******/
@@ -395,21 +395,21 @@
       gap:80px 25px;
     }
     .list-product-wrapper .list-img-wrapper .list-img-atag{
-      margin-top: 10px;
+      margin-top:  var(--size-xxs);
     }
     .list-text{
-      margin-top:10px;
+      margin-top: var(--size-xxs);
     }
     .list-product-wrapper .list-img-wrapper p{
-      line-height: 1.4;
+      line-height: var(--lineHeight-sm);
       font-size: var(--size-xs);
     }
     .list-product-wrapper .list-img-wrapper ul .selectColor{
-      width:10px;
-      height: 10px;
+      width: var(--size-xxs);
+      height: var(--size-xxs);
     }
     .list-product-wrapper .list-img-wrapper{
-      margin-top:30px;
+      margin-top: 30px;
     }
   }
   @media screen and (max-width:500px){
@@ -424,17 +424,17 @@
       height: 320px;
     }
     .list-lookbook-wrapper .list-lookbook1-wrapper{
-      padding:50px 40px;
+      padding: 50px 40px;
       height: 320px;
     }
     .list-lookbook-wrapper .list-lookbook1-wrapper .box{
-      padding:4vw 5vw;
+      padding: 4vw 5vw;
     }
     .list-lookbook-wrapper .list-lookbook1-wrapper .box p{
       font-size: var(--size-xxs);
     }
     .list-lookbook-wrapper .list-lookbook1-wrapper .box .list-content{
-      margin-top:5vw;
+      margin-top: 5vw;
     }
     .list-lookbook-wrapper .list-lookbook1-wrapper .list-lookbook1-wrappera{
       height: 220px;
@@ -448,32 +448,32 @@
       font-size: var(--size-xxs);
     }
     .list-content-wrapper .list-content li a{
-      margin:0;
-      padding-right:10px;
+      margin: 0;
+      padding-right: var(--size-xxs);
     }
 
     /****** list product ******/
     .list-product-wrapper {
       padding:0 40px;
       grid-template-columns: repeat(2,47%);
-      gap:80px 25px;
+      gap: 80px 25px;
     }
     .list-product-wrapper .list-img-wrapper .list-img-atag{
-      margin-top: 10px;
+      margin-top: var(--size-xxs);
     }
     .list-text{
-      margin-top:10px;
+      margin-top: var(--size-xxs);
     }
     .list-product-wrapper .list-img-wrapper p{
-      line-height: 1.4;
+      line-height: var(--lineHeight-sm);
       font-size: var(--size-xs);
     }
     .list-product-wrapper .list-img-wrapper ul .selectColor{
-      width:10px;
-      height: 10px;
+      width: var(--size-xxs);
+      height: var(--size-xxs);
     }
     .list-product-wrapper .list-img-wrapper{
-      margin-top:30px;
+      margin-top: 30px;
     }
   }
   @media screen and (max-width:430px){
@@ -493,12 +493,12 @@
       height: 310px;
     }
     .list-lookbook-wrapper .list-lookbook1-wrapper .box{
-      padding:4vw 5vw;
+      padding: 4vw 5vw;
       background-color: var(--color-w);
-      width:150px;
+      width: 150px;
     }
     .list-lookbook-wrapper .list-lookbook1-wrapper .box p{
-      font-size: 10px;
+      font-size: var(--size-xxs);
     }
     .list-lookbook-wrapper .list-lookbook1-wrapper .box .list-content{
       margin-top:5vw;
@@ -516,7 +516,7 @@
     }
     .list-content-wrapper .list-content li a{
       margin:0;
-      padding-right:10px;
+      padding-right: var(--size-xxs);
     }
 
     /****** list product ******/
@@ -526,18 +526,18 @@
       gap:80px 25px;
     }
     .list-product-wrapper .list-img-wrapper .list-img-atag{
-      margin-top: 10px;
+      margin-top: var(--size-xxs);
     }
     .list-text{
-      margin-top:10px;
+      margin-top: var(--size-xxs);
     }
     .list-product-wrapper .list-img-wrapper p{
-      line-height: 1.4;
+      line-height:var(--lineHeight-sm);
       font-size: var(--size-xs);
     }
     .list-product-wrapper .list-img-wrapper ul .selectColor{
-      width:10px;
-      height: 10px;
+      width: var(--size-xxs);
+      height: var(--size-xxs);
     }
     .list-product-wrapper .list-img-wrapper{
       margin-top:30px;
