@@ -1,3 +1,12 @@
+/****** Loading ******/
+/****** 페이지 로딩 구간 ******/
+
+window.addEventListener('load', function() {
+    // 페이지가 완전히 로드되었을 때 로딩 화면을 숨김
+    document.getElementById('loading-screen').style.display = 'none';
+});
+
+
 /****** index mainTxt show ******/
 
 document.addEventListener("DOMContentLoaded", function () {
