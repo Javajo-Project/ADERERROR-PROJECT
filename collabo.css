@@ -1,17 +1,17 @@
 @charset "UTF-8";
 
 body {
-  margin: 0 auto;
-  line-height: var(--lineHeight-sm);
+  margin: var(--primary-center);
+  line-height: var(--lineHeight-nm);
   word-break: break-all;
   word-wrap: break-word;
 }
 
 .main-title {
-  font-family: "Jost", sans-serif;
+  font-family: var(--primary-font-en);
   font-size: 80px;
-  font-weight: 600;
-  color: #fff;
+  font-weight: var(--weight-md);
+  color: var(--color-w);
   text-transform: uppercase;
   text-align: center;
   display: block;
@@ -19,47 +19,45 @@ body {
 }
 
 .sub-title {
-  font-family: "Jost", sans-serif;
+  font-family: var(--primary-font-en);
   font-size: 40px;
-  font-weight: 600;
+  font-weight: var(--weight-md);
 }
 
 .inner-text-sm {
-  font-family: "Pretendard", sans-serif;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 1.6;
+  font-family: var(--primary-font-ko);
+  font-size: var(--size-md);
+  font-weight: var(--weight-sm);
 }
 
 .inner-text-lg {
-  font-family: "Pretendard", sans-serif;
-  font-size: 20px;
-  font-weight: 600;
-  line-height: 1.6;
+  font-family: var(--primary-font-ko);
+  font-size: var(--size-xl);
+  font-weight: var(--weight-sm);
 }
 
 .campain-title {
-  font-family: "Jost", sans-serif;
-  font-weight: 600;
+  font-family: var(--primary-font-en);
+  font-weight: var(--weight-md);
   font-size: 50px;
   text-transform: uppercase;
 }
 
 .mini-title {
-  font-family: "Jost", sans-serif;
-  font-weight: 600;
-  font-size: 18px;
+  font-family: var(--primary-font-en);
+  font-weight: var(--weight-md);
+  font-size: var(--size-xl);
 }
 
 .btn {
   display: block;
-  font-size: 1rem;
-  font-weight: 500;
+  font-size: var(--size-md);
+  font-weight: var(--weight-sm);
   width: 220px;
   padding: 15px 0px;
   border-radius: 50px;
   text-align: center;
-  font-family: "Pretendard", sans-serif;
+  font-family: var(--primary-font-ko);
   white-space: nowrap;
 }
 
@@ -73,7 +71,7 @@ body {
 .btn-bk {
   color: var(--color-w);
   background-color: var(--color-b);
-  margin: 0 auto;
+  margin: var(--primary-center);
 }
 
 .btn:hover {
@@ -148,7 +146,7 @@ p span {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 1fr 1fr;
-  margin: 0 auto;
+  margin: var(--primary-center);
   padding: 160px 10%;
 } 
 .collabo-through .through-wrapper1 {
@@ -161,7 +159,7 @@ p span {
   text-align: right;
 }
 .collabo-through .through-wrapper img{
-  width: 100%;
+  width: var(--full-size);
 }
 .collabo-through .through-wrapper h3 {
   padding: 40px 5px 20px;
@@ -180,12 +178,12 @@ p span {
 }
 .collabo-campain .campain-wrapper p {
   padding: 60px 0;
-  margin: 0 auto;
+  margin: var(--primary-center);
   
 }
 .collabo-campain .campain-wrapper .btn-wrapper {
   max-width: 500px;
-  margin:0 auto;
+  margin:var(--primary-center);
   padding: 30px 0;
 }
 
@@ -231,7 +229,7 @@ p span {
     display: block;
   } 
   .collabo-through .through-wrapper img{
-    width: 100%;
+    width: var(--full-size);
   }
   .collabo-through .through-wrapper h3 {
     padding: 30px 0;
@@ -241,7 +239,7 @@ p span {
     padding: 0 40px 10px 40px;
     text-align: center;
     max-width: 700px;
-    margin: 0 auto;
+    margin: var(--primary-center);
     }
   .collabo-through .through-wrapper1 {
     margin-bottom: 60px;
@@ -280,25 +278,25 @@ p span {
     font-size: 30px;
   }
   .inner-text-sm {
-    font-size: 14px;
+    font-size: var(--size-sm);
   }
   .inner-text-lg {
-    font-size: 14px;
+    font-size: var(--size-sm);
   }
   .campain-title {
     font-size: 30px;
   }
   .mini-title {
-    font-size: 16px;
+    font-size: var(--size-md);
   }
   p span {
     display: inline;
   }
 
 .btn {
-  font-size: 14px;
+  font-size: var(--size-sm);
   width: 200px;
-  margin: 0 auto;
+  margin: var(--primary-center);
 }
 
   /***** collabo-intro *****/
@@ -328,7 +326,7 @@ p span {
     display: block;
   } 
   .collabo-through .through-wrapper img{
-    width: 100%;
+    width: var(--full-size);
   }
   .collabo-through .through-wrapper h3 {
     padding: 20px 0;
