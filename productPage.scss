@@ -56,24 +56,24 @@ body {
   gap: 100px;
   padding: 0 90px;
 
-  .page-sidebarImages-container {
-    margin-top: 130px;
-    // margin-left: 90px;
+  .device {
+    .pagination {
+      display: none;
+    }
+    .page-sidebarImages-container {
+      // margin-left: 90px;
 
-    .page-sidebarImages-wrapper {
-      .page-sidebarImages-item {
-        margin-bottom: 20PX;
-        width: max(100%, 400px);
+      .page-sidebarImages-wrapper {
+        .page-sidebarImages-item {
+          margin-bottom: 20PX;
+          width: max(100%, 400px);
 
-        img {
-          width: 100%;
-          height: 100%;
+          img {
+            width: 100%;
+            height: 100%;
+          }
         }
       }
-    }
-
-    .mo-button {
-      display: none;
     }
   }
 
@@ -202,52 +202,47 @@ body {
     padding: 0 40px;
     position: relative;
 
-    .page-sidebarImages-container {
-      margin: 0 auto;
+    .device {
       position: relative;
+      margin: 0 auto;
       width: 300px;
       height: 375px;
+      .page-sidebarImages-container {
+        width: 100%;
+        height: 100%;
 
-      .page-sidebarImages-wrapper {
-        display: flex;
-        width: 400%;
-
-        .page-sidebarImages-item {
-          width: 100%;
-          position: absolute;
-          top: 0;
-
-          img {
+        .page-sidebarImages-wrapper {
+          .page-sidebarImages-item {
             width: 100%;
             height: 100%;
-            vertical-align: middle;
-          }
-        }
-      }
-
-      .mo-button {
-        display: block;
-        ul {
-          display: flex;
-          gap: 5px;
-          position: absolute;
-          left: 50%;
-          transform: translateX(-50%);
-          bottom: 20px;
-          li {
-            z-index: 999;
-            width: 8px;
-            height: 8px;
-            display: block;
-            background-color: $gColor;
-            opacity: 0.5;
-            border-radius: 50%;
-            text-indent: -99999px;
-            &.active {
-              opacity: 0.8;
+            img {
+              width: 100%;
+              height: 100%;
+              vertical-align: middle;
             }
           }
         }
+      }
+      .pagination {
+        // display: block;
+        position: absolute;
+        left: 0;
+        text-align: center;
+        bottom:10px;
+        width: 100%;
+      }
+      .swiper-pagination-switch {
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        border-radius: 10px;
+        background: #999;
+        box-shadow: 0px 1px 2px #555 inset;
+        margin: 0 3px;
+        cursor: pointer;
+      }
+      .swiper-active-switch {
+        background: #fff;
       }
     }
 
