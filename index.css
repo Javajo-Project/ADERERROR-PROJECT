@@ -301,7 +301,7 @@
 }
 
 /****** index zoom in ******/
-#zoom-in {
+.zoom-in {
   background-color: #f3f3f3;
   display: flex;
   justify-content: center;
@@ -309,11 +309,11 @@
   overflow: hidden;
   height: 100vh;
 }
-#zoom-in .logo {
+.zoom-in .logo {
   width: 60%;
   /* transition: transform 0.3s ease;  */
 }
-#slogan {
+.slogan {
   text-align: center;
   font-family: "Pretendard", sans-serif;
   font-size: 1.5rem;
@@ -324,14 +324,14 @@
   margin: 0 auto;
   height: 70vh; 
 }
-#slogan .slogan-wrapper {
+.slogan .slogan-wrapper {
   /* transition: transform 0.3s cubic-bezier(0.33, 1, 0.68, 1); */
   opacity: 0.5;
 }
-#slogan .slogan-wrapper p {
+.slogan .slogan-wrapper p {
   padding: 20px 0;
 }
-#slogan .slogan-wrapper p span {
+.slogan .slogan-wrapper p span {
   display: block;
 }
 
@@ -421,20 +421,20 @@
   }
   
   /****** index zoom in ******/
-  #zoom-in {
+  .zoom-in {
     display: none;
   }
-  #slogan {
+  .slogan {
     height: auto;
   }
-  #slogan .slogan-wrapper {
+  .slogan .slogan-wrapper {
     opacity: 1;
     padding: 120px 0 200px;
   }
-  #slogan .slogan-wrapper p span {
+  .slogan .slogan-wrapper p span {
     display: inline;
   }
-  #slogan .slogan-wrapper p {
+  .slogan .slogan-wrapper p {
     padding: 0 40px;
     font-size: 20px;
     max-width: 700px;
@@ -522,20 +522,20 @@
     font-size: 24px;
   }
   /****** index zoom in ******/
-  #zoom-in {
+  .zoom-in {
     display: none;
   }
-  #slogan {
+  .slogan {
     height: auto;
   }
-  #slogan .slogan-wrapper {
+  .slogan .slogan-wrapper {
     opacity: 1;
   }
-  #slogan .slogan-wrapper p {
+  .slogan .slogan-wrapper p {
     padding: 0 40px;
     font-size: 18px;
   }
-  #slogan .slogan-wrapper p span {
+  .slogan .slogan-wrapper p span {
     display: inline;
   }
 }

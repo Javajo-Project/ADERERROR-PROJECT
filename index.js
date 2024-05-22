@@ -82,10 +82,10 @@ sections.forEach(section => {
 const { innerHeight } = window;
     if (innerWidth > 1100) {
 
-    gsap.to("#zoom-in .logo", {
+    gsap.to(".zoom-in .logo", {
         scale: 100, stagger: 0.25, duration: 3,
         scrollTrigger: {
-            trigger: "#zoom-in",
+            trigger: ".zoom-in",
             pin: true,
             // start: "10%",
             end: `+=${innerHeight * 1.5}`,
@@ -100,7 +100,7 @@ const { innerHeight } = window;
         y: -250,
         ease: "easeOutExpo",
         scrollTrigger: {
-            trigger: "#slogan",
+            trigger: ".slogan",
             start: "top bottom",
             end: "center center",
             scrub: 1
