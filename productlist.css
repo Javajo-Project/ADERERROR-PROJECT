@@ -6,7 +6,7 @@
  body{
     margin:0;
     padding:0;
-    font-family: 'jost';
+    font-family: 'jost',sans-serif;
   }
   a{
     text-decoration: none;
@@ -105,7 +105,7 @@
     grid-template-columns: repeat(3,32%);
     justify-content: space-evenly;
     gap:80px 20px;
-    margin-bottom:20vh;
+    margin-bottom:30vh;
   }
   .list-product-wrapper .list-img-wrapper{
     margin-top:55px;
@@ -485,14 +485,16 @@
 
     /****** list lookbook ******/
     .list-lookbook-wrapper{
-      height: 285px;
+      height: 310px;
     }
     .list-lookbook-wrapper .list-lookbook1-wrapper{
-      padding:50px 40px;
-      height: 285px;
+      padding:50px 20px;
+      height: 310px;
     }
     .list-lookbook-wrapper .list-lookbook1-wrapper .box{
       padding:4vw 5vw;
+      background-color: #fff;
+      width:150px;
     }
     .list-lookbook-wrapper .list-lookbook1-wrapper .box p{
       font-size: 10px;
@@ -506,7 +508,7 @@
 
     /****** list content ******/
     .list-content-wrapper .list-content {
-      padding: 10px 40px 0 40px;
+      padding: 10px 20px 0 20px;
     }
     .list-content-wrapper .list-content li{
       font-size: 10px;
@@ -518,7 +520,7 @@
 
     /****** list product ******/
     .list-product-wrapper {
-      padding:0 40px;
+      padding:0 20px;
       grid-template-columns: repeat(2,47%);
       gap:80px 25px;
     }
