@@ -18,7 +18,7 @@ body {
 }
 
 /***** section 2 - brand-text-wrapper1 *****/
-@media screen and (max-width: 1101px) and (min-width: 500px) {
+@media screen and (max-width: 1101px) and (min-width: 900px) {
   .brand-text-wrapper1 {
     flex-wrap: wrap;
     margin-top: -200px;
@@ -65,7 +65,8 @@ body {
   .brand-text-btn {
     margin-left: 80px;
   }
-
+}
+@media screen and (max-width: 1101px) and (min-width: 1000px) {
   /***** 움직이는 이미지 2개 *****/
   .brand-text-img .img1 {
     width: 320px;
@@ -73,13 +74,11 @@ body {
     top: 500px;
     left: 760px;
 
-    display: none;
+    /* display: none; */
   }
-
   .brand-text-img .img2 {
     display: none;
   }
-
 }
 
 /***** section 3 - brand-text-wrapper2 *****/
