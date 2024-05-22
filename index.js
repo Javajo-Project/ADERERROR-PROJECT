@@ -25,6 +25,14 @@ window.addEventListener('load', function() {
         // startPageLoading();
     }, 3000); // 3초 대기 후에 숨김
 });
+/****** 고친부분  ************************************************************/
+
+
+
+
+
+
+
 
 
 /****** index mainTxt show ******/

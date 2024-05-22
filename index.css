@@ -1,11 +1,7 @@
 @charset "utf-8";
 
+/****** 고친부분  ************************************************************/
 /****** Loading ******/
-body {
-  margin: 0;
-  /* overflow: hidden; 로딩 화면이 보이는 동안 스크롤바 숨기기 */
-}
-
 .loading-screen {
   position: fixed;
   top: 0;
@@ -23,9 +19,24 @@ body {
   display: none;
 }
 
+/* .loading-screen .logo-open {
+  width: 40vw;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+} */
+
+.loading-screen .logo-open img {
+  width: 50%;
+  display: flex;
+  align-items: space-around;
+}
+
 .content {
+  width: 100%;
   position: relative;
-  z-index: 1000000000000; /* 로딩 화면 위에 위치하도록 설정 */
+  z-index: 1000000000000;
+  /* 로딩 화면 위에 위치하도록 설정 / header 수정해야함 */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -34,8 +45,10 @@ body {
 }
 
 .content img {
-  max-width: 100px;
+  max-width: 10px;
 }
+
+/****************************************************************************/
 
 
 
