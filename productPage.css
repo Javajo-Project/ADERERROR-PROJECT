@@ -17,14 +17,32 @@ body {
   gap: 100px;
   padding: 0 90px;
 }
-.page-main-productContaine .device .pagination {
+.page-main-productContaine .swiper {
   display: none;
+  width: 300px;
+  height: 375px;
+  position: relative;
 }
-.page-main-productContaine .device .page-sidebarImages-container .page-sidebarImages-wrapper .page-sidebarImages-item {
+.page-main-productContaine .swiper .swiper-slide {
+  width: 100%;
+  height: 100%;
+}
+.page-main-productContaine .swiper .swiper-slide img {
+  width: 100%;
+  height: 100%;
+}
+.page-main-productContaine .swiper .swiper-pagination {
+  position: absolute;
+  bottom: 10px;
+  font-size: 10px;
+  font-weight: 400;
+  text-align: end;
+}
+.page-main-productContaine .page-sidebarImages-container .page-sidebarImages-wrapper .page-sidebarImages-item {
   margin-bottom: 20PX;
   width: max(100%, 400px);
 }
-.page-main-productContaine .device .page-sidebarImages-container .page-sidebarImages-wrapper .page-sidebarImages-item img {
+.page-main-productContaine .page-sidebarImages-container .page-sidebarImages-wrapper .page-sidebarImages-item img {
   width: 100%;
   height: 100%;
 }
@@ -139,46 +157,12 @@ body {
     width: 100%;
     display: block;
     padding: 0 40px;
-    position: relative;
   }
-  .page-main-productContaine .device {
-    position: relative;
-    margin: 0 auto;
-    width: 300px;
-    height: 375px;
+  .page-main-productContaine .page-sidebarImages-container {
+    display: none;
   }
-  .page-main-productContaine .device .page-sidebarImages-container {
-    width: 100%;
-    height: 100%;
-  }
-  .page-main-productContaine .device .page-sidebarImages-container .page-sidebarImages-wrapper .page-sidebarImages-item {
-    width: 100%;
-    height: 100%;
-  }
-  .page-main-productContaine .device .page-sidebarImages-container .page-sidebarImages-wrapper .page-sidebarImages-item img {
-    width: 100%;
-    height: 100%;
-    vertical-align: middle;
-  }
-  .page-main-productContaine .device .pagination {
-    position: absolute;
-    left: 0;
-    text-align: center;
-    bottom: 10px;
-    width: 100%;
-  }
-  .page-main-productContaine .device .swiper-pagination-switch {
-    display: inline-block;
-    width: 10px;
-    height: 10px;
-    border-radius: 10px;
-    background: #999;
-    box-shadow: 0px 1px 2px #555 inset;
-    margin: 0 3px;
-    cursor: pointer;
-  }
-  .page-main-productContaine .device .swiper-active-switch {
-    background: #fff;
+  .page-main-productContaine .swiper {
+    display: block;
   }
   .page-main-productContaine .page-mainContent-container {
     margin-top: 30px;

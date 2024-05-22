@@ -56,26 +56,43 @@ body {
   gap: 100px;
   padding: 0 90px;
 
-  .device {
-    .pagination {
-      display: none;
+  .swiper {
+    display: none;
+    width: 300px;
+    height: 375px;
+    position: relative;
+    .swiper-slide {
+      width: 100%;
+      height: 100%;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    } 
+    .swiper-pagination {
+      position: absolute;
+      bottom: 10px;
+      font-size: 10px;
+      font-weight: 400;
+      text-align: end;
     }
-    .page-sidebarImages-container {
-      // margin-left: 90px;
+  }
+  .page-sidebarImages-container {
+    // margin-left: 90px;
 
-      .page-sidebarImages-wrapper {
-        .page-sidebarImages-item {
-          margin-bottom: 20PX;
-          width: max(100%, 400px);
+    .page-sidebarImages-wrapper {
+      .page-sidebarImages-item {
+        margin-bottom: 20PX;
+        width: max(100%, 400px);
 
-          img {
-            width: 100%;
-            height: 100%;
-          }
+        img {
+          width: 100%;
+          height: 100%;
         }
       }
     }
   }
+
 
   .page-mainContent-container {
     margin-top: 200px;
@@ -200,51 +217,14 @@ body {
     width: 100%;
     display: block;
     padding: 0 40px;
-    position: relative;
 
-    .device {
-      position: relative;
-      margin: 0 auto;
-      width: 300px;
-      height: 375px;
-      .page-sidebarImages-container {
-        width: 100%;
-        height: 100%;
-
-        .page-sidebarImages-wrapper {
-          .page-sidebarImages-item {
-            width: 100%;
-            height: 100%;
-            img {
-              width: 100%;
-              height: 100%;
-              vertical-align: middle;
-            }
-          }
-        }
-      }
-      .pagination {
-        // display: block;
-        position: absolute;
-        left: 0;
-        text-align: center;
-        bottom:10px;
-        width: 100%;
-      }
-      .swiper-pagination-switch {
-        display: inline-block;
-        width: 10px;
-        height: 10px;
-        border-radius: 10px;
-        background: #999;
-        box-shadow: 0px 1px 2px #555 inset;
-        margin: 0 3px;
-        cursor: pointer;
-      }
-      .swiper-active-switch {
-        background: #fff;
-      }
+    .page-sidebarImages-container {
+     display: none;
     }
+
+    .swiper {
+      display: block;
+    } 
 
     .page-mainContent-container {
       margin-top: 30px;

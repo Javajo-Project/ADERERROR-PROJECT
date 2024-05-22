@@ -6,21 +6,17 @@ $('.subTextBox-item .subTextBox-item-title').on('click', (e) => {
 /****** section - page-main-productContainer ******/
 
 const mq = matchMedia('(max-width: 430px)');
-if (mq.matches) {
-  var mySwiper = new Swiper('.page-sidebarImages-container', {
-    pagination: '.pagination',
-    loop: true,
-    autoplay: 1000,
-    paginationClickable: true
-  })
-  $('.page-sidebarImages-container').on('mouseenter', function (e) {
-    console.log('stop autoplay');
-    mySwiper.stopAutoplay();
-  })
-  $('.page-sidebarImages-container').on('mouseleave', function (e) {
-    console.log('start autoplay');
-    mySwiper.startAutoplay();
-  })
-} else {
-  clearInterval();
-}
+
+var swiper = new Swiper(".mySwiper", {
+  speed: 600,
+  loop:true,
+  parallax: true, // 시간차 움직임
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    type: "fraction",
+  },
+});
