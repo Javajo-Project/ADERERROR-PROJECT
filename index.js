@@ -35,7 +35,7 @@ gsap.to("#shape", {
         start: "top 30%", // 요소의 상단이 닿을 때 스크롤 이벤트 트리거
         end: "bottom 80%", // 요소의 하단이 닿을 때 스크롤 이벤트 트리거
         scrub: true,
-        markers: true
+        markers: false,
     },
     width: "120%",
     height: "800px",
@@ -108,3 +108,17 @@ const { innerHeight } = window;
         }
     });
 }
+/***** index magazine *****/
+const rotateitem=1;
+gsap.to(".index-magazine-container",{
+    scrollTrigger:{
+        trigger:".index-magazine-wrapper",
+        start:"top top",
+        end:'bottom 100%',
+        scrub:true,
+        pin:true,
+    },
+    rotate:(rotateitem%3)*2,
+    duration:3,
+    scale:1.1,
+});

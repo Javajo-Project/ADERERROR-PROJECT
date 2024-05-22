@@ -448,6 +448,11 @@
   padding: 0;
   overflow: hidden;
   margin-bottom: 200px;
+  z-index:-9999;
+}
+.index-magazine .index-magazine-container{
+  overflow: hidden;
+  position: sticky;
 }
 .index-magazine .grid-img-wrapper img {
   vertical-align: middle;
