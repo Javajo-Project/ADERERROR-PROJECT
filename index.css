@@ -296,7 +296,7 @@
 
 .index-productlist-wrapper .index-productlist-container .index-product-list1 .index-product img:hover {
   transform: scale(1.3);
-  transition: 2s;
+  transition: 1s;
 }
 
 .index-productlist-wrapper .index-productlist-container .index-product-list2 {
