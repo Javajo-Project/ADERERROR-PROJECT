@@ -274,6 +274,15 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  /* object-position: bottom; */
+}
+
+.index-productlist-wrapper .index-productlist-container .index-product-list2 .index-product .bag {
+  border-radius: 50px;
+  aspect-ratio: 1/1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   object-position: bottom;
 }
 
