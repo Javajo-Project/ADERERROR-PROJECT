@@ -15,6 +15,12 @@
 - 코드리뷰 작성
 - index 3d viedo section 추가
 
+**김예진**
+- 피그마에 pc, 모바일 최종 디자인 수정
+- collabo, index 유효성검사 오류 수정
+- collabo page 여백 수정
+- collabo, index css 변수 적용
+
 # 240521_화
 **정진영**
 - index page 모바일 버전 작업

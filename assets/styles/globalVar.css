@@ -38,6 +38,7 @@
 
 /****** z-index ******/
 /* 1: 가장 위에 올라올 것, 9: 가장 아래 내려갈 것 */
+--zIndex-7: -9999;
 --zIndex-6: 99;
 --zIndex-5: 999;
 --zIndex-4: 9999;
@@ -50,6 +51,7 @@
 --lineHeight-nm: 1.6;
 --lineHeight-md: 1.8;
 --lineHeight-lg: 1;
+--lineHeight-xxl: 3;
 
 /****** 기타 ******/
 --full-size: 100%;

@@ -121,14 +121,13 @@ const { innerHeight } = window;
     if (innerWidth > 1100) {
 
     gsap.to(".zoom-in .logo", {
-        scale: 100, stagger: 0.25, duration: 3,
+        scale: 100, duration: 3,
         scrollTrigger: {
             trigger: ".zoom-in",
             pin: true,
             // start: "10%",
             end: `+=${innerHeight * 1.5}`,
             scrub: 10
-            // markers: true
         }
     });
 
