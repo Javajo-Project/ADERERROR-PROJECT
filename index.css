@@ -569,8 +569,61 @@
   z-index: var(--zIndex-2);
   width: 50vw;
 }
+@media screen and (max-width:1800px){
 
+  /***** index main video *****/
+ .index-main{
+    overflow: hidden;
+    height: 1000px;
+  }
+  .index-main .youtube {
+    width:2000px;
+  }
+.index-main .index-main-text h2{
+    font-size: 100px;
+    top:25%;
+    margin-left:80px;
+  }
+  .index-main .index-main-text p{
+    font-size: var(--size-lg);
+    width:350px;
+  }
+  .index-main .index-main-text p:first-of-type {
+    top: 30%;
+    right:80px;
+  }
+  .index-main .index-main-text p:last-of-type {
+    top:50%;
+    right:80px;
+  }
+}
 @media screen and (max-width:1100px){
+  /***** index main video *****/
+  .index-main{
+    overflow: hidden;
+    height: 1000px;
+  }
+  .index-main .youtube {
+    width:2000px;
+  }
+  .index-main .index-main-text h2{
+    font-size: 100px;
+    top:23%;
+    margin-left:20px;
+  }
+  .index-main .index-main-text p{
+    font-size: var(--size-lg);
+    width:350px;
+  }
+  .index-main .index-main-text p:first-of-type {
+    top: 30%;
+    right:20px;
+  }
+  .index-main .index-main-text p:last-of-type {
+    top:48%;
+    right:20px;
+  }
+
   /***** index product list *****/
   .index-productlist-wrapper {
     height: auto;
@@ -666,6 +719,8 @@
 }
 
 @media screen and (max-width:430px){
+
+   /***** index main video *****/
   .index-main{
     overflow: hidden;
     height: 927px;
@@ -689,6 +744,17 @@
   .index-main .index-main-text p:last-of-type {
     top:65%;
     left:20px;
+  }
+
+  /****** index mainBtm ******/
+  .index-mainBtm-wrapper {
+  top:1090px;
+  }
+  .index-collab {
+    overflow: hidden;
+  }
+  .index-collab img{
+    width:50px;
   }
    /****** index collaboration horizontal lookbook ******/
 
