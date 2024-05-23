@@ -203,7 +203,7 @@
   }
   .list-product-wrapper .list-img-wrapper .list-img3-black{
     background-color: var(--color-b);
-    margin-right: var(--size-xxs)x;
+    margin-right: var(--size-xxs);
   }
   .list-product-wrapper .list-img-wrapper .list-img3-blue{
     background-color: var(--color-main);
