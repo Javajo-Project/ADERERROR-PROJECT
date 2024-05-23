@@ -12,7 +12,7 @@ header .mo-main-header {
 }
 header .pc-main-nav {
   transition: 0.3s;
-  z-index: 9999999;
+  z-index: var(--zIndex-2);
   position: fixed;
   top: 50px;
   left: 50%;
