@@ -4,27 +4,27 @@ $(function slide(){
     setTimeout(slide,3500);
   });
   
-  $('.img2_black').on('click',()=>{
+  $(document).on('click','.img2_black', ()=>{
     $(`.img2`).css('background', `url('./assets/images/productlist/list-img2-black.jpg') 50%/cover`);
   });
-  $('.img2_gray').on('click',()=>{
+  $(document).on('click','.img2_gray', ()=>{
     $(`.img2`).css('background', `url('./assets/images/productlist/list-img2-gray.jpg') 50%/cover`);
   });
-  $('.img2_brown').on('click',()=>{
+  $(document).on('click','.img2_brown',()=>{
     $(`.img2`).css('background', `url('./assets/images/productlist/list-img2-brown.jpg') 50%/cover`);
   });
-  $('.img3_black').on('click',()=>{
+  $(document).on('click','.img3_black',()=>{
     $(`.img3`).css('background', `url('./assets/images/productlist/list-img3-black.jpg') 50%/cover`);
   });
-  $('.img3_blue').on('click',()=>{
+  $(document).on('click','.img3_blue',()=>{
     $(`.img3`).css('background', `url('./assets/images/productlist/list-img3-blue.jpg') 50%/cover`);
   });
-  $('.img3_white').on('click',()=>{
+  $(document).on('click','.img3_white',()=>{
     $(`.img3`).css('background', `url('./assets/images/productlist/list-img3-white.jpg') 50%/cover`);
   });
-  $('.img6_blue').on('click',()=>{
+  $(document).on('click','.img6_blue',()=>{
     $(`.img6`).css('background', `url('./assets/images/productlist/list-img6-blue.jpg') 50%/cover`);
   });
-  $('.img6_brown').on('click',()=>{
+  $(document).on('click','.img6_brown',()=>{
     $(`.img6`).css('background', `url('./assets/images/productlist/list-img6-brown.jpg') 50%/cover`);
   });

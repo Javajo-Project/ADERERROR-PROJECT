@@ -1,0 +1,48 @@
+[
+    {
+        "id":"img1",
+        "url":"./assets/images/productlist/list-img1-white.jpg",
+        "name":"Blue bird t-shirt",
+        "price":"139,000",
+        "color":["white"]
+    },
+    {
+        "id":"img2",
+        "url":"./assets/images/productlist/list-img2-black.jpg",
+        "name":"Langle t-shirt",
+        "price":"139,000",
+        "color":["black", "gray", "brown"]
+    },
+    {
+        "id":"img3",
+        "url":"./assets/images/productlist/list-img3-black.jpg",
+        "name":"Caef logo t-shirt",
+        "price":"149,000",
+        "color":["black", "blue", "white"]
+
+    },
+    {
+        "id":"img4",
+        "url":"./assets/images/productlist/list-img4-blue.jpg",
+        "name":"Henrik jeans",
+        "price":"339,000",
+        "color":["blue"]
+
+    },
+    {
+        "id":"img5",
+        "url":"./assets/images/productlist/list-img5-blue.jpg",
+        "name":"Beosound A1 Ader Error Edition With Speaker Stand",
+        "price":"700,000",
+        "color":["blue"]
+
+    },
+    {
+        "id":"img6",
+        "url":"./assets/images/productlist/list-img6-blue.jpg",
+        "name":"Langle t-shirt",
+        "price":"139,000",
+        "color":["blue", "brown"]
+
+    }
+]
