@@ -9,7 +9,7 @@ body {
 
 .main-title {
   font-family: var(--primary-font-en);
-  font-size: 80px;
+  font-size: 70px;
   font-weight: var(--weight-md);
   color: var(--color-w);
   text-transform: uppercase;
@@ -21,7 +21,7 @@ body {
 .sub-title {
   font-family: var(--primary-font-en);
   font-size: 40px;
-  font-weight: var(--weight-md);
+  font-weight: var(--weight-sm);
 }
 
 .inner-text-sm {
@@ -45,7 +45,7 @@ body {
 
 .mini-title {
   font-family: var(--primary-font-en);
-  font-weight: var(--weight-md);
+  font-weight: var(--weight-sm);
   font-size: var(--size-xl);
 }
 
