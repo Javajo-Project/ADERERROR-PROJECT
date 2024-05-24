@@ -118,7 +118,7 @@ const { innerHeight } = window;
             trigger: ".zoom-in",
             pin: true,
             // start: "10%",
-            end: `+=${innerHeight * 1.5}`,
+            end: `+=${innerHeight * 2}`,
             scrub: 10
         }
     });
