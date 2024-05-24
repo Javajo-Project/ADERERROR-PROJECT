@@ -2,7 +2,6 @@
 /****** 페이지 로딩 구간 ******/
 
 window.addEventListener('load', function() {
-    // 페이지가 완전히 로드되었을 때 로딩 화면을 숨김
     var loadingScreen = document.querySelector('.loading-screen');
     var content = document.querySelector('.content');
     if (loadingScreen) {
@@ -10,22 +9,6 @@ window.addEventListener('load', function() {
         content.style.visibility = 'visible';
     }
 });
-
-// window.addEventListener('load', function() {
-//     var loadingScreen = document.querySelector('.loading-screen');
-//     var content = document.querySelector('.content');
-
-//     setTimeout(function() {
-//         if (loadingScreen) {
-//             loadingScreen.classList.add('hidden');
-//             content.style.visibility = 'visible';
-//         }
-//         // 여기서 페이지 로딩을 시작하도록 추가
-//         // 예를 들어:
-//         // startPageLoading();
-//     }, 500); // n초 대기 후에 숨김
-// });
-
 
 /****** index mainTxt show ******/
 
